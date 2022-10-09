@@ -89,8 +89,10 @@ const ArticleBlock = () => {
   }
   return (
     <>
+      {/* set enableRotate: true for detail debug */}
       <OrbitControls ref={orbit as never} enableRotate={false} makeDefault={true} />
-      <Html>
+      {/* follow orbit controls transform */}
+      <Html transform={true} occlude={true}>
         <p onClick={handleClick} className="text-4xl cursor-pointer">
           hello world
         </p>
