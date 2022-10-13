@@ -4,7 +4,7 @@ import * as THREE from 'three'
 import { Vector3 } from 'three'
 import { OrbitControls as OrbitControlsImpl } from 'three/examples/jsm/controls/OrbitControls'
 import { Html, OrbitControls } from '@react-three/drei'
-import { useSpring } from '@react-spring/three'
+import { useSpring, animated } from '@react-spring/three'
 import { useDrag } from '@use-gesture/react'
 
 const ArticleBlock = () => {
@@ -55,66 +55,55 @@ const ArticleBlock = () => {
   return (
     <>
       {/* follow orbit controls transform */}
-      <Html as="div" transform={true} occlude={true} className="cursor-pointer w-96">
-        <h3 onClick={handleClick} className="mb-2">Lorem, ipsum.</h3>
+      <Html as="div" transform={true} occlude={true} className="w-96 cursor-grab antialiased">
+        <h3 onClick={handleClick} className="mb-2">
+          Lorem, ipsum.
+        </h3>
         <p className="text-gray-300 text-xs">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dolorem natus quas corporis fuga nesciunt incidunt aut enim quis ratione sunt quo neque atque sapiente, eos nostrum! Facere, maxime deserunt.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dolorem natus quas corporis
+          fuga nesciunt incidunt aut enim quis ratione sunt quo neque atque sapiente, eos nostrum!
+          Facere, maxime deserunt.
         </p>
       </Html>
     </>
   )
 }
 
-const AttachDrag = () => {
-  const { controls, size, viewport, camera } = useThree()
-  const [draging, drag] = useState(false)
-  const orbit: OrbitControlsImpl = controls as OrbitControlsImpl
+const AttachDrag = (props: { children?: any }) => {
+  const { size, viewport } = useThree()
+  const [, drag] = useState(false)
   const aspect = size.width / viewport.width
   const [spring, api] = useSpring(() => ({ position: [0, 0, 0] }))
-  const source = useRef<{ focus: THREE.Vector3; camera: THREE.Vector3 }>({
-    focus: new THREE.Vector3(),
-    camera: new THREE.Vector3(),
-  })
-
   // Set the drag hook and define component movement based on gesture data
   useDrag(
     ({ active, offset: [x, y] }) => {
       drag(active)
-      source.current.camera?.copy(camera.position)
-      source.current.focus?.copy(orbit!.target)
-      api.start({ position: [-x / aspect, y / aspect, 0] })
+      api.start({ position: [x / aspect, -y / aspect, 0] })
     },
     { target: window },
   )
 
-  useFrame(({ camera }) => {
-    if (draging) {
-      const [x, y] = spring.position.get()
-      source.current.focus.x = x
-      source.current.focus.y = y
-      source.current.camera.x = x
-      source.current.camera.y = y
-      console.log(source.current)
-      camera.lookAt(source.current.focus)
-      camera.position.set(source.current.camera!.x, camera.position.y, camera.position.z)
-      camera.updateProjectionMatrix()
-      orbit?.target.copy(source.current.focus)
-      orbit?.update()
-    }
-  })
-
-  return <></>
+  return (
+    // @ts-expect-error -- https://github.com/pmndrs/use-gesture/discussions/287
+    <animated.group {...spring}>{props.children}</animated.group>
+  )
 }
 
 const Home = () => {
   return (
-    <Canvas onDrag={() => console.log('draging')}>
+    <Canvas>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       {/* set enableRotate: true for detail debug */}
-      <OrbitControls enableRotate={false} makeDefault={true} enableZoom={true} />
-      <AttachDrag />
-      <ArticleBlock />
+      <OrbitControls
+        enableRotate={false}
+        makeDefault={true}
+        enableZoom={true}
+        enableDamping={false}
+      />
+      <AttachDrag>
+        <ArticleBlock />
+      </AttachDrag>
     </Canvas>
   )
 }
