@@ -3,7 +3,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import * as THREE from 'three'
 import { Vector3 } from 'three'
 import { OrbitControls as OrbitControlsImpl } from 'three/examples/jsm/controls/OrbitControls'
-import { Html, OrbitControls } from '@react-three/drei'
+import { Html, OrbitControls, OrthographicCamera } from '@react-three/drei'
 import { useSpring, animated } from '@react-spring/three'
 import { useDrag } from '@use-gesture/react'
 
@@ -53,35 +53,113 @@ const ArticleBlock = () => {
   }
 
   return (
-    <>
-      {/* follow orbit controls transform */}
-      <Html as="div" transform={true} occlude={true} className="w-96 cursor-grab antialiased">
-        <h3 onClick={handleClick} className="mb-2">
-          Lorem, ipsum.
-        </h3>
-        <p className="text-gray-300 text-xs">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dolorem natus quas corporis
-          fuga nesciunt incidunt aut enim quis ratione sunt quo neque atque sapiente, eos nostrum!
-          Facere, maxime deserunt.
-        </p>
-      </Html>
-    </>
+    <Html
+      as="div"
+      // follow orbit controls transform
+      transform={true}
+      occlude={true}
+      className="w-96 cursor-grab antialiased border border-white"
+    >
+      <h3 onClick={handleClick} className="mb-2">
+        Lorem, ipsum.
+      </h3>
+      <p className="text-gray-300 text-xs">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dolorem natus quas corporis
+        fuga nesciunt incidunt aut enim quis ratione sunt quo neque atque sapiente, eos nostrum!
+        Facere, maxime deserunt.
+      </p>
+    </Html>
   )
 }
+
+// conflict with article block, should convert ArticleBlock to hooks
+const Block = () => {
+  return (
+    <div className="w-48 cursor-grab antialiased border border-white p-4">
+      <h3 className="mb-2">Lorem, ipsum.</h3>
+      <p className="text-gray-300 text-xs">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dolorem natus quas corporis
+        fuga nesciunt incidunt aut enim quis ratione sunt quo neque atque sapiente, eos nostrum!
+        Facere, maxime deserunt.
+      </p>
+    </div>
+  )
+}
+
+const Articles = () => {
+  const [lists] = useState(new Array(10).fill(0).map(() => 0))
+  return (
+    <Html
+      as="div"
+      transform={true}
+      occlude={true}
+      className="border-box flex flex-wrap w-screen gap-4 p-16 border border-white"
+    >
+      {lists.map((_, i) => {
+        return <Block key={i} />
+      })}
+    </Html>
+  )
+}
+
+const v1 = new THREE.Vector2()
+const v2 = new THREE.Vector2(0, 0)
+const dir = new THREE.Vector2(0, 0)
+let friction = 1
 
 const AttachDrag = (props: { children?: any }) => {
   const { size, viewport } = useThree()
   const [, drag] = useState(false)
   const aspect = size.width / viewport.width
-  const [spring, api] = useSpring(() => ({ position: [0, 0, 0] }))
+  const maxX = viewport.width / 2
+  const [spring, api] = useSpring(() => ({
+    position: [0, 0, 0],
+  }))
   // Set the drag hook and define component movement based on gesture data
+  // FIXME: currently bounding only working on outside border is align to browser viewpoint, maybe related to zoom value
+  // TODO: bounding effect should also working on axis y
+  // TODO: if drag on both x & y axis, currently is not working
   useDrag(
-    ({ active, offset: [x, y] }) => {
-      drag(active)
-      api.start({ position: [x / aspect, -y / aspect, 0] })
+    ({ dragging, offset: [x, y], movement: [mx], delta: [dlx], direction: [dirx] }) => {
+      drag(!!dragging)
+      const lastPosx = v2.x / aspect
+      if (Math.abs(lastPosx) > maxX && Math.abs(lastPosx) - maxX > 1 && dragging) {
+        friction = Math.abs(lastPosx) - maxX
+      }
+      if (!dragging) {
+        friction = 1
+      }
+      if (dragging) {
+        // far from border, hard to move
+        v2.x += dlx * (1 / friction)
+        // looks like bugs: dirx something reset to zero
+        dir.x = dirx || dir.x
+      }
+      const posx = v2.x / aspect
+      // if drag over border, bounding to right/left axis border
+      if (Math.abs(posx) > maxX && Math.abs(posx) - maxX > 1 && !dragging) {
+        api.start({
+          position: [dir.x * maxX, -y / aspect, 0],
+        })
+        v2.x = dir.x * maxX * aspect
+      } else if (dragging) {
+        api.start({ position: [posx, -y / aspect, 0] })
+      }
     },
     { target: window },
   )
+
+  useFrame(({ camera, controls, viewport }) => {
+    // console.log(1 / controls.target.distanceTo( controls.object.position ))
+    // const objectPos = v1.setFromMatrixPosition(el.matrixWorld)
+    // const cameraPos = v2.setFromMatrixPosition(camera.matrixWorld)
+    // const vFOV = (camera.fov * Math.PI) / 180
+    // const dist = objectPos.distanceTo(cameraPos)
+    // const scaleFOV = 2 * Math.tan(vFOV / 2) * dist
+    // return 1 / scaleFOV
+    // console.log(camera.zoom)
+    // console.log(camera instanceof THREE.OrthographicCamera)
+  })
 
   return (
     // @ts-expect-error -- https://github.com/pmndrs/use-gesture/discussions/287
@@ -95,14 +173,16 @@ const Home = () => {
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       {/* set enableRotate: true for detail debug */}
+      {/* <OrthographicCamera makeDefault={true} /> */}
       <OrbitControls
         enableRotate={false}
         makeDefault={true}
         enableZoom={true}
-        enableDamping={false}
+        // maxZoom={1}
+        // minZoom={0.5}
       />
       <AttachDrag>
-        <ArticleBlock />
+        <Articles />
       </AttachDrag>
     </Canvas>
   )
