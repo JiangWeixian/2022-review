@@ -102,29 +102,36 @@ const Articles = () => {
   )
 }
 
-const v1 = new THREE.Vector2()
+const v1 = new THREE.Vector2(0, 0)
 const v2 = new THREE.Vector2(0, 0)
 const dir = new THREE.Vector2(0, 0)
 let friction = 1
+let threshold = 1
+const DEFAULT_ZOOM = 0.2
 
 const AttachDrag = (props: { children?: any }) => {
   const { size, viewport } = useThree()
   const [, drag] = useState(false)
   const aspect = size.width / viewport.width
-  const maxX = viewport.width / 2
+  const maxX = viewport.width
   const [spring, api] = useSpring(() => ({
     position: [0, 0, 0],
   }))
+  // in default z = 5, zoom = 1 / distance
+  const zoom = useRef(DEFAULT_ZOOM)
   // Set the drag hook and define component movement based on gesture data
   // FIXME: currently bounding only working on outside border is align to browser viewpoint, maybe related to zoom value
   // TODO: bounding effect should also working on axis y
   // TODO: if drag on both x & y axis, currently is not working
   useDrag(
     ({ dragging, offset: [x, y], movement: [mx], delta: [dlx], direction: [dirx] }) => {
+      const scale = DEFAULT_ZOOM / zoom.current
+      v1.x = maxX / scale
+      threshold = 1 * scale
       drag(!!dragging)
       const lastPosx = v2.x / aspect
-      if (Math.abs(lastPosx) > maxX && Math.abs(lastPosx) - maxX > 1 && dragging) {
-        friction = Math.abs(lastPosx) - maxX
+      if (Math.abs(lastPosx) > v1.x && Math.abs(lastPosx) - v1.x > threshold && dragging) {
+        friction = Math.abs(lastPosx) - v1.x
       }
       if (!dragging) {
         friction = 1
@@ -137,12 +144,13 @@ const AttachDrag = (props: { children?: any }) => {
       }
       const posx = v2.x / aspect
       // if drag over border, bounding to right/left axis border
-      if (Math.abs(posx) > maxX && Math.abs(posx) - maxX > 1 && !dragging) {
+      if (Math.abs(posx) > v1.x && Math.abs(posx) - v1.x > threshold && !dragging) {
         api.start({
-          position: [dir.x * maxX, -y / aspect, 0],
+          position: [dir.x * v1.x, -y / aspect, 0],
         })
-        v2.x = dir.x * maxX * aspect
+        v2.x = dir.x * v1.x * aspect
       } else if (dragging) {
+        console.log(viewport, size, posx, zoom.current)
         api.start({ position: [posx, -y / aspect, 0] })
       }
     },
@@ -150,6 +158,8 @@ const AttachDrag = (props: { children?: any }) => {
   )
 
   useFrame(({ camera, controls, viewport }) => {
+    const c = controls as unknown as OrbitControlsImpl
+    zoom.current = 1 / c.target.distanceTo(c.object.position)
     // console.log(1 / controls.target.distanceTo( controls.object.position ))
     // const objectPos = v1.setFromMatrixPosition(el.matrixWorld)
     // const cameraPos = v2.setFromMatrixPosition(camera.matrixWorld)
