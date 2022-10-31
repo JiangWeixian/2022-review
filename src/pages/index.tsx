@@ -88,19 +88,11 @@ const Block = () => {
 
 const Articles = () => {
   const [lists] = useState(new Array(30).fill(0).map(() => 0))
-  const g = useRef<HTMLDivElement>(null)
-  useEffect(() => {
-    window.addEventListener('click', () => {
-      console.log(g.current?.getBoundingClientRect())
-    })
-  }, [g])
-  console.log(g.current)
   return (
     <Html
       as="div"
       transform={true}
       occlude={true}
-      ref={g}
       className="border-box flex flex-wrap w-screen gap-4 p-16 border border-white"
     >
       {lists.map((_, i) => {
@@ -121,7 +113,7 @@ const v2 = new THREE.Vector2(0, 0)
 const dir = new THREE.Vector2(0, 0)
 const percent = new THREE.Vector2(0, 0)
 let friction = 1
-const threshold = 0.01
+const threshold = 0.1
 const DEFAULT_ZOOM = 0.2
 
 const isClose = (pos: number, max: number, t: number) => {
@@ -132,8 +124,13 @@ const AttachDrag = (props: { children?: any }) => {
   const { size, viewport } = useThree()
   const [, drag] = useState(false)
   const aspect = size.width / viewport.width
+  const bounding = useRef<boolean | null>(false)
   const [spring, api] = useSpring(() => ({
     position: [0, 0, 0],
+    onRest: () => {
+      console.log('resolved')
+      bounding.current = null
+    },
   }))
   const g = useRef<HTMLDivElement>(null)
   const getBoundingClientRect = () => {
@@ -145,8 +142,10 @@ const AttachDrag = (props: { children?: any }) => {
   // Set the drag hook and define component movement based on gesture data
   // TODO: if drag on both x & y axis, currently is not working
   useDrag(
-    ({ dragging, offset: [x, y], movement: [mx], delta: [dlx, dly], direction: [dirx, diry] }) => {
-      console.log(dragging)
+    ({ dragging, tap, offset: [x, y], movement: [mx], delta: [dlx, dly], direction: [dirx, diry] }) => {
+      if (tap) {
+        return
+      }
       const rect = getBoundingClientRect()
       percent.y = rect.height / size.height
       percent.x = rect.width / size.width
@@ -157,9 +156,9 @@ const AttachDrag = (props: { children?: any }) => {
       // threshold = 1 * scale
       drag(!!dragging)
       const lastPosx = v2.x / aspect
-      // if (Math.abs(lastPosx) > v1.x && Math.abs(lastPosx) - v1.x > threshold && dragging) {
-      //   friction = Math.abs(lastPosx) - v1.x
-      // }
+      if (isClose(lastPosx, v1.x, 2) && dragging) {
+        friction = Math.abs(lastPosx) - v1.x
+      }
       if (!dragging) {
         friction = 1
       }
@@ -167,34 +166,73 @@ const AttachDrag = (props: { children?: any }) => {
         // far from border, hard to move
         v2.x += dlx * (1 / friction)
         v2.y += dly * (1 / friction)
-        // looks like bugs: dirx something reset to zero
-        dir.x = dirx || dir.x
-        dir.y = diry || dir.y
       }
+      // looks like bugs: dirx sometimes reset to zero
+      dir.x = v2.x < 0 ? -1 : 1
+      dir.y = v2.y < 0 ? -1 : 1
       const posx = v2.x / aspect
       const posy = -v2.y / aspect
+      const isoverx = isClose(posx, v1.x, threshold)
+      const isovery = isClose(posy, v1.y, threshold)
+
+      if ((isoverx || isovery) && !dragging) {
+        bounding.current = true
+        if (isoverx && !isovery) {
+          api.start({
+            position: [dir.x * v1.x, posy, 0],
+          })
+          v2.x = dir.x * v1.x * aspect
+        }
+        if (!isoverx && isovery) {
+          api.start({
+            position: [posx, -dir.y * v1.y, 0],
+          })
+          v2.y = dir.y * v1.y * aspect
+        }
+        if (isoverx && isovery) {
+          api.start({
+            position: [dir.x * v1.x, -dir.y * v1.y, 0],
+          })
+          v2.x = dir.x * v1.x * aspect
+          v2.y = dir.y * v1.y * aspect
+        }
+        // console.table({ v2x: dir.x * v1.x, posx })
+      } else if (dragging) {
+        bounding.current = bounding.current === null ? false : bounding.current
+        // console.table({
+        //   posx,
+        //   vx: v1.x,
+        //   scale,
+        //   percent: percent.x,
+        //   viewport,
+        //   aspect,
+        //   size,
+        //   dir,
+        // })
+        api.start({ position: [posx, posy, 0] })
+      }
 
       // FIXME: drag x and drag y is confict, can't not work togther perfect!
       // x, if drag over border, bounding to right/left axis border
-      if (isClose(posx, v1.x, threshold) && !dragging) {
-        api.start({
-          position: [dir.x * v1.x, -y / aspect, 0],
-        })
-        v2.x = dir.x * v1.x * aspect
-        console.table({ v2x: dir.x * v1.x, posx })
-      } else if (dragging) {
-        console.table({
-          posx,
-          vx: v1.x,
-          scale,
-          percent: percent.x,
-          viewport,
-          aspect,
-          size,
-          dir: dir.x,
-        })
-        api.start({ position: [posx, -y / aspect, 0] })
-      }
+      // if (isClose(posx, v1.x, threshold) && !dragging) {
+      //   api.start({
+      //     position: [dir.x * v1.x, -y / aspect, 0],
+      //   })
+      //   v2.x = dir.x * v1.x * aspect
+      //   console.table({ v2x: dir.x * v1.x, posx })
+      // } else if (dragging) {
+      //   console.table({
+      //     posx,
+      //     vx: v1.x,
+      //     scale,
+      //     percent: percent.x,
+      //     viewport,
+      //     aspect,
+      //     size,
+      //     dir: dir.x,
+      //   })
+      //   api.start({ position: [posx, -y / aspect, 0] })
+      // }
 
       // y
       // if (isClose(posy, v1.y, threshold) && !dragging) {
@@ -228,11 +266,6 @@ const AttachDrag = (props: { children?: any }) => {
   })
 
   const [lists] = useState(new Array(30).fill(0).map(() => 0))
-  useEffect(() => {
-    window.addEventListener('click', () => {
-      console.log(g.current?.getBoundingClientRect())
-    })
-  }, [g])
 
   return (
     // @ts-expect-error -- https://github.com/pmndrs/use-gesture/discussions/287
