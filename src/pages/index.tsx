@@ -142,7 +142,14 @@ const AttachDrag = (props: { children?: any }) => {
   // Set the drag hook and define component movement based on gesture data
   // TODO: if drag on both x & y axis, currently is not working
   useDrag(
-    ({ dragging, tap, offset: [x, y], movement: [mx], delta: [dlx, dly], direction: [dirx, diry] }) => {
+    ({
+      dragging,
+      tap,
+      offset: [x, y],
+      movement: [mx],
+      delta: [dlx, dly],
+      direction: [dirx, diry],
+    }) => {
       if (tap) {
         return
       }
@@ -211,39 +218,6 @@ const AttachDrag = (props: { children?: any }) => {
         // })
         api.start({ position: [posx, posy, 0] })
       }
-
-      // FIXME: drag x and drag y is confict, can't not work togther perfect!
-      // x, if drag over border, bounding to right/left axis border
-      // if (isClose(posx, v1.x, threshold) && !dragging) {
-      //   api.start({
-      //     position: [dir.x * v1.x, -y / aspect, 0],
-      //   })
-      //   v2.x = dir.x * v1.x * aspect
-      //   console.table({ v2x: dir.x * v1.x, posx })
-      // } else if (dragging) {
-      //   console.table({
-      //     posx,
-      //     vx: v1.x,
-      //     scale,
-      //     percent: percent.x,
-      //     viewport,
-      //     aspect,
-      //     size,
-      //     dir: dir.x,
-      //   })
-      //   api.start({ position: [posx, -y / aspect, 0] })
-      // }
-
-      // y
-      // if (isClose(posy, v1.y, threshold) && !dragging) {
-      //   api.start({
-      //     position: [x / aspect, -dir.y * v1.y, 0],
-      //   })
-      //   v2.y = dir.y * v1.y * aspect
-      // } else if (dragging) {
-      //   // console.table({ posy, vy: v1.y, scale, percent, viewport, aspect, size, dir: dir.y })
-      //   api.start({ position: [x / aspect, posy, 0] })
-      // }
     },
     { target: window },
   )
