@@ -6,3 +6,7 @@
   height: 100vh;
   background-color: black;
 }
+
+.article {
+  background-color: rgba(255, 255, 255, 0.12)
+}
