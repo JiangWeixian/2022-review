@@ -21,11 +21,11 @@
     "email": "jiangweixian1994@gmail.com"
   },
   "scripts": {
-    "test": "echo test",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
+    "prepare:datasets": "pnpm esno ./scripts/unfurl.ts",
     "ci:version": "pnpm changeset version",
     "lint:fix": "eslint . --fix"
   },
@@ -53,6 +53,7 @@
   "devDependencies": {
     "@aiou/eslint-config": "^0.5.1",
     "@changesets/cli": "^2.24.4",
+    "@types/fs-extra": "^9.0.13",
     "@types/node": "^18.8.4",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
@@ -61,14 +62,18 @@
     "autoprefixer": "10.4.8",
     "cz-emoji": "1.3.2-canary.2",
     "eslint": "^8.23.0",
+    "esno": "^0.16.3",
+    "fs-extra": "^10.1.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "postcss": "8.4.16",
     "prettier": "^2.7.1",
     "typescript": "4.4.4",
+    "unfurl.js": "^6.0.0",
     "vite": "^3.0.9",
     "vite-plugin-document": "^0.1.1",
-    "vite-plugin-pages": "^0.26.0"
+    "vite-plugin-pages": "^0.26.0",
+    "vite-plugin-svgr": "^2.2.2"
   },
   "config": {
     "commitizen": {

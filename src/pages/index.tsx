@@ -5,8 +5,13 @@ import { Html, OrbitControls, OrthographicCamera } from '@react-three/drei'
 import { useSpring, animated } from '@react-spring/three'
 import { useDrag } from '@use-gesture/react'
 
-// conflict with article block, should convert ArticleBlock to hooks
-const Block = () => {
+import rss from '@/assets/unfurl_rss.json'
+import { ReactComponent as Link } from '@/assets/icons/link.svg'
+import avatar from '@/assets/imgs/avatar_circle.png'
+
+// TODO: will fixed or remove later
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const BlockPlaceholder = () => {
   return (
     <div className="article w-48 cursor-grab antialiased rounded shadow p-4">
       <div>
@@ -16,6 +21,45 @@ const Block = () => {
           fuga nesciunt incidunt aut enim quis ratione sunt quo neque atque sapiente, eos nostrum!
           Facere, maxime deserunt.
         </p>
+      </div>
+    </div>
+  )
+}
+
+type BlockProps = {
+  type: string
+  summary: string
+  url: string
+  meta: {
+    title: string
+    description: string
+    favicon: string
+  }
+}
+
+const Block = (item: BlockProps) => {
+  return (
+    <div className="article cursor-grab antialiased rounded shadow p-8 aspect-video flex flex-col justify-between">
+      <div className="w-full">
+        <div className="flex items-center gap-2">
+          <img src={item.meta.favicon} className="w-6 h-6" />
+          <h1 className="mb-2 font-bold text-3xl text-white">{item.meta.title}</h1>
+        </div>
+        <p className="text-gray-400 text-xs">{item.meta.description}</p>
+      </div>
+      <div className="flex flex-col gap-4">
+        <div className="flex gap-2 text-gray-500">
+          <span className="w-6 h-6 inline-block flex-0">
+            <img src={avatar} className="w-full h-full" />
+          </span>
+          <p className="text-xs inline-block flex-1">{item.summary}</p>
+        </div>
+        <div className="w-full flex justify-between items-center opacity-70 hover:opacity-90">
+          <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.type}</span>
+          <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
+            <Link className="w-full h-full" />
+          </a>
+        </div>
       </div>
     </div>
   )
@@ -131,7 +175,8 @@ const AttachDrag = () => {
     { target: window },
   )
 
-  const [lists] = useState(new Array(30).fill(0).map(() => 0))
+  const [lists] = useState(new Array(30).fill(rss[0]).map((item) => item))
+  console.log(lists)
 
   return (
     // @ts-expect-error -- https://github.com/pmndrs/use-gesture/discussions/287
@@ -141,10 +186,10 @@ const AttachDrag = () => {
         transform={true}
         occlude={true}
         ref={g}
-        className="border-box flex flex-wrap w-screen gap-4 p-16 border border-white select-none"
+        className="border-box grid grid-cols-3 w-screen gap-4 p-8 border border-white select-none"
       >
-        {lists.map((_, i) => {
-          return <Block key={i} />
+        {lists.map((item, i) => {
+          return <Block key={i} {...item} />
         })}
       </Html>
     </animated.group>

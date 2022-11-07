@@ -7,6 +7,13 @@
   background-color: black;
 }
 
+.type {
+  /* font-family: 'Nabla', cursive; */
+  font-family: 'Carter One', cursive;
+}
+
 .article {
-  background-color: rgba(255, 255, 255, 0.12)
+  background-color: rgba(13, 13, 14)
+  /* background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px); */
 }
