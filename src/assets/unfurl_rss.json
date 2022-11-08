@@ -1,9 +1,77 @@
 [
   {
     "week": 29,
+    "url": "https://www.radix-ui.com/colors",
+    "tag": "toolkit",
+    "summary": "提供了多个色版，目的是解决网站色彩方案选择的问题。看起来还挺有用的，因为它还提供了思路。第一个知道色版的每个颜色都应该用在什么位置，比如 1/2 是属于背景",
+    "type": "comment",
+    "meta": {
+      "title": "Colors – Radix UI",
+      "description": "An open-source color system for designing beautiful, accessible websites and apps.",
+      "open_graph": {
+        "url": "https://radix-ui.com/colors",
+        "title": "Colors – Radix UI",
+        "description": "An open-source color system for designing beautiful, accessible websites and apps.",
+        "images": [
+          {
+            "url": "https://radix-ui.com/social/colors.png"
+          }
+        ]
+      },
+      "twitter_card": {
+        "site": "@radix_ui",
+        "card": "summary_large_image"
+      },
+      "favicon": "https://www.radix-ui.com/favicon.svg",
+      "cover": "https://radix-ui.com/social/colors.png"
+    }
+  },
+  {
+    "week": 29,
+    "url": "https://www.figma.com/community/file/1163373380971425118",
+    "tag": "resource",
+    "type": "bg",
+    "meta": {
+      "twitter_card": {
+        "card": "summary_large_image",
+        "site": "@figmadesign",
+        "title": "Free People Illustrations",
+        "description": "Figma Community file - Pack of 12 free standing illustrations with different poses for your personal and commercial projects.\n",
+        "images": [
+          {
+            "url": "https://s3-alpha.figma.com/hub/file/2471948373/a8d72b7e-6082-45f0-b94d-427ed0021528-cover.png"
+          }
+        ]
+      },
+      "open_graph": {
+        "type": "website",
+        "images": [
+          {
+            "url": "https://s3-alpha.figma.com/hub/file/2471948373/a8d72b7e-6082-45f0-b94d-427ed0021528-cover.png",
+            "width": 1920,
+            "height": 960
+          }
+        ],
+        "url": "https://www.figma.com/community/file/1163373380971425118",
+        "title": "Free People Illustrations | Figma Community",
+        "description": "Figma Community file - Pack of 12 free standing illustrations with different poses for your personal and commercial projects.\n",
+        "site_name": "Figma"
+      },
+      "description": "Pack of 12 free standing illustrations with different poses for your personal and commercial projects.\n",
+      "title": "Figma",
+      "favicon": "https://static.figma.com/app/icon/1/favicon.svg",
+      "cover": "https://s3-alpha.figma.com/hub/file/2471948373/a8d72b7e-6082-45f0-b94d-427ed0021528-cover.png"
+    }
+  },
+  {
+    "week": 29,
     "url": "https://overreacted.io/goodbye-clean-code/",
     "tag": "developers",
     "type": "twitter_share",
+    "summary": [
+      "Firstly, I didn’t talk to the person who wrote it. I rewrote the code and checked it in without their input. Even if it was an improvement (which I don’t believe anymore), this is a terrible way to go about it. A healthy engineering team is constantly building trust. Rewriting your teammate’s code without a discussion is a huge blow to your ability to effectively collaborate on a codebase together.",
+      "Secondly, nothing is free. My code traded the ability to change requirements for reduced duplication, and it was not a good trade. For example, we later needed many special cases and behaviors for different handles on different shapes. My abstraction would have to become several times more convoluted to afford that, whereas with the original “messy” version such changes stayed easy as cake."
+    ],
     "meta": {
       "title": "Goodbye, Clean Code — Overreacted",
       "description": "Let clean code guide you. Then let it go.",
@@ -19,10 +87,6 @@
         "description": "Let clean code guide you. Then let it go."
       },
       "favicon": "https://overreacted.io/favicon-32x32.png?v=8c19a894ebc3f54d282a8f2418cf5398"
-    },
-    "summary": [
-      "Firstly, I didn’t talk to the person who wrote it. I rewrote the code and checked it in without their input. Even if it was an improvement (which I don’t believe anymore), this is a terrible way to go about it. A healthy engineering team is constantly building trust. Rewriting your teammate’s code without a discussion is a huge blow to your ability to effectively collaborate on a codebase together.",
-      "Secondly, nothing is free. My code traded the ability to change requirements for reduced duplication, and it was not a good trade. For example, we later needed many special cases and behaviors for different handles on different shapes. My abstraction would have to become several times more convoluted to afford that, whereas with the original “messy” version such changes stayed easy as cake."
-    ]
+    }
   }
 ]

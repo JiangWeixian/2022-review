@@ -44,7 +44,7 @@ type BlockProps = {
 
 const CommentsBlock = (item: BlockProps) => {
   return (
-    <div className="article cursor-grab antialiased rounded shadow p-8 aspect-video flex flex-col justify-between">
+    <div className="article cursor-grab antialiased rounded shadow p-8 pb-4 aspect-video flex flex-col justify-between">
       <div className="w-full">
         <div className="flex items-center gap-2">
           <img src={item.meta.favicon} className="w-6 h-6" />
@@ -111,7 +111,7 @@ const TwitterShareBlock = (item: BlockProps) => {
 
 const BgBlock = (item: BlockProps) => {
   return (
-    <div className="article relative cursor-grab antialiased rounded shadow p-8 aspect-video flex flex-col justify-end overflow-hidden">
+    <div className="article relative cursor-grab antialiased rounded shadow p-8 pb-4 aspect-video flex flex-col justify-end overflow-hidden">
       <div
         className="w-full h-full absolute top-0 left-0 z-0 flex justify-center items-center bg-cover"
         style={{ backgroundImage: `url(${item.meta.cover})` }}
