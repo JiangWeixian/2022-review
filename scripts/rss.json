@@ -11,5 +11,12 @@
     "url": "https://www.figma.com/community/file/1163373380971425118",
     "tag": "resource",
     "type": "bg"
+  },
+  {
+    "week": 29,
+    "url": "https://overreacted.io/goodbye-clean-code/",
+    "tag": "developers",
+    "type": "twitter_share",
+    "summary": "Firstly, I didn’t talk to the person who wrote it. I rewrote the code and checked it in without their input. Even if it was an improvement (which I don’t believe anymore), this is a terrible way to go about it. A healthy engineering team is constantly building trust. Rewriting your teammate’s code without a discussion is a huge blow to your ability to effectively collaborate on a codebase together. \n Secondly, nothing is free. My code traded the ability to change requirements for reduced duplication, and it was not a good trade. For example, we later needed many special cases and behaviors for different handles on different shapes. My abstraction would have to become several times more convoluted to afford that, whereas with the original “messy” version such changes stayed easy as cake."
   }
 ]

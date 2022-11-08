@@ -7,6 +7,7 @@ specifiers:
   '@react-three/drei': ^9.34.0
   '@react-three/fiber': ^8.8.9
   '@stitches/react': 1.2.8
+  '@tailwindcss/line-clamp': ^0.4.2
   '@tailwindcss/typography': 0.5.7
   '@types/fs-extra': ^9.0.13
   '@types/node': ^18.8.4
@@ -44,6 +45,7 @@ dependencies:
   '@react-three/drei': 9.34.0_zoourtuqs6jpz5hshrv5fac7t4
   '@react-three/fiber': 8.8.9_ee34sidbpuk5ebd4phepfgxxdi
   '@stitches/react': 1.2.8_react@18.2.0
+  '@tailwindcss/line-clamp': 0.4.2_tailwindcss@3.1.8
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.1.8
   '@use-gesture/react': 10.2.20_react@18.2.0
   clsx: 1.2.1
@@ -1225,6 +1227,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@tailwindcss/line-clamp/0.4.2_tailwindcss@3.1.8:
+    resolution: {integrity: sha512-HFzAQuqYCjyy/SX9sLGB1lroPzmcnWv1FHkIpmypte10hptf4oPUfucryMKovZh2u0uiS9U5Ty3GghWfEJGwVw==}
+    peerDependencies:
+      tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
+    dependencies:
+      tailwindcss: 3.1.8_postcss@8.4.16
+    dev: false
 
   /@tailwindcss/typography/0.5.7_tailwindcss@3.1.8:
     resolution: {integrity: sha512-JTTSTrgZfp6Ki4svhPA4mkd9nmQ/j9EfE7SbHJ1cLtthKkpW2OxsFXzSmxbhYbEkfNIyAyhle5p4SYyKRbz/jg==}

@@ -36,6 +36,9 @@ type BlockProps = {
     description: string
     favicon: string
     cover: string
+    twitter_card: {
+      creator: string
+    }
   }
 }
 
@@ -67,8 +70,46 @@ const CommentsBlock = (item: BlockProps) => {
   )
 }
 
+const TwitterShareBlock = (item: BlockProps) => {
+  return (
+    <div className="article cursor-grab antialiased rounded shadow pb-4 flex flex-col justify-between rows-2 overflow-hidden">
+      <div className="flex-1 overflow-hidden pb-4">
+        <div className="w-auto p-8 mb-8 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+          <h1 className="mb-2 font-bold text-3xl text-white font-carter drop-shadow">
+            {item.meta.title}
+          </h1>
+          <p className="text-gray-200 text-xs italic">{item.meta.description}</p>
+        </div>
+        <div className="flex flex-col gap-2 text-white px-8">
+          <span className="w-6 h-6 mb-4 inline-block flex-0 font-carter underline">
+            {item.meta.twitter_card.creator}
+          </span>
+          {Array.isArray(item.summary) ? (
+            <ul className="h-1/2 line-clamp-6">
+              {item.summary.map((item, key) => {
+                return (
+                  <li className="list-disc list-inside text-sm" key={key}>
+                    {item}
+                  </li>
+                )
+              })}
+            </ul>
+          ) : (
+            <p className="text-sm inline-block flex-1 text-ellipsis">{item.summary}</p>
+          )}
+        </div>
+      </div>
+      <div className="w-full px-8 flex h-4 justify-between items-center justify-self-end opacity-70 hover:opacity-90">
+        <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+        <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
+          <Link className="w-full h-full" />
+        </a>
+      </div>
+    </div>
+  )
+}
+
 const BgBlock = (item: BlockProps) => {
-  console.log(item)
   return (
     <div className="article relative cursor-grab antialiased rounded shadow p-8 aspect-video flex flex-col justify-end overflow-hidden">
       <div
@@ -88,6 +129,7 @@ const BgBlock = (item: BlockProps) => {
 const components = {
   comment: CommentsBlock,
   bg: BgBlock,
+  twitter_share: TwitterShareBlock,
 }
 
 /**
@@ -211,7 +253,7 @@ const AttachDrag = () => {
         transform={true}
         occlude={true}
         ref={g}
-        className="border-box grid grid-cols-3 w-screen gap-4 p-8 border border-white select-none"
+        className="articles-layout border-box grid grid-cols-3 w-screen min-h-screen gap-4 p-8 border border-white select-none"
       >
         {lists.map((item, i) => {
           const Block = components[item.type as keyof typeof components]

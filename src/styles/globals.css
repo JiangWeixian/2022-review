@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 #root {
+  --row-height: 266px;
   height: 100vh;
   background-color: black;
+}
+
+.font-carter {
+  font-family: 'Carter One', cursive;
 }
 
 .type {
@@ -12,8 +17,14 @@
   font-family: 'Carter One', cursive;
 }
 
+.articles-layout {
+  grid-template-rows: repeat(auto-fill, minmax(var(--row-height), 1fr));
+}
+
 .article {
-  background-color: rgba(13, 13, 14)
-  /* background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px); */
+  background-color: rgba(13, 13, 14);
+}
+
+.rows-2 {
+  height: calc(var(--row-height) * 2);
 }
