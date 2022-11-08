@@ -126,10 +126,27 @@ const BgBlock = (item: BlockProps) => {
   )
 }
 
+const IframeBlock = (item: BlockProps) => {
+  return (
+    <div className="article relative cursor-grab antialiased rounded shadow flex flex-col overflow-hidden aspect-video col-start-1 col-end-3">
+      <iframe className="w-full h-full" src={item.url} />
+      <div className="w-full flex flex-col justify-end absolute left-0 bottom-0 h-32 p-8 pb-4 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent">
+        <p className="w-full flex justify-between items-center mix-blend-exclusion">
+          <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+          <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
+            <Link className="w-full h-full" />
+          </a>
+        </p>
+      </div>
+    </div>
+  )
+}
+
 const components = {
   comment: CommentsBlock,
   bg: BgBlock,
   twitter_share: TwitterShareBlock,
+  iframe: IframeBlock,
 }
 
 /**

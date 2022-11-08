@@ -88,5 +88,16 @@
       },
       "favicon": "https://overreacted.io/favicon-32x32.png?v=8c19a894ebc3f54d282a8f2418cf5398"
     }
+  },
+  {
+    "week": 29,
+    "url": "https://deck-24abcd.netlify.app/",
+    "tag": "css-is-awesome",
+    "type": "iframe",
+    "meta": {
+      "title": "Pokémon Cards CSS Holographic Effect",
+      "description": "An exploration of what's possible with CSS for Pokemon Cards, simeydotme (Simon Goellner)",
+      "favicon": "https://deck-24abcd.netlify.app/favicon.png"
+    }
   }
 ]

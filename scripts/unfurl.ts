@@ -15,7 +15,7 @@ const main = async () => {
     const unfurlItem: Item = Object.assign({}, item)
     unfurlItem.meta = result ?? {}
     unfurlItem.meta.cover =
-      result.twitter_card.images?.[0]?.url || result.open_graph?.images?.[0].url
+      result.twitter_card?.images?.[0]?.url || result.open_graph?.images?.[0].url
     unfurlRSS.push(unfurlItem)
   }
   fse.writeJSONSync(path.resolve(__dirname, '../src/assets/unfurl_rss.json'), unfurlRSS, {

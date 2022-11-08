@@ -18,7 +18,7 @@
 }
 
 .articles-layout {
-  grid-template-rows: repeat(auto-fill, minmax(var(--row-height), 1fr));
+  grid-template-rows: repeat(auto-fill, var(--row-height));
 }
 
 .article {
