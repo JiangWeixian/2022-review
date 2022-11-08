@@ -28,16 +28,18 @@ const BlockPlaceholder = () => {
 
 type BlockProps = {
   type: string
+  tag: string
   summary: string
   url: string
   meta: {
     title: string
     description: string
     favicon: string
+    cover: string
   }
 }
 
-const Block = (item: BlockProps) => {
+const CommentsBlock = (item: BlockProps) => {
   return (
     <div className="article cursor-grab antialiased rounded shadow p-8 aspect-video flex flex-col justify-between">
       <div className="w-full">
@@ -55,7 +57,7 @@ const Block = (item: BlockProps) => {
           <p className="text-xs inline-block flex-1">{item.summary}</p>
         </div>
         <div className="w-full flex justify-between items-center opacity-70 hover:opacity-90">
-          <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.type}</span>
+          <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
           <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
             <Link className="w-full h-full" />
           </a>
@@ -63,6 +65,29 @@ const Block = (item: BlockProps) => {
       </div>
     </div>
   )
+}
+
+const BgBlock = (item: BlockProps) => {
+  console.log(item)
+  return (
+    <div className="article relative cursor-grab antialiased rounded shadow p-8 aspect-video flex flex-col justify-end overflow-hidden">
+      <div
+        className="w-full h-full absolute top-0 left-0 z-0 flex justify-center items-center bg-cover"
+        style={{ backgroundImage: `url(${item.meta.cover})` }}
+      />
+      <div className="w-full flex justify-between items-center opacity-70 hover:opacity-90 mix-blend-exclusion">
+        <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+        <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
+          <Link className="w-full h-full" />
+        </a>
+      </div>
+    </div>
+  )
+}
+
+const components = {
+  comment: CommentsBlock,
+  bg: BgBlock,
 }
 
 /**
@@ -175,7 +200,7 @@ const AttachDrag = () => {
     { target: window },
   )
 
-  const [lists] = useState(new Array(30).fill(rss[0]).map((item) => item))
+  const [lists] = useState(rss)
   console.log(lists)
 
   return (
@@ -189,6 +214,7 @@ const AttachDrag = () => {
         className="border-box grid grid-cols-3 w-screen gap-4 p-8 border border-white select-none"
       >
         {lists.map((item, i) => {
+          const Block = components[item.type as keyof typeof components]
           return <Block key={i} {...item} />
         })}
       </Html>
