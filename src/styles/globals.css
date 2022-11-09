@@ -19,6 +19,7 @@
 
 .articles-layout {
   grid-template-rows: repeat(auto-fill, var(--row-height));
+  width: 200vw;
 }
 
 .article {

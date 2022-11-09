@@ -149,8 +149,19 @@ const RefBlock = (item: BlockProps) => {
         <span className="text-xs uppercase bg-opacity-10 text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-pink-500 text-pink-500 flex gap-2 mb-2">
           {type}
         </span>
-        <h1 className="mb-2 font-bold text-lg text-white">{item.meta.title}</h1>
+        <div className="flex items-center gap-2 mb-2">
+          <img src={item.meta.favicon} className="w-4 h-4" />
+          <h1 className="font-bold text-xl text-white">{item.meta.title}</h1>
+        </div>
         <p className="text-gray-400 text-xs">{item.meta.description}</p>
+        {item.summary ? (
+          <div className="flex gap-2 text-gray-500">
+            <span className="w-6 h-6 inline-block flex-0">
+              <img src={avatar} className="w-full h-full" />
+            </span>
+            <p className="text-xs inline-block flex-1">{item.summary}</p>
+          </div>
+        ) : null}
       </div>
       <div className="w-full flex flex-0 justify-between items-center opacity-70 hover:opacity-90 mix-blend-exclusion">
         <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
@@ -307,7 +318,7 @@ const AttachDrag = () => {
         transform={true}
         occlude={true}
         ref={g}
-        className="articles-layout border-box grid grid-cols-3 w-screen min-h-screen gap-4 p-8 select-none"
+        className="articles-layout border-box grid grid-cols-6 min-h-screen gap-4 p-8 select-none"
       >
         {lists.map((item, i) => {
           const Block = components[item.type as keyof typeof components]
