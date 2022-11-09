@@ -72,7 +72,7 @@ const CommentsBlock = (item: BlockProps) => {
 
 const TwitterShareBlock = (item: BlockProps) => {
   return (
-    <div className="article cursor-grab antialiased rounded shadow pb-4 flex flex-col justify-between rows-2 overflow-hidden">
+    <div className="article cursor-grab antialiased rounded shadow pb-4 flex flex-col justify-between overflow-hidden row-start-1 row-end-3">
       <div className="flex-1 overflow-hidden pb-4">
         <div className="w-auto p-8 mb-8 bg-gradient-to-r from-violet-500 to-fuchsia-500">
           <h1 className="mb-2 font-bold text-3xl text-white font-carter drop-shadow">
@@ -126,9 +126,30 @@ const BgBlock = (item: BlockProps) => {
   )
 }
 
+const RefBlock = (item: BlockProps) => {
+  const [_, type] = item.type.split('$')
+  return (
+    <div className="article relative cursor-grab antialiased rounded shadow p-8 pb-4 aspect-video flex flex-col justify-center overflow-hidden">
+      <div className="w-full flex-1 flex flex-col justify-center items-start">
+        <span className="text-xs uppercase bg-opacity-10 text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-pink-500 text-pink-500 flex gap-2 mb-2">
+          {type}
+        </span>
+        <h1 className="mb-2 font-bold text-lg text-white">{item.meta.title}</h1>
+        <p className="text-gray-400 text-xs">{item.meta.description}</p>
+      </div>
+      <div className="w-full flex flex-0 justify-between items-center opacity-70 hover:opacity-90 mix-blend-exclusion">
+        <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+        <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
+          <Link className="w-full h-full" />
+        </a>
+      </div>
+    </div>
+  )
+}
+
 const IframeBlock = (item: BlockProps) => {
   return (
-    <div className="article relative cursor-grab antialiased rounded shadow flex flex-col overflow-hidden aspect-video col-start-1 col-end-3">
+    <div className="article relative cursor-grab antialiased rounded shadow flex flex-col overflow-hidden col-start-1 col-end-3 row-start-2 row-end-4">
       <iframe className="w-full h-full" src={item.url} />
       <div className="w-full flex flex-col justify-end absolute left-0 bottom-0 h-32 p-8 pb-4 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent">
         <p className="w-full flex justify-between items-center mix-blend-exclusion">
@@ -147,6 +168,7 @@ const components = {
   bg: BgBlock,
   twitter_share: TwitterShareBlock,
   iframe: IframeBlock,
+  reference$document: RefBlock,
 }
 
 /**

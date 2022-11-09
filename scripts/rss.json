@@ -27,5 +27,11 @@
     "url": "https://deck-24abcd.netlify.app/",
     "tag": "css-is-awesome",
     "type": "iframe"
+  },
+  {
+    "week": 29,
+    "url": "https://docs.qq.com/doc/DWHl3am5Zb05QbGVs",
+    "tag": "resource",
+    "type": "reference$document"
   }
 ]

@@ -99,5 +99,27 @@
       "description": "An exploration of what's possible with CSS for Pokemon Cards, simeydotme (Simon Goellner)",
       "favicon": "https://deck-24abcd.netlify.app/favicon.png"
     }
+  },
+  {
+    "week": 29,
+    "url": "https://docs.qq.com/doc/DWHl3am5Zb05QbGVs",
+    "tag": "resource",
+    "type": "reference$document",
+    "meta": {
+      "open_graph": {
+        "title": "元素法典——Novel AI 元素魔法全收录",
+        "images": [
+          {
+            "url": "https://docs.gtimg.com/docs-design-resources/mobile/png@3x/file_doc_64@3x-58ec57f56b.png"
+          }
+        ],
+        "description": "腾讯文档-在线文档",
+        "url": "https://docs.qq.com/"
+      },
+      "title": "元素法典——Novel AI 元素魔法全收录",
+      "description": "腾讯文档-在线文档",
+      "favicon": "https://docs.idqqimg.com/tim/docs/docs-design-resources/pc/png@2x/file_web_doc_64@2x-77242f419d.png",
+      "cover": "https://docs.gtimg.com/docs-design-resources/mobile/png@3x/file_doc_64@3x-58ec57f56b.png"
+    }
   }
 ]
