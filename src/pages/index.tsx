@@ -56,6 +56,7 @@ const Block = (props: React.PropsWithChildren<{ className: string }>) => {
   )
 }
 
+// TODO: should merge with ref block
 const CommentsBlock = (item: BlockProps) => {
   return (
     <Block className="aspect-video flex flex-col justify-between">
