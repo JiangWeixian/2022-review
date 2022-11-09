@@ -4,6 +4,7 @@ import * as THREE from 'three'
 import { Html, OrbitControls, OrthographicCamera } from '@react-three/drei'
 import { useSpring, animated } from '@react-spring/three'
 import { useDrag } from '@use-gesture/react'
+import clsx from 'clsx'
 
 import rss from '@/assets/unfurl_rss.json'
 import { ReactComponent as Link } from '@/assets/icons/link.svg'
@@ -42,9 +43,22 @@ type BlockProps = {
   }
 }
 
+const Block = (props: React.PropsWithChildren<{ className: string }>) => {
+  return (
+    <div
+      className={clsx(
+        'article relative cursor-grab antialiased rounded shadow p-8 pb-4',
+        props.className,
+      )}
+    >
+      {props.children}
+    </div>
+  )
+}
+
 const CommentsBlock = (item: BlockProps) => {
   return (
-    <div className="article cursor-grab antialiased rounded shadow p-8 pb-4 aspect-video flex flex-col justify-between">
+    <Block className="aspect-video flex flex-col justify-between">
       <div className="w-full">
         <div className="flex items-center gap-2">
           <img src={item.meta.favicon} className="w-6 h-6" />
@@ -66,13 +80,13 @@ const CommentsBlock = (item: BlockProps) => {
           </a>
         </div>
       </div>
-    </div>
+    </Block>
   )
 }
 
 const TwitterShareBlock = (item: BlockProps) => {
   return (
-    <div className="article cursor-grab antialiased rounded shadow pb-4 flex flex-col justify-between overflow-hidden row-start-1 row-end-3">
+    <Block className="p-0 flex flex-col justify-between overflow-hidden row-start-1 row-end-3">
       <div className="flex-1 overflow-hidden pb-4">
         <div className="w-auto p-8 mb-8 bg-gradient-to-r from-violet-500 to-fuchsia-500">
           <h1 className="mb-2 font-bold text-3xl text-white font-carter drop-shadow">
@@ -105,13 +119,13 @@ const TwitterShareBlock = (item: BlockProps) => {
           <Link className="w-full h-full" />
         </a>
       </div>
-    </div>
+    </Block>
   )
 }
 
 const BgBlock = (item: BlockProps) => {
   return (
-    <div className="article relative cursor-grab antialiased rounded shadow p-8 pb-4 aspect-video flex flex-col justify-end overflow-hidden">
+    <Block className="aspect-video flex flex-col justify-end overflow-hidden">
       <div
         className="w-full h-full absolute top-0 left-0 z-0 flex justify-center items-center bg-cover"
         style={{ backgroundImage: `url(${item.meta.cover})` }}
@@ -122,14 +136,15 @@ const BgBlock = (item: BlockProps) => {
           <Link className="w-full h-full" />
         </a>
       </div>
-    </div>
+    </Block>
   )
 }
 
 const RefBlock = (item: BlockProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_, type] = item.type.split('$')
   return (
-    <div className="article relative cursor-grab antialiased rounded shadow p-8 pb-4 aspect-video flex flex-col justify-center overflow-hidden">
+    <Block className="aspect-video flex flex-col justify-center overflow-hidden">
       <div className="w-full flex-1 flex flex-col justify-center items-start">
         <span className="text-xs uppercase bg-opacity-10 text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-pink-500 text-pink-500 flex gap-2 mb-2">
           {type}
@@ -143,13 +158,13 @@ const RefBlock = (item: BlockProps) => {
           <Link className="w-full h-full" />
         </a>
       </div>
-    </div>
+    </Block>
   )
 }
 
 const IframeBlock = (item: BlockProps) => {
   return (
-    <div className="article relative cursor-grab antialiased rounded shadow flex flex-col overflow-hidden col-start-1 col-end-3 row-start-2 row-end-4">
+    <Block className="flex flex-col overflow-hidden col-start-1 col-end-3 row-start-2 row-end-4">
       <iframe className="w-full h-full" src={item.url} />
       <div className="w-full flex flex-col justify-end absolute left-0 bottom-0 h-32 p-8 pb-4 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent">
         <p className="w-full flex justify-between items-center mix-blend-exclusion">
@@ -159,7 +174,7 @@ const IframeBlock = (item: BlockProps) => {
           </a>
         </p>
       </div>
-    </div>
+    </Block>
   )
 }
 
@@ -292,7 +307,7 @@ const AttachDrag = () => {
         transform={true}
         occlude={true}
         ref={g}
-        className="articles-layout border-box grid grid-cols-3 w-screen min-h-screen gap-4 p-8 border border-white select-none"
+        className="articles-layout border-box grid grid-cols-3 w-screen min-h-screen gap-4 p-8 select-none"
       >
         {lists.map((item, i) => {
           const Block = components[item.type as keyof typeof components]
