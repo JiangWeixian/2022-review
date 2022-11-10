@@ -21,7 +21,7 @@ const isInvalid = (prev: Item, current: Item) => {
   if (!prev?.meta) {
     return true
   }
-  if (prev?.type === current?.type) {
+  if (prev?.type !== current?.type) {
     return true
   }
   return false
@@ -34,12 +34,17 @@ const main = async () => {
     let result = cachedItem?.meta as unknown as Metadata
     if (isInvalid(cachedItem, item)) {
       console.log(`${colors.bgBlue(colors.black(` unfurling: `))} ${item.url}`)
-      result = await unfurl(item.url)
+      try {
+        result = await unfurl(item.url)
+      } catch (e) {
+        console.log(`${colors.bgRed(colors.black(` unfurling failed: `))} ${item.url}`)
+      }
     } else {
       console.log(`${colors.bgGreen(colors.black(` unfurling: `))} ${item.url}`)
     }
     const unfurlItem: Item = Object.assign({}, item)
-    unfurlItem.meta = result ?? {}
+    result = result ?? {}
+    unfurlItem.meta = result
     unfurlItem.meta.title =
       item.title ?? result.title ?? (result.twitter_card?.title || result.open_graph?.title)
     unfurlItem.meta.cover =

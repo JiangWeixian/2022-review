@@ -84,9 +84,11 @@ const CommentsBlock = (item: BlockProps) => {
   return (
     <Block className="flex flex-col justify-between" pos={item.pos}>
       <div className="w-full">
-        <div className="flex items-center gap-2">
-          <img src={item.meta.favicon} className="w-6 h-6" />
-          <h1 title={item.meta.title} className="mb-2 font-bold text-3xl text-white truncate">
+        <div className="flex items-center gap-3 mb-2">
+          {item.meta.favicon && (
+            <img src={item.meta.favicon} className="w-6 h-6 mix-blend-lighten" />
+          )}
+          <h1 title={item.meta.title} className="font-bold text-3xl text-white truncate">
             {item.meta.title}
           </h1>
         </div>
@@ -111,25 +113,32 @@ const CommentsBlock = (item: BlockProps) => {
 }
 
 const TwitterShareBlock = (item: BlockProps) => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { comment, gradient } = item.props ?? {}
+  const { comment, gradient, horizontal } = item.props ?? {}
   const useComment = comment ?? true
   const useGradient = gradient ?? !item.meta.cover
   const useImage = !useGradient
   return (
-    <Block className="p-0 flex flex-col justify-between overflow-hidden" pos={item.pos}>
-      <div className="flex-1 overflow-hidden">
-        <div
-          className={clsx('w-auto p-8 mb-8 bg-cover', {
-            'bg-gradient-to-r from-violet-500 to-fuchsia-500': useGradient,
-          })}
-          style={{ backgroundImage: useImage ? `url(${item.meta.cover})` : undefined }}
-        >
-          <h1 className="mb-2 font-bold text-3xl text-white font-carter drop-shadow">
-            {item.meta.title}
-          </h1>
-          <p className="text-gray-200 text-xs italic">{item.meta.description}</p>
-        </div>
+    <Block
+      className={clsx('p-0 pb-0 flex overflow-hidden', {
+        'flex-row': !!horizontal,
+        'flex-col': !horizontal,
+      })}
+      pos={item.pos}
+    >
+      <div
+        className={clsx('w-auto p-8 bg-cover', {
+          'bg-gradient-to-r from-violet-500 to-fuchsia-500': useGradient,
+          'h-full aspect-square': !!horizontal,
+        })}
+        style={{ backgroundImage: useImage ? `url(${item.meta.cover})` : undefined }}
+      >
+        {/* TODO: add gray mask on image */}
+        <h1 className="mb-2 font-bold text-3xl text-white font-carter drop-shadow">
+          {item.meta.title}
+        </h1>
+        <p className="text-gray-200 text-xs italic">{item.meta.description}</p>
+      </div>
+      <div className="flex flex-1 flex-col justify-between py-4">
         <div className="flex flex-col gap-2 text-white px-8">
           <div className="flex flex-col gap-2">
             <span className="w-6 h-6 inline-block flex-0 font-carter underline">
@@ -141,12 +150,12 @@ const TwitterShareBlock = (item: BlockProps) => {
             />
           </div>
         </div>
-      </div>
-      <div className="w-full px-8 flex flex-0 h-4 justify-between items-center justify-self-end opacity-70 hover:opacity-90">
-        <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
-        <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
-          <Link className="w-full h-full" />
-        </a>
+        <div className="w-full px-8 flex flex-0 h-4 justify-between items-center justify-self-end opacity-70 hover:opacity-90">
+          <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+          <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
+            <Link className="w-full h-full" />
+          </a>
+        </div>
       </div>
     </Block>
   )
@@ -154,7 +163,7 @@ const TwitterShareBlock = (item: BlockProps) => {
 
 const BgBlock = (item: BlockProps) => {
   return (
-    <Block className=" aspect-video flex flex-col justify-end overflow-hidden" pos={item.pos}>
+    <Block className="flex flex-col justify-end overflow-hidden" pos={item.pos}>
       <div
         className="w-full h-full absolute top-0 left-0 z-0 flex justify-center items-center bg-cover"
         style={{ backgroundImage: `url(${item.meta.cover})` }}
@@ -179,18 +188,20 @@ const RefBlock = (item: BlockProps) => {
           style={{ backgroundImage: `url(${item.meta.cover})` }}
         />
       )}
-      <div className="flex flex-1 flex-col justify-center px-8 py-4">
+      <div className="w-full flex flex-col justify-center px-8 py-4">
         <div className="w-full flex-1 flex flex-col justify-center items-start">
           <span className="text-xs uppercase bg-opacity-10 text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-pink-500 text-pink-500 flex gap-2 mb-2">
             {category}
           </span>
-          <div className="flex items-center gap-2 mb-2">
-            <img src={item.meta.favicon} className="w-4 h-4" />
-            <h1 title={item.meta.title} className="font-bold text-xl text-white truncate">
-              {item.meta.title}
+          <div className="w-full flex items-center gap-2 mb-2">
+            {item.meta.favicon && <img src={item.meta.favicon} className="w-4 h-4" />}
+            <h1
+              title={item.meta.title}
+              className="font-bold text-xl text-white truncate overflow-hidden"
+            >
+              {item.meta.title || item.url}
             </h1>
           </div>
-          <p className="text-gray-400 text-xs">{item.meta.description}</p>
           {item.summary ? (
             <div className="flex gap-2 text-gray-500">
               <span className="w-6 h-6 inline-block flex-0">
@@ -198,7 +209,9 @@ const RefBlock = (item: BlockProps) => {
               </span>
               <p className="text-xs inline-block flex-1">{item.summary}</p>
             </div>
-          ) : null}
+          ) : (
+            <p className="text-gray-400 text-xs">{item.meta.description}</p>
+          )}
         </div>
         <div className="w-full flex flex-0 justify-between items-center opacity-70 hover:opacity-90 mix-blend-exclusion">
           <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
@@ -229,13 +242,18 @@ const IframeBlock = (item: BlockProps) => {
 
 const AnnouncementBlock = (item: BlockProps) => {
   const ref = useRef<HTMLHeadingElement>(null)
+  const { shape = 'highlight' } = item.props ?? {}
   useEffect(() => {
     if (!ref.current) {
       return
     }
-    const annotation = annotate(ref.current!, { type: 'highlight', color: 'rgb(192 132 252)' })
+    const annotation = annotate(ref.current!, {
+      type: shape,
+      brackets: ['right', 'left'],
+      color: 'rgb(192 132 252)',
+    })
     annotation.show()
-  }, [ref])
+  }, [ref, shape])
   return (
     <Block className="flex flex-col justify-between" pos={item.pos}>
       <div className="flex flex-1 justify-center items-center">
@@ -385,7 +403,7 @@ const AttachDrag = () => {
         transform={true}
         occlude={true}
         ref={g}
-        className="articles-layout border-box grid grid-cols-6 min-h-screen gap-4 p-8 select-none"
+        className="articles-layout border-box grid grid-cols-6 gap-4 p-8 select-none"
       >
         {lists.map((item, i) => {
           const Block: any = components[item.type as keyof typeof components]

@@ -132,5 +132,1928 @@
       [3, 4],
       [6, 7]
     ]
+  },
+  {
+    "week": 28,
+    "url": "https://limboy.me",
+    "tag": "blog",
+    "type": "reference",
+    "summary": "推荐一个 rss 分享的文章非常高质量，被种草。",
+    "props": {
+      "category": "rss"
+    },
+    "pos": [
+      [4, 5],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 28,
+    "url": "https://mypiday.com/results/?date=22-02-20&ck=5fe8fc4d",
+    "title": "pi",
+    "tag": "product",
+    "props": {
+      "shape": "circle"
+    },
+    "type": "announcement",
+    "pos": [
+      [4, 5],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 28,
+    "url": "https://staysaasy.com/career/2022/09/11/Dirty-Work.html",
+    "summary": "- High-growth matters because at an exponentially growing company you’re first in line for exponentially more (and larger) opportunities. When growth is high you also win by doing, rather than winning by getting ahead politically. \n - Being at a place that needs you to get work done is essential - the more they need you, the more you’ll have a whole community of people trying to help you crush it.\n - The final bit is often the most surprising - look for the nasty things people avoid.",
+    "tag": "developers",
+    "type": "twitter_share",
+    "pos": [
+      [4, 6],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 28,
+    "url": "https://rauchg.com/2020/books-people-reread",
+    "tag": "resource",
+    "type": "reference",
+    "props": {
+      "category": "collections",
+      "image": true
+    },
+    "pos": [
+      [4, 5],
+      [4, 6]
+    ]
+  },
+  {
+    "week": 28,
+    "url": "https://shud.in/posts/ssr-streaming-and-css-in-js",
+    "tag": "front-end",
+    "type": "twitter_share",
+    "summary": "css-in-js 在 ssr stream 无法在服务端收集全部的样式，也就没有办法插入到 head 内。解决办法是在渲染阶段动态的收集 style，然后动态的返回并插入到 html 结构中，此时需要一段 js 脚本辅助它。某种意义上实现了 css 的懒加载；或者完全抛弃 css-in-js 方案，纯 css 方案或者 tailwindcss 可以在编译阶段就搜集好 css 了。\n - 文章内介绍了 [[react]] 如何分片的返回 html。以 suspense 作为边界，先返回 html 其余部分，再返回 suspense loading 部分，等待 suspense 结束之后，再通过脚本使用真实的组件替换 suspense loading 部分。而让我感到奇怪的是，最后它才会 html 剩余部分让 html 闭合？\n - 它文章展示方式挺好的，[[blog]] 也可以提供这种纯净版本，只有文章内容，没有其余东西。  ",
+    "pos": [
+      [4, 6],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 28,
+    "url": "https://zhuanlan.zhihu.com/p/561215012",
+    "tag": "what-is",
+    "title": "prompt",
+    "type": "announcement",
+    "props": {
+      "shape": "bracket"
+    },
+    "pos": [
+      [5, 6],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 28,
+    "url": "https://geekplux.com/posts/2019-summary",
+    "tag": "blog",
+    "type": "reference",
+    "props": {
+      "category": "rss"
+    },
+    "pos": [
+      [5, 6],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 28,
+    "url": "https://blog.jim-nielsen.com/2022/website-fidelity/",
+    "tag": "front-end",
+    "type": "twitter_share",
+    "summary": "很有意思的一次尝试，将网站分为三个等级，比如丰富的交互和只有 CSS + HTML。而最近似乎有种趋势，大家正在追求回到最开始的前端开发状态，因为追求性能，放弃 React，而选择简单的 state + html 的轻量实现。对于没有强依赖 React 辅助交互的站点，抛弃 React 会变的更快。这也是目前为什么 qwik，svelte 最近变得更火的原因。",
+    "props": {
+      "horizontal": true
+    },
+    "pos": [
+      [5, 6],
+      [4, 6]
+    ]
+  },
+  {
+    "week": 27,
+    "url": "https://www.briantimar.com/notes/mimetic/mimetic/",
+    "title": "模仿陷阱",
+    "tag": "what-is",
+    "type": "announcement",
+    "props": {
+      "shape": "bracket"
+    },
+    "pos": [
+      [6, 7],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 27,
+    "url": "https://github.com/semver/semver/issues/221#issuecomment-54581879",
+    "tag": "knowledge",
+    "type": "comment",
+    "summary": "对于 Major Zero 的版本来说，第二个版本号是 Breaking Change。这一点是和以非零版本号不同的。",
+    "pos": [
+      [6, 7],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 27,
+    "url": "https://www.smashingmagazine.com/2022/10/ui-animations-shared-element-transitions-api-part2/",
+    "tag": "new-api",
+    "type": "twitter_share",
+    "props": {
+      "horizontal": false,
+      "gradient": true
+    },
+    "summary": "createDocumentTransition 实现之前可能需要复杂的动画库才能实现的效果。",
+    "pos": [
+      [6, 8],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 27,
+    "url": "https://www.w3schools.com/colors/colors_names.asp",
+    "tag": "css-is-awesome",
+    "type": "reference",
+    "props": {
+      "category": "color"
+    },
+    "summary": "好家伙，我终于知道这些颜色叫什么名字了。",
+    "pos": [
+      [6, 7],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 27,
+    "url": "https://web.dev/new-patterns-for-amazing-apps/",
+    "tag": "front-end",
+    "type": "reference",
+    "props": {
+      "image": true,
+      "category": "cheatsheets"
+    },
+    "pos": [
+      [6, 7],
+      [5, 7]
+    ]
+  },
+  {
+    "week": 27,
+    "url": "https://www.figma.com/blog/behind-the-feature-find-and-replace/",
+    "tag": "tutorial",
+    "type": "twitter_share",
+    "summary": "在无限画布中如何思考查找和替换，还有聚焦。",
+    "props": {
+      "horizontal": true
+    },
+    "pos": [
+      [7, 8],
+      [1, 3]
+    ]
+  },
+  {
+    "week": 27,
+    "url": "https://tympanus.net/Tutorials/CSSMaskTransition/",
+    "tag": "css-is-awesome",
+    "type": "iframe",
+    "pos": [
+      [7, 9],
+      [4, 6]
+    ]
+  },
+  {
+    "week": 26,
+    "url": "https://infinitecanvas.tools/gallery/",
+    "tag": "product",
+    "type": "reference",
+    "props": {
+      "category": "collections"
+    },
+    "pos": [
+      [7, 8],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 26,
+    "url": "https://github.com/mdx-js/mdx/discussions/2114",
+    "tag": "markdown",
+    "type": "comment",
+    "summary": "这里的说法，JSX 或者 HTML 元素在 GFM 其实是不会被渲染的。",
+    "pos": [
+      [8, 9],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 26,
+    "url": "https://grep.app/",
+    "title": "grep.app",
+    "tag": "toolkit",
+    "type": "announcement",
+    "pos": [
+      [8, 9],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 25,
+    "url": "https://github.com/Rezmason/matrix",
+    "tag": "resource",
+    "type": "reference",
+    "props": {
+      "category": "cool"
+    },
+    "pos": [
+      [8, 9],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 25,
+    "url": "https://whoisinspace.com/",
+    "tag": "cool",
+    "type": "comment",
+    "summary": "就像是标题写的那样，谁在太空中。",
+    "pos": [
+      [8, 9],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 25,
+    "url": "https://connortumbleson.com/2022/09/19/someone-is-pretending-to-be-me/",
+    "tag": "articles",
+    "type": "comment",
+    "summary": "冒充别人进行面试？",
+    "pos": [
+      [9, 10],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 25,
+    "url": "https://github.com/t-mart/kill-sticky",
+    "tag": "front-end",
+    "type": "twitter_share",
+    "props": {
+      "gradient": true
+    },
+    "summary": "作用是可以实现点击移除所有弹窗等效果。但是让我更加觉得神奇的是它的实现效果，只要点击收藏的书签就可以实现。因为书签的地址是一段 JS 代码，点击书签就会执行。",
+    "pos": [
+      [9, 11],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 25,
+    "url": "https://www.smashingmagazine.com/2022/09/data-loading-patterns-improve-frontend-performance/#resumability",
+    "title": "resumability",
+    "tag": "what-is",
+    "type": "announcement",
+    "props": {
+      "shape": "bracket"
+    },
+    "pos": [
+      [9, 10],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 24,
+    "url": "https://github.com/ronami/HypeScript",
+    "tag": "toolkit",
+    "type": "reference",
+    "props": {
+      "category": "typescript"
+    },
+    "pos": [
+      [9, 10],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 24,
+    "url": "https://portfolio2022.michalzalobny.com/projects/image-transitions",
+    "tag": "tutorial",
+    "type": "reference",
+    "summary": "WebGL 实现的动画效果",
+    "props": {
+      "category": "threejs"
+    },
+    "pos": [
+      [9, 10],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 24,
+    "url": "https://lmy.medium.com/7-tools-for-visualizing-a-codebase-41b7cddb1a14",
+    "tag": "toolkit",
+    "type": "reference",
+    "summary": "一些代码可视化工具介绍，比如说调用关系等。如果你正在重构你的代码，或许会很有用。",
+    "props": {
+      "category": "collections"
+    },
+    "pos": [
+      [9, 10],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 24,
+    "url": "https://www.thelocal.dk/20220804/danish-ai-driven-political-party-eyes-parliament/",
+    "tag": "ai",
+    "type": "reference",
+    "summary": "AI 成为政党",
+    "props": {
+      "category": "ai"
+    },
+    "pos": [
+      [10, 11],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 24,
+    "url": "https://github.com/hakimel/reveal.js",
+    "tag": "product",
+    "type": "comment",
+    "summary": "slidev 做一样事情的框架，主要目的就是对开发友好的 PPT。",
+    "pos": [
+      [10, 11],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 24,
+    "url": "https://twitter.com/ChristianSelig/status/1570863225234923520",
+    "tag": "iphone",
+    "type": "announcement",
+    "title": "灵动岛可以养宠物了",
+    "pos": [
+      [10, 11],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 24,
+    "url": "https://github.com/carson-katri/dream-textures",
+    "tag": "ai",
+    "type": "reference",
+    "summary": "使用 stable-diffusion 生成 blender 纹理，ai 生图比较实际的应用。",
+    "props": {
+      "category": "blender"
+    },
+    "pos": [
+      [10, 11],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 23,
+    "url": "https://github.com/carson-katri/dream-textures",
+    "tag": "resource",
+    "type": "reference",
+    "props": {
+      "category": "fonts"
+    },
+    "summary": "像素风格的字体，为编程字符做了很多适配。",
+    "pos": [
+      [10, 11],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 23,
+    "url": "https://drawkit.com/product/animal-pets-illustrations",
+    "tag": "resource",
+    "type": "bg",
+    "pos": [
+      [10, 11],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 23,
+    "url": "https://lenciel.com/2022/09/what-could-happen-after-ism/",
+    "tag": "ai",
+    "type": "twitter_share",
+    "props": {
+      "horizontal": true
+    },
+    "summary": "AI 是否会导致失业。作者认为这是同步进化的，AI 会进化，人也会。会逐渐适应。",
+    "pos": [
+      [11, 12],
+      [1, 3]
+    ]
+  },
+  {
+    "week": 23,
+    "url": "https://github.com/divamgupta/diffusionbee-stable-diffusion-ui",
+    "tag": "ai",
+    "type": "reference",
+    "props": {
+      "category": "product"
+    },
+    "pos": [
+      [11, 12],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 23,
+    "url": "https://effectivetypescript.com/2022/07/30/treemap-for-source-files/",
+    "tag": "typescript",
+    "type": "comment",
+    "summary": "使用原生 TSC 查看什么让项目变得更慢。",
+    "pos": [
+      [11, 12],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 23,
+    "url": "https://literature-clock.jenevoldsen.com/",
+    "tag": "cool",
+    "type": "iframe",
+    "pos": [
+      [11, 13],
+      [5, 7]
+    ]
+  },
+  {
+    "week": 23,
+    "url": "https://news.ycombinator.com/item?id=32801359",
+    "tag": "cool",
+    "type": "comment",
+    "summary": "最短的 URL，试试在浏览器输入 http://ai",
+    "pos": [
+      [12, 13],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 23,
+    "url": "http://www.effectgames.com/demos/worlds/",
+    "tag": "cool",
+    "type": "iframe",
+    "pos": [
+      [12, 14],
+      [2, 4]
+    ]
+  },
+  {
+    "week": 23,
+    "url": "https://mp.weixin.qq.com/s/t2VjwrewFuE0DHo_HeJ2zw",
+    "tag": "new-api",
+    "type": "twitter_share",
+    "props": {
+      "gradient": true
+    },
+    "summary": "realm 与 iframe 不同的 JS 沙盒实现方式。特点是更加的灵活（不需要 iframe 元素）",
+    "pos": [
+      [12, 14],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 23,
+    "url": "https://github.com/facebookincubator/memlab",
+    "tag": "toolkit",
+    "type": "reference",
+    "props": {
+      "category": "performance"
+    },
+    "pos": [
+      [13, 14],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 22,
+    "url": "https://github.com/mantou132/nesbox",
+    "tag": "cool",
+    "type": "reference",
+    "props": {
+      "category": "game"
+    },
+    "pos": [
+      [13, 14],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 22,
+    "url": "https://github.com/dlvhdr/gh-dash",
+    "tag": "toolkit",
+    "type": "comment",
+    "summary": "官方 CLI 插件，可视化 Issue PR 等",
+    "pos": [
+      [13, 14],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 22,
+    "url": "https://rectangles.app/",
+    "tag": "toolkit",
+    "type": "twitter_share",
+    "summary": "将每天分为小方格，挺有趣的注意力工具。",
+    "props": {
+      "horizontal": true
+    },
+    "pos": [
+      [14, 15],
+      [1, 3]
+    ]
+  },
+  {
+    "week": 22,
+    "url": "https://thealgorithmicbridge.substack.com/p/stable-diffusion-is-the-most-important",
+    "tag": "what-is",
+    "title": "stable-diffusion",
+    "props": {
+      "shape": "bracket"
+    },
+    "type": "announcement",
+    "pos": [
+      [14, 15],
+      [3, 5]
+    ]
+  },
+  {
+    "week": 22,
+    "url": "https://www.latepost.com/news/dj_detail?id=1305",
+    "tag": "ai",
+    "type": "twitter_share",
+    "summary": "人工智能正在成为老师（成为棋手的老师），让人感觉非常恐怖。",
+    "props": {
+      "horizontal": true
+    },
+    "pos": [
+      [14, 15],
+      [5, 7]
+    ]
+  },
+  {
+    "week": 22,
+    "url": "https://kentcdodds.com/blog/a-review-of-my-time-at-remix",
+    "tag": "developers",
+    "type": "twitter_share",
+    "summary": "在前端领域一个很喜欢的作者，在 Remix 工作过一段时间，现在离开要开始新的路程了。可以很清楚介绍了作为他这种角色，在公司需要承担什么工作。和大多数国内公司一致。",
+    "pos": [
+      [15, 17],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 22,
+    "url": "https://blog.pragmaticengineer.com/how-to-become-a-full-time-creator/",
+    "tag": "solo",
+    "type": "twitter_share",
+    "summary": "可以说是关于独立开发者宝藏级别的文章了，统一分析了做了独立开发者能够实现独立的方式，以及在这个领域比较出名的人。并给予了一定的建议（在文章的论述条件下是成立的）。万变不离其宗，让别人为你的专业付费，当然你可能需要尝试更多东西找到你的专业。",
+    "pos": [
+      [15, 17],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 22,
+    "url": "https://mutant.tech/demo/",
+    "tag": "resource",
+    "type": "bg",
+    "pos": [
+      [15, 16],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 21,
+    "url": "https://dronexl.co/2022/08/22/dji-mavic-3-flies-over-mount-everest/",
+    "tag": "video",
+    "type": "bg",
+    "pos": [
+      [15, 16],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 21,
+    "url": "https://www.ghacks.net/2022/07/17/facebook-has-started-to-encrypt-links-to-counter-privacy-improving-url-stripping/",
+    "tag": "privacy",
+    "summary": "加密 URL 无法剥离跟踪参数。",
+    "type": "comment",
+    "pos": [
+      [15, 16],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 21,
+    "url": "https://www.lloydatkinson.net/posts/2022/default-exports-in-javascript-modules-are-terrible/",
+    "tag": "front-end",
+    "summary": "为什么在 JS 中 export default 是不友好的。",
+    "type": "comment",
+    "pos": [
+      [15, 16],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 21,
+    "url": "https://blog.pointer.gg/learn/building-a-product-demo",
+    "tag": "ai",
+    "summary": "介绍利用 clip-path 的动画效果，通过滚动改变主要图片的部分位置。但是我觉得滚动之后，阅读时间会动态变化这个功能还挺有意思的",
+    "type": "twitter_share",
+    "pos": [
+      [15, 17],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 21,
+    "url": "https://openai.com/blog/dall-e-introducing-outpainting/",
+    "tag": "css-is-awesome",
+    "summary": "在原先的画上补充缺失的部分。比如在一些世界名画上想象它的画外的背景是什么，它会帮你画出来。",
+    "type": "twitter_share",
+    "props": {
+      "horizontal": true
+    },
+    "pos": [
+      [16, 17],
+      [3, 5]
+    ]
+  },
+  {
+    "week": 21,
+    "url": "https://atelier-anchor.com/luohei-variable/#/ripple",
+    "tag": "fonts",
+    "summary": "可变字体的特殊动画效果看起来还不错",
+    "type": "comment",
+    "pos": [
+      [16, 17],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 21,
+    "url": "https://www.jacopocolo.com/hexclock/",
+    "tag": "cool",
+    "type": "iframe",
+    "pos": [
+      [17, 19],
+      [1, 3]
+    ]
+  },
+  {
+    "week": 21,
+    "url": "https://tympanus.net/Development/EmitterCursor/",
+    "tag": "cool",
+    "type": "iframe",
+    "pos": [
+      [17, 19],
+      [3, 5]
+    ]
+  },
+  {
+    "week": 21,
+    "url": "https://tjukanovt.github.io/notable-people?utm_source=densediscovery&utm_medium=email&utm_campaign=newsletter-issue-203",
+    "tag": "threejs",
+    "summary": "名人地图 threejs 的应用，非常有意思",
+    "type": "comment",
+    "pos": [
+      [17, 18],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 20,
+    "url": "https://buttondown.email/hillelwayne/archive/why-do-arrays-start-at-0/",
+    "tag": "typescript",
+    "summary": "为什么数组索引从 0 开始。",
+    "type": "comment",
+    "pos": [
+      [17, 18],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 20,
+    "url": "https://englishrussia.com/2022/04/01/rare-natural-phenomenon-observed-in-saint-petersburg/",
+    "tag": "articles",
+    "summary": "雪泥效果有点震撼。",
+    "type": "twitter_share",
+    "pos": [
+      [18, 19],
+      [5, 7]
+    ]
+  },
+  {
+    "week": 20,
+    "url": "https://dodov.dev/blog/dont-build-your-own-framework",
+    "tag": "developers",
+    "summary": "这个文章很好的解释了 build-in-public 以及 pen-source 好处。也验证了之前我尝试在工作中使用自己实现的库的一些错误做法，在之前一段时间内想想之前的决定也有点后悔。总之，如果你有好的想法，特别是类似库的代码。请在社区发布他，这样好与不好都有人验证。可以及早的杀死一个项目。但是这一点似乎在公司内很难做到，基础工具也是闭源的这一点就不是很合理。",
+    "type": "twitter_share",
+    "pos": [
+      [19, 21],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 20,
+    "url": "https://stickerlife.org/",
+    "tag": "resource",
+    "type": "bg",
+    "pos": [
+      [19, 20],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 20,
+    "url": "https://mp.weixin.qq.com/s/Uis2iLFCExuvulW5goi-MA",
+    "tag": "design",
+    "type": "reference",
+    "props": {
+      "category": "fonts"
+    },
+    "pos": [
+      [19, 20],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 19,
+    "url": "https://kottke.org/22/03/pixel-birds-and-other-animals",
+    "tag": "resource",
+    "type": "bg",
+    "pos": [
+      [19, 20],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 19,
+    "url": "https://gamma.app/",
+    "tag": "product",
+    "type": "twitter_share",
+    "summary": "之前看到 slidev 这个工具时候就想过为什么写 PPT 不是像 notion 那种方式，提供一些内置的布局组件，让你可以通过 nocode 的方式写 PPT。现在这个工具做了类似的事情，而且关注度很高。",
+    "pos": [
+      [19, 21],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 19,
+    "url": "https://css-tricks.com/how-i-added-scroll-snapping-to-my-twitter-timeline/",
+    "tag": "css-is-awesome",
+    "type": "twitter_share",
+    "summary": "原来 scroll-snap-type 可以自动让滚动行为定位到下个你需要定位的元素（需要在下一个元素做标记）。很适合 tweet 这种场景。",
+    "pos": [
+      [19, 21],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 19,
+    "url": "https://codesandbox.io/s/spider-2-t5nqfy",
+    "tag": "3d",
+    "type": "reference",
+    "props": {
+      "category": "tutorial"
+    },
+    "summary": "不依靠 threejs 框架实现的 3d 效果。一个在页面上的小蜘蛛，火柴人风格。但是效果非常不错。",
+    "pos": [
+      [19, 20],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 19,
+    "url": "https://japan-dev.com/blog/how-and-why-i-built-japan-dev",
+    "tag": "solo",
+    "type": "twitter_share",
+    "summary": "分享了在日本做工作机会发布的网站的经历，里面的心路历程非常真实。本身是全职，空余时间来实现功能。并没有那种做出了网站之后立马火的经历，最开始也是一个小项目，长期没有收入。但是靠自己去推广，公司发布职业招聘来投钱，才一点点有收入。但是有几点铁律是不变的：\n- 用心做产品，推广广告都会有力气一些。\n - 用户反馈很重要，因为日本的招聘和其他地方不太一样，需求也不一样。\n - 宣传自己，可能不是宣传产品。写博客这些都是宣传自己的方式。  ",
+    "pos": [
+      [20, 22],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 18,
+    "url": "https://cmdk.paco.me/",
+    "tag": "toolkit",
+    "type": "reference",
+    "props": {
+      "category": "react"
+    },
+    "pos": [
+      [20, 21],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 18,
+    "url": "https://threadreaderapp.com/thread/1554667451203276801.html",
+    "tag": "tutorial",
+    "type": "comment",
+    "summary": "因为今年比较重要的事情是写作。写作技巧可以看看。",
+    "pos": [
+      [20, 21],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 18,
+    "url": "https://mp.weixin.qq.com/s/rZ96wy8xUrx4T1qG5OKS0w",
+    "tag": "typescript",
+    "type": "comment",
+    "summary": "any unknown never 区别。学到了很多。any unknown 是 top type，比如 never 是最小类型单元(bottom type)，所以任何类型和它的交际是空，联合集合是和它联合的那个类型。",
+    "pos": [
+      [21, 22],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 18,
+    "url": "https://indexstorm.com/",
+    "tag": "ext",
+    "type": "comment",
+    "summary": "在 Github 上推荐类似仓库的插件 ，会在某个仓库主页右边显示，感觉挺有用的。",
+    "pos": [
+      [21, 22],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 18,
+    "url": "https://diff.intrinsic.com/mini-css-extract-plugin/0.4.5/0.6.0",
+    "tag": "toolkit",
+    "type": "comment",
+    "summary": "有时候想知道使用的包升级之后修改了什么（出现 BUG，debug 时候使用）可以使用这个看看 diff",
+    "pos": [
+      [21, 22],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 18,
+    "url": "https://levelup.gitconnected.com/are-web-components-dead-12e404e0f4b0",
+    "tag": "front-end",
+    "type": "twitter_share",
+    "props": {
+      "horizontal": true
+    },
+    "summary": "关于 [[Web-Components]] 讨论，虽然目前 React 类似框架是主流，但是还是给了它很高的预期，主要是现阶段的 [[SSR]] 等问题都有大公司在推出框架解决，比如 https://github.com/github/catalyst 因为这样对这些公司来说演进的幅度更小一些。不过按照 W3C 的速度，一些 API 支持可能没有那么快。",
+    "pos": [
+      [21, 22],
+      [5, 7]
+    ]
+  },
+  {
+    "week": 18,
+    "url": "https://txtmoji.com",
+    "tag": "cool",
+    "type": "reference",
+    "props": {
+      "category": "product"
+    },
+    "pos": [
+      [22, 23],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 18,
+    "url": "https://deephaven.io/blog/2022/08/08/AI-generated-blog-thumbnails/",
+    "tag": "ai",
+    "type": "reference",
+    "summary": "生成文章配图的思路，确实在写文章的时候找题图的一个好思路 。类似的还有 https://jacobmartins.com/posts/how-i-used-dalle2-to-generate-the-logo-for-octosql/ 使用 AI 生成 Icon 的思路，一些个人项目的 Logo 或许有思路了",
+    "props": {
+      "category": "ai"
+    },
+    "pos": [
+      [22, 23],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 18,
+    "url": "https://github.com/mulaRahul/keyviz",
+    "tag": "toolkit",
+    "type": "reference",
+    "summary": "Window 平台上的。Mac 上的有 https://github.com/keycastr/keycastr 录制视频教程时十分有用",
+    "props": {
+      "category": "product"
+    },
+    "pos": [
+      [22, 23],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 17,
+    "url": "https://chrome.google.com/webstore/detail/css-scan/gieabiemggnpnminflinemaickipbebg/related?hl=en",
+    "tag": "toolkit",
+    "type": "reference",
+    "summary": "直接复制元素样式的浏览器插件",
+    "props": {
+      "category": "ext"
+    },
+    "pos": [
+      [22, 23],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 17,
+    "url": "https://vytal.io/",
+    "tag": "toolkit",
+    "type": "reference",
+    "summary": "一个浏览器插件，用于修改和模拟浏览器数据。",
+    "props": {
+      "category": "ext"
+    },
+    "pos": [
+      [22, 23],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 17,
+    "url": "https://github.blog/changelog/2022-08-03-introducing-the-new-npm-dependency-selector-syntax/",
+    "tag": "new-api",
+    "type": "comment",
+    "summary": "npm 支持了 query 的命令，语法有点像是 CSS query",
+    "pos": [
+      [22, 23],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 17,
+    "url": "https://www.figma.com/community/file/1134039006128510775",
+    "tag": "resource",
+    "type": "bg",
+    "pos": [
+      [23, 24],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 17,
+    "url": "https://voussoir.net/writing/browser_in_the_dark",
+    "tag": "css-is-awesome",
+    "type": "comment",
+    "summary": "CSS 实现的手电筒效果，关键是它可以和图片交互",
+    "pos": [
+      [23, 24],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 17,
+    "url": "https://voussoir.net/writing/browser_in_the_dark",
+    "tag": "css-is-awesome",
+    "type": "comment",
+    "summary": "CSS 实现的手电筒效果，关键是它可以和图片交互",
+    "pos": [
+      [23, 24],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 17,
+    "url": "//player.bilibili.com/player.html?aid=856138376&bvid=BV19V4y1J7Hx&cid=782251995&page=1",
+    "tag": "product",
+    "type": "iframe",
+    "pos": [
+      [23, 25],
+      [4, 6]
+    ]
+  },
+  {
+    "week": 16,
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins",
+    "tag": "front-end",
+    "type": "comment",
+    "summary": "HTML 居然有标签可以显示 diff 的效果",
+    "pos": [
+      [23, 24],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 16,
+    "url": "https://wooshy.app/",
+    "tag": "product",
+    "type": "reference",
+    "props": {
+      "category": "toolkit"
+    },
+    "pos": [
+      [24, 25],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 16,
+    "url": "https://mtlynch.io/tinypilot-redesign/",
+    "tag": "articles",
+    "type": "twitter_share",
+    "summary": "原来一些外包机构是这么工作的。可以向他们购买时间开发（比如 40 小时），他们会评估开发工作所需要的时间。之后就是拆解任务，可能会在固定时间汇报任务的情况，以及开发进度。\n - 评估时间很重要 \n - 外包机构比个人收费贵 \n - 详细的任务记录对于客户来说很重要，可以了解任务进度。  ",
+    "pos": [
+      [24, 26],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 16,
+    "url": "https://www.bmpi.dev/dev/software-engineering-at-google/culture/",
+    "tag": "developers",
+    "type": "announcement",
+    "title": "知识孤岛",
+    "props": {
+      "shape": "bracket"
+    },
+    "pos": [
+      [24, 25],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 16,
+    "url": "https://emoji.supply/kitchen/",
+    "tag": "toolkit",
+    "type": "reference",
+    "props": {
+      "category": "product"
+    },
+    "pos": [
+      [24, 25],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 15,
+    "url": "https://tinyprojects.dev/posts/i_spent_two_years_launching_tiny_projects",
+    "tag": "solo",
+    "type": "twitter_share",
+    "summary": "独立开发的个人项目总结，看到了一些不错的 idea，项目价值与否与它是否帮助到了别人有关；另外，在你写项目的同时，你可以很好的提升你的编程技能",
+    "pos": [
+      [25, 27],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 15,
+    "url": "https://news.ycombinator.com/item?id=32137336",
+    "tag": "developers",
+    "type": "twitter_share",
+    "summary": "写博客是否是一件有价值的事情。有人通过它获得了工作；现在视频是主流，本来应该在 30s 获得的知识，现在可能需要看 30s 的广告；但是个人认为不能一概而论，视频还是有好处的，对于一些软件教程（比如 blender）来说，一个视频或许能够讲的更加清楚。",
+    "pos": [
+      [25, 27],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 15,
+    "url": "https://revenuewatcher.com/",
+    "tag": "solo",
+    "type": "comment",
+    "summary": "可以看到一些项目的收入情况",
+    "pos": [
+      [25, 26],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 15,
+    "url": "https://ieftimov.com/posts/how-to-make-reviewers-love-your-big-pull-requests/",
+    "tag": "developers",
+    "type": "twitter_share",
+    "summary": "如何提交 PR 的建议，有几个比较有用，因为最近我发现有不好的习惯，在一个 PR 中可能会带上其他功能的修复或者实现。带上的原因也很简单  \n - 实现很简单，可能只需要修改一行代码就可以实现，所以就加上了。这是非常不好的习惯。\n - 对于 commit 记录，在使用 emoji-commit 的工具的时候我就发现了，它是基于原子 commit 的实现。安装一个 npm 以及使用相关包的 api 被分成两个 commit。这是好习惯，需要保持。\n - 除了 commit 之外，还有一个比较少被使用的是 PR 的描述。首先你肯定需要描述你干了什么（即使你有良好的 commit 记录）。如果你看到了不太好的实现（相关，不相关的话最好放在 issue 中）。可以描述一下未来应该如何修复它（个人感觉代码注释更好）。临时修复（紧急修复）最好说明出于什么理由，因为临时修复的代码可能会比较丑。",
+    "pos": [
+      [25, 27],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 15,
+    "url": "https://www.uifiller.com/",
+    "tag": "toolkit",
+    "type": "reference",
+    "props": {
+      "category": "toolkit"
+    },
+    "summary": "集合随机返回图片，文字的功能",
+    "pos": [
+      [25, 26],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 15,
+    "url": "https://cohost.org/blackle/post/42994-contraption",
+    "tag": "css-is-awesome",
+    "type": "comment",
+    "summary": "试着拉那根绳子，效果惊人",
+    "pos": [
+      [26, 27],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 15,
+    "url": "https://www.foldnfly.com/#/1-1-1-1-1-1-1-1-2",
+    "tag": "fun",
+    "type": "comment",
+    "summary": "教你叠各种纸飞机",
+    "pos": [
+      [26, 27],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 15,
+    "url": "https://www.kawabangga.com/posts/4718",
+    "tag": "solo",
+    "type": "comment",
+    "summary": "个人项目的建议，减少成本以及快乐最好。成本最少（指钱）的个人项目就是开发一个包了。之前也看到一个类似的对于项目的区别，能够赚钱的是产品，不能够赚钱就是慈善项目",
+    "pos": [
+      [26, 27],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 15,
+    "url": "https://news.ycombinator.com/item?id=32136733",
+    "tag": "solo",
+    "type": "comment",
+    "summary": "一个喜欢编程但是讨厌自己工作的讨论。但是我不认同评论说的小公司不尊重你的技术。因为如果你写个人项目的话，可以发现你其实很容易提高你的编程技能。",
+    "pos": [
+      [27, 28],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 14,
+    "url": "https://konstantinlebedev.com/solid-in-react/",
+    "tag": "re",
+    "type": "comment",
+    "summary": "SOLID 原则在 React 中应用和解释",
+    "pos": [
+      [27, 28],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 14,
+    "url": "https://github.com/codemix/deprank",
+    "tag": "resource",
+    "type": "reference",
+    "props": {
+      "category": "performance"
+    },
+    "summary": "对仓库文件进行排名，如果是为了重构的话。可以找到优先重构的文件？",
+    "pos": [
+      [27, 28],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 14,
+    "url": "https://draculatheme.com/",
+    "tag": "developers",
+    "type": "reference",
+    "props": {
+      "category": "color"
+    },
+    "pos": [
+      [27, 28],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 14,
+    "url": "http://www.ruanyifeng.com/blog/2022/07/weekly-issue-214.html",
+    "tag": "product",
+    "type": "twitter_share",
+    "summary": "乔布斯说过一句名言：问消费者他们需要什么是没有意义的，因为他们不知道，只有当你把新事物拿到他们眼前，他们才会意识到自己需要它。他的意思就是开发未知领域，再把消费者领进去，他们会惊叹新世界是多么美妙，而你就成为这里的王者。",
+    "pos": [
+      [27, 29],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 14,
+    "url": "https://github.com/ashok-khanna/react-snippets/blob/main/Router.js",
+    "tag": "front-end",
+    "type": "comment",
+    "summary": "不依赖 react-router 的路由实现",
+    "pos": [
+      [27, 28],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 14,
+    "url": "https://ishadeed.com/article/figma-css/",
+    "tag": "css-is-awesome",
+    "type": "reference",
+    "props": {
+      "category": "document"
+    },
+    "summary": "figma 中 grid 的使用例子",
+    "pos": [
+      [28, 29],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 14,
+    "url": "https://www.youtube.com/devaslife",
+    "tag": "developers",
+    "type": "reference",
+    "props": {
+      "category": "youtuber"
+    },
+    "pos": [
+      [28, 29],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 13,
+    "url": "https://www.raycast.com/blog/we-hack-every-friday/",
+    "tag": "developers",
+    "type": "twitter_share",
+    "props": {
+      "horizontal": true
+    },
+    "summary": "这个 Hack 的团队文化可以说是非常喜欢了。因为很喜欢这种毫无意义（可能），但是很有诚意的小惊喜。",
+    "pos": [
+      [28, 29],
+      [3, 5]
+    ]
+  },
+  {
+    "week": 13,
+    "url": "https://robbowen.digital/wrote-about/css-blend-mode-shaders/",
+    "tag": "css-is-awesome",
+    "type": "reference",
+    "props": {
+      "category": "tutorial"
+    },
+    "summary": "CSS 实现的极光效果，看起来非常棒。",
+    "pos": [
+      [28, 29],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 13,
+    "url": "https://qiangmzsx.github.io/Software-Engineering-at-Google/#/zh-cn/Chapter-12_Unit_Testing/Chapter-12_Unit_Testing",
+    "tag": "developers",
+    "type": "reference",
+    "props": {
+      "category": "document"
+    },
+    "pos": [
+      [29, 30],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 13,
+    "url": "https://defensivecss.dev/tip/bg-repeat/",
+    "tag": "css-is-awesome",
+    "type": "comment",
+    "pos": [
+      [29, 30],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 13,
+    "url": "https://css-irl.info/masonry-in-css/",
+    "tag": "css-is-awesome",
+    "type": "comment",
+    "summary": "grid 的 marsonry 布局，目前应该是一个 draft 阶段。",
+    "pos": [
+      [29, 30],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 13,
+    "url": "https://www.adriancooney.ie/blog/web-scraping-via-javascript-heap-snapshots",
+    "tag": "front-end",
+    "type": "comment",
+    "summary": "一个抓取 SPA 页面的方案",
+    "pos": [
+      [29, 30],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 13,
+    "url": "https://chrome.google.com/webstore/detail/social-share-preview/ggnikicjfklimmffbkhknndafpdlabib/related",
+    "tag": "toolkit",
+    "type": "reference",
+    "props": {
+      "category": "ext"
+    },
+    "summary": "预览社交媒体上的网页",
+    "pos": [
+      [29, 30],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 12,
+    "url": "https://www.vox.com/future-perfect/21420357/kenya-mobile-banking-unbanked-cellphone-money",
+    "tag": "articles",
+    "type": "comment",
+    "summary": "肯尼亚居然使用通话时间作为移动支付货币。",
+    "pos": [
+      [29, 30],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 12,
+    "url": "https://phys.org/news/2022-06-bacteria-species-glacial-ice-pose.html",
+    "tag": "articles",
+    "type": "comment",
+    "summary": "肯尼亚居然使用通话时间作为移动支付货币。",
+    "pos": [
+      [30, 31],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 12,
+    "url": "https://dkb.show/post/life-is-not-short",
+    "tag": "articles",
+    "type": "twitter_share",
+    "props": {
+      "horizontal": true
+    },
+    "summary": "你不会有人偷走你的钱，但是会让人偷走你的时间。因为你觉得时间很长，可以浪费。",
+    "pos": [
+      [30, 31],
+      [2, 4]
+    ]
+  },
+  {
+    "week": 12,
+    "url": "https://blog.p2hp.com/archives/8744",
+    "tag": "front-end",
+    "type": "reference",
+    "props": {
+      "category": "tutorial"
+    },
+    "summary": "屏蔽 F12，屏蔽右键的一些代码片段",
+    "pos": [
+      [30, 31],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 12,
+    "url": "https://mebtte.com/react_fragment_with_event_listener",
+    "tag": "css-is-awesome",
+    "type": "twitter_share",
+    "summary": "如何在 fragment 组件上添加事件，虽然没有遇到这种需求，但是里面提到一个 css 属性 display: contents 十分有趣。能够做到只应用 child 的样式，但是忽略本身设置的样式。",
+    "pos": [
+      [30, 32],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 12,
+    "url": "https://flagicons.lipis.dev/",
+    "tag": "resource",
+    "type": "reference",
+    "props": {
+      "category": "icons"
+    },
+    "pos": [
+      [30, 31],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 12,
+    "url": "https://musicforprogramming.net/about",
+    "tag": "toolkit",
+    "type": "iframe",
+    "pos": [
+      [31, 33],
+      [1, 3]
+    ]
+  },
+  {
+    "week": 12,
+    "url": "https://prototypr.io/post/adaptive-cursor-mouse-touch",
+    "tag": "design",
+    "type": "comment",
+    "summary": "悬浮到物体上，然后将鼠标变得和目标物体一样。这个交互效果太好了。",
+    "pos": [
+      [31, 32],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 11,
+    "url": "https://gimli.app/tailwinddx.html?ref=producthunt",
+    "tag": "toolkit",
+    "type": "reference",
+    "props": {
+      "category": "ext"
+    },
+    "pos": [
+      [31, 32],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 11,
+    "url": "https://www.addevent.com/calendar/Yo445433?utm_source=densediscovery&utm_medium=email&utm_campaign=newsletter-issue-193",
+    "tag": "toolkit",
+    "type": "reference",
+    "props": {
+      "category": "collections"
+    },
+    "summary": "挺有意思的，每天一个小问题关于你身边的人。目的也是为了让你更加关心他人。",
+    "pos": [
+      [31, 32],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 11,
+    "url": "https://www.patterns.dev/posts/",
+    "tag": "developers",
+    "type": "twitter_share",
+    "summary": "不只设计模式，还有包括框架不同渲染模式介绍，非常推荐",
+    "props": {
+      "horizontal": true
+    },
+    "pos": [
+      [32, 33],
+      [5, 7]
+    ]
+  },
+  {
+    "week": 11,
+    "url": "https://sspai.com/post/72993",
+    "tag": "what-is",
+    "title": "好奇心",
+    "type": "announcement",
+    "pos": [
+      [33, 34],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 11,
+    "url": "http://earthclock.cwandt.com/",
+    "tag": "fun",
+    "type": "iframe",
+    "pos": [
+      [32, 34],
+      [3, 5]
+    ]
+  },
+  {
+    "week": 10,
+    "url": "https://whistlr.info/2022/abortcontroller-is-your-friend/",
+    "tag": "front-end",
+    "type": "twitter_share",
+    "summary": "现在才知道，原来 addEventListener 有第三个参数，用文中的 AbortContoller 可以控制是否移除监听事件。",
+    "pos": [
+      [33, 35],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 10,
+    "url": "https://evilmartians.com/chronicles/how-to-make-absolutely-any-app-look-like-a-macos-app",
+    "tag": "front-end",
+    "type": "comment",
+    "summary": "有人真的在认真研究如何让应用看起来像是真的 macOS App",
+    "pos": [
+      [33, 34],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 10,
+    "url": "https://github.com/pissang/little-big-city",
+    "tag": "product",
+    "type": "reference",
+    "props": {
+      "category": "map"
+    },
+    "pos": [
+      [33, 34],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 10,
+    "url": "https://github.com/mxgmn/MarkovJunior",
+    "tag": "resource",
+    "type": "reference",
+    "props": {
+      "category": "toolkit"
+    },
+    "pos": [
+      [33, 34],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 9,
+    "url": "https://danylpo.com/skware/",
+    "tag": "resource",
+    "type": "reference",
+    "props": {
+      "category": "icons"
+    },
+    "pos": [
+      [34, 35],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 9,
+    "url": "https://journalisticapp.com/",
+    "tag": "product",
+    "type": "reference",
+    "summary": "PWA 的应用，已经看起来和真的没有什么区别了",
+    "props": {
+      "category": "pwa"
+    },
+    "pos": [
+      [34, 35],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 9,
+    "url": "http://savethesounds.info/",
+    "tag": "product",
+    "type": "comment",
+    "summary": "一些现在不常听到的声音，比如诺基亚开机。",
+    "pos": [
+      [34, 35],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 9,
+    "url": "https://www.cartoonbrew.com/tech/artists-uses-ai-to-create-photorealistic-versions-of-disney-and-simpsons-characters-213045.html",
+    "tag": "ai",
+    "type": "comment",
+    "summary": "AI 生成动画真人效果，效果非常好。",
+    "pos": [
+      [34, 35],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 9,
+    "url": "",
+    "tag": "what-is",
+    "type": "announcement",
+    "title": "Next Generation",
+    "props": {
+      "shape": "bracket"
+    },
+    "pos": [
+      [34, 35],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 9,
+    "url": "https://readmake.com/",
+    "tag": "solo",
+    "type": "twitter_share",
+    "summary": "周末看了 Nomand List 作者写的关于独立开发者的经验分享 https://readmake.com/ （不免费）。如果你经常逛独立开发者社区，无论是独立的论坛还是来自 Hacker News，再看他的书可以获得一些想法的再次验证（比如某某观点它和我想的一样）。但是还是能获得一些不一样的看法，比如你真的需要成为某个领域专家，才能让为你的服务付费，又比如项目管理，没有给你反馈（可以是情感，可以是金钱）的项目，及时终止你的项目；如果你刚刚萌生了独立开发者想法，会更有收获，保持冷静，这条路并不好走。",
+    "pos": [
+      [35, 37],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 8,
+    "title": "冒名顶替综合症",
+    "url": "https://zh.m.wikipedia.org/zh/%E5%86%92%E5%90%8D%E9%A0%82%E6%9B%BF%E7%97%87%E5%80%99%E7%BE%A4",
+    "type": "announcement",
+    "props": {
+      "shape": "bracket"
+    },
+    "pos": [
+      [35, 36],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 8,
+    "url": "https://www.youtube.com/watch?v=kMN-Xd_dcR4",
+    "type": "reference",
+    "tag": "css-is-awesome",
+    "props": {
+      "category": "tutorial"
+    },
+    "pos": [
+      [35, 36],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 7,
+    "url": "https://kevincox.ca/2022/05/06/rss-feed-best-practices/",
+    "type": "comment",
+    "tag": "rss",
+    "summary": "RSS 格式最佳实践。",
+    "pos": [
+      [35, 36],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 7,
+    "url": "https://github.com/breakfast-studio/lunchboxjs",
+    "type": "reference",
+    "tag": "resource",
+    "summary": "类似 threejs-fiber 的 vue 版本",
+    "props": {
+      "category": "threejs"
+    },
+    "pos": [
+      [35, 36],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 7,
+    "url": "https://chrome.google.com/webstore/detail/ublacklist/pncfbmialoiaghdehhbnbhkkgmjanfhe",
+    "type": "reference",
+    "tag": "toolkit",
+    "summary": " 网上有人推荐了个搜索结果过滤的，配合别人收集的[黑名单](https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist)列表，打算试用一段时间。",
+    "props": {
+      "category": "ext"
+    },
+    "pos": [
+      [35, 36],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 7,
+    "url": "https://github.com/round/Twitter-Links-beta",
+    "type": "reference",
+    "tag": "toolkit",
+    "summary": "在 twitter 上找是否有人分享过了当前页面的链接。",
+    "props": {
+      "category": "ext"
+    },
+    "pos": [
+      [35, 36],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 7,
+    "url": "https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk/related?hl=en",
+    "type": "reference",
+    "tag": "toolkit",
+    "summary": "快捷键控制网页上视频的播放速度。可惜和我的 vim 快捷键有些冲突。",
+    "props": {
+      "category": "ext"
+    },
+    "pos": [
+      [36, 37],
+      [1, 2]
+    ]
+  },
+  {
+    "week": 7,
+    "url": "https://web.dev/publish-modern-javascript/ ",
+    "type": "twitter_share",
+    "tag": "front-end",
+    "summary": "Modern JS  的定义之前一直不太清楚，https://web.dev/publish-modern-javascript/ 这篇文章讲的对我来说很有启发的一点是，Modern 其实是一个动态的词，并不是 ES2019（or ES2017） 就一定是 Modern，因为 JS 世界一直在发展，所以现在 ES2019 的高级语法在未来也会变为 legacy，所以 Modern 是动态。文章中因此定义个一个阈值来简单判断是否是 Modern 的代码，即你写的代码的浏览器的覆盖率是不是 >= 95%。就目前 2022 来说， ES2017 是 95% 支持率，所以是最接近的。\n - 为什么需要 Modern 的语法，反过来想因为浏览器支持率都已经达到了 95%，我们是否需要支持那 5% 剩下的用户。**因为从 Modern JS 4行代码编译为支持那 5% 的用户，可能需要增加 100 多行的代码，会导致加载性能的问题**  \n - https://estimator.dev/#github.com web.dev 出了一个分析工具，如果你的代码转换为 Modern 的写法，可以是提升多少的速度。  ",
+    "pos": [
+      [36, 38],
+      [2, 3]
+    ]
+  },
+  {
+    "week": 6,
+    "url": "https://www.myfonts.com/fonts/almarkha-type/stacker/ ",
+    "type": "reference",
+    "tag": "resource",
+    "props": {
+      "category": "fonts"
+    },
+    "pos": [
+      [36, 37],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 5,
+    "url": "https://relingo.net/zh/guide",
+    "type": "reference",
+    "tag": "resource",
+    "summary": "学习英文的插件，会自动在页面中显示那些单词是你不会的，是一个动态学习的过程",
+    "props": {
+      "category": "ext"
+    },
+    "pos": [
+      [36, 37],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 5,
+    "url": "https://missiveapp.com/open/emoji-mart",
+    "type": "reference",
+    "tag": "resource",
+    "summary": "emoji 选择器，很有 mac 的风格",
+    "props": {
+      "category": "react"
+    },
+    "pos": [
+      [36, 37],
+      [5, 6]
+    ]
+  },
+  {
+    "week": 5,
+    "url": "https://greatdk.com/1835.html",
+    "type": "reference",
+    "tag": "articles",
+    "summary": "诗词生成的效果实在是太好了",
+    "props": {
+      "category": "ai"
+    },
+    "pos": [
+      [36, 37],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 5,
+    "url": "https://unit520.net/deadtrees/",
+    "type": "iframe",
+    "tag": "game",
+    "pos": [
+      [37, 39],
+      [1, 3]
+    ]
+  },
+  {
+    "week": 4,
+    "url": "https://docs.github.com/en/rest/issues/labels",
+    "type": "comment",
+    "tag": "resource",
+    "summary": "github 不知道什么时候上线了 API 以及对应的 schema 预览。对于长期住在 github 上来说还是挺有用的。",
+    "pos": [
+      [37, 38],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 4,
+    "url": "https://www.smashingmagazine.com/2022/05/you-dont-need-ui-framework/",
+    "type": "twitter_share",
+    "tag": "articles",
+    "summary": "使用 UI 组件库，比如说 ant design，前期或许可以加速开发，但是随着项目推进会拖累项目进度，原因是组件库并不能覆盖全部的需求，可能这个组件库有 select，但是却没有 modal（这两个组件一般都会有，只是举例）。自定义组件又往往无法符合原先框架的风格。\n - 但是 tailwindcss 在作者排除之外，因为 tailwindcss 定义的是 design token，并没有提供组件。\n - chara-ui 虽然也是 UI 组件，但是它定义的组件比较原子化。\n - 所以结论是，使用的 UI 组件不要太过于高度的封闭，应该使用原子化的能力如 tailwindcss。",
+    "pos": [
+      [37, 39],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 4,
+    "url": "https://fonts.google.com/noto/specimen/Noto+Emoji?query=noto+emoji",
+    "type": "reference",
+    "tag": "resource",
+    "props": {
+      "category": "fonts"
+    },
+    "summary": "字体，但是支持黑白的 emoji",
+    "pos": [
+      [37, 38],
+      [5, 6]
+    ]
+  },
+  {
+    "#": "确实没有 week 3",
+    "week": 2,
+    "url": "https://microsoft.github.io/win-student-devs/#/30DaysOfPWA/kickoff",
+    "type": "reference",
+    "tag": "resource",
+    "props": {
+      "category": "tutorial"
+    },
+    "summary": "微软出的 PWA 课程。",
+    "pos": [
+      [37, 38],
+      [6, 7]
+    ]
+  },
+  {
+    "week": 2,
+    "url": "https://pointerpointer.com/",
+    "type": "iframe",
+    "tag": "fun",
+    "pos": [
+      [38, 40],
+      [5, 7]
+    ]
+  },
+  {
+    "week": 2,
+    "url": "https://developer.mozilla.org/zh-CN/docs/Web/API/WakeLock",
+    "type": "twitter_share",
+    "summary": "浏览器的一个实验性质的 API。目的是为在页面存在下载等任务的时候可以让页面保持唤醒。但是我实验发现只有在页面 active 的时候才能够让页面保持唤醒，一旦切换 tab 就会自动失效。这样看起来有点鸡肋。但是可以在浏览器插件中尝试一下。",
+    "tag": "front-end",
+    "pos": [
+      [38, 40],
+      [3, 4]
+    ]
+  },
+  {
+    "week": 1,
+    "url": "https://blog.jim-nielsen.com/2022/inspecting-web-views-in-macos/",
+    "type": "twitter_share",
+    "summary": "mac 原生软件有些界面用的是 Web 方式写的",
+    "tag": "front-end",
+    "props": {
+      "horizontal": true
+    },
+    "pos": [
+      [39, 40],
+      [1, 3]
+    ]
+  },
+  {
+    "week": 1,
+    "url": "https://blogsurf.io/",
+    "type": "reference",
+    "props": {
+      "category": "rss"
+    },
+    "summary": "收集好多博客，感觉可以日常看看",
+    "tag": "resource",
+    "pos": [
+      [39, 40],
+      [4, 5]
+    ]
+  },
+  {
+    "week": 1,
+    "url": "https://mirror.xyz/0xb6C61A1DeDDfAaFe7ef9B26ae74Fb71afd5e9E4B/QNvuUMGI03LPHS1DKTcPEMH5w2nmEpc5ii-Fv_Xtvok",
+    "type": "twitter_share",
+    "props": {
+      "horizontal": true
+    },
+    "summary": "为什么成功的文章，但是越来越觉得，NFT 很注重营销以及有一点很酷的游戏结合。最近看了 BAYC 的文章，发现营销对于 NFT 真的很重要，或许可以向拼多多取经。",
+    "tag": "articles",
+    "pos": [
+      [40, 41],
+      [1, 3]
+    ]
+  },
+  {
+    "week": 1,
+    "url": "https://github.com/goldbergyoni/javascript-testing-best-practices/blob/master/readme-zh-CN.md",
+    "type": "twitter_share",
+    "props": {
+      "gradient": true
+    },
+    "summary": "总结了写测试的最佳实践，里面有两点感觉说的十分对，比如写测试可能不需要特别抽象的代码，测试需要把一些细节展示出来；外部数据可以 mock，但是内部的数据最好是使用真实的。\n - 另外测试名加上 tag 是学到的一个小技巧。\n - 另外推荐 vitest。",
+    "tag": "developers",
+    "pos": [
+      [40, 42],
+      [3, 4]
+    ]
   }
 ]
