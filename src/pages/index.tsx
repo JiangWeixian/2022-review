@@ -33,6 +33,7 @@ type BlockProps = {
   summary: string
   url: string
   pos?: [number[], number[]]
+  props?: Record<string, any>
   meta: {
     title: string
     description: string
@@ -105,23 +106,26 @@ const CommentsBlock = (item: BlockProps) => {
 
 const TwitterShareBlock = (item: BlockProps) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [_, type] = item.type.split('$')
+  const { comment, gradient } = item.props ?? {}
+  const useComment = comment ?? true
+  const useGradient = gradient ?? !item.meta.cover
+  const useImage = !useGradient
   return (
     <Block className="p-0 flex flex-col justify-between overflow-hidden" pos={item.pos}>
       <div className="flex-1 overflow-hidden">
         <div
           className={clsx('w-auto p-8 mb-8 bg-cover', {
-            'bg-gradient-to-r from-violet-500 to-fuchsia-500': !item.meta.cover,
+            'bg-gradient-to-r from-violet-500 to-fuchsia-500': useGradient,
           })}
-          style={{ backgroundImage: item.meta.cover ? `url(${item.meta.cover})` : undefined }}
+          style={{ backgroundImage: useImage ? `url(${item.meta.cover})` : undefined }}
         >
-          <h1 className="mb-2 font-bold text-3xl text-white font-carter drop-shadow">
+          <h1 className="mb-2 font-bold text-3xl text-white font-sans font-carter drop-shadow">
             {item.meta.title}
           </h1>
           <p className="text-gray-200 text-xs italic">{item.meta.description}</p>
         </div>
         <div className="flex flex-col gap-2 text-white px-8">
-          {type === 'comment' ? (
+          {useComment ? (
             <div className="flex gap-2">
               <span className="w-6 h-6 inline-block flex-0">
                 <img src={avatar} className="w-full h-full" />
@@ -160,29 +164,6 @@ const TwitterShareBlock = (item: BlockProps) => {
   )
 }
 
-const TwitterShareImageBlock = (item: BlockProps) => {
-  return (
-    <Block className="p-0 pb-0 flex flex-col justify-between overflow-hidden" pos={item.pos}>
-      <div
-        className={clsx('w-auto h-full flex items-center overflow-hidden p-8 bg-cover', {
-          'bg-gradient-to-r from-violet-500 to-fuchsia-500': !item.meta.cover,
-        })}
-        style={{ backgroundImage: item.meta.cover ? `url(${item.meta.cover})` : undefined }}
-      >
-        <h1 className="mb-2 font-bold text-3xl text-white font-carter drop-shadow">
-          {item.meta.title}
-        </h1>
-      </div>
-      <div className="w-full absolute bottom-4 px-8 flex h-4 justify-between items-center justify-self-end opacity-70 hover:opacity-90 mix-blend-exclusion">
-        <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
-        <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
-          <Link className="w-full h-full" />
-        </a>
-      </div>
-    </Block>
-  )
-}
-
 const BgBlock = (item: BlockProps) => {
   return (
     <Block className=" aspect-video flex flex-col justify-end overflow-hidden" pos={item.pos}>
@@ -201,13 +182,12 @@ const BgBlock = (item: BlockProps) => {
 }
 
 const RefBlock = (item: BlockProps) => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [_, type] = item.type.split('$')
+  const { category } = item.props ?? {}
   return (
     <Block className="flex flex-col justify-center overflow-hidden" pos={item.pos}>
       <div className="w-full flex-1 flex flex-col justify-center items-start">
         <span className="text-xs uppercase bg-opacity-10 text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-pink-500 text-pink-500 flex gap-2 mb-2">
-          {type}
+          {category}
         </span>
         <div className="flex items-center gap-2 mb-2">
           <img src={item.meta.favicon} className="w-4 h-4" />
@@ -253,10 +233,8 @@ const components = {
   comment: CommentsBlock,
   bg: BgBlock,
   twitter_share: TwitterShareBlock,
-  twitter_share$comment: TwitterShareBlock,
-  twitter_share$image: TwitterShareImageBlock,
   iframe: IframeBlock,
-  reference$document: RefBlock,
+  reference: RefBlock,
 }
 
 /**
@@ -383,7 +361,7 @@ const AttachDrag = () => {
         className="articles-layout border-box grid grid-cols-6 min-h-screen gap-4 p-8 select-none"
       >
         {lists.map((item, i) => {
-          const Block = components[item.type as keyof typeof components]
+          const Block: any = components[item.type as keyof typeof components]
           return <Block key={i} {...item} />
         })}
       </Html>

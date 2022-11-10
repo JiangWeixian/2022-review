@@ -21,6 +21,7 @@ const main = async () => {
     const unfurlItem: Item = Object.assign({}, item)
     console.log(`${colors.bgGreen(colors.black(` unfurling: `))} ${item.url}`)
     unfurlItem.meta = result ?? {}
+    unfurlItem.meta.title = result.title ?? (result.twitter_card?.title || result.open_graph?.title)
     unfurlItem.meta.cover =
       result.twitter_card?.images?.[0]?.url || result.open_graph?.images?.[0].url
     // TODO: calucate pos based on item.size

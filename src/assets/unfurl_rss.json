@@ -76,6 +76,9 @@
     "url": "https://overreacted.io/goodbye-clean-code/",
     "tag": "developers",
     "type": "twitter_share",
+    "props": {
+      "comment": false
+    },
     "summary": [
       "Firstly, I didn’t talk to the person who wrote it. I rewrote the code and checked it in without their input. Even if it was an improvement (which I don’t believe anymore), this is a terrible way to go about it. A healthy engineering team is constantly building trust. Rewriting your teammate’s code without a discussion is a huge blow to your ability to effectively collaborate on a codebase together.",
       "Secondly, nothing is free. My code traded the ability to change requirements for reduced duplication, and it was not a good trade. For example, we later needed many special cases and behaviors for different handles on different shapes. My abstraction would have to become several times more convoluted to afford that, whereas with the original “messy” version such changes stayed easy as cake."
@@ -122,7 +125,7 @@
     "week": 29,
     "url": "https://height.app/blog/guide-to-build-context-menus",
     "tag": "design",
-    "type": "twitter_share$comment",
+    "type": "twitter_share",
     "pos": [
       [1, 3],
       [6, 7]
@@ -149,13 +152,17 @@
       },
       "favicon": "https://height.app/a/statics/assets/favicon-ZBAA3W6E.png",
       "cover": "https://height-blog.ghost.io/content/images/2022/01/blog-post-contextMenu-1.png"
-    }
+    },
+    "size": [1, 2]
   },
   {
     "week": 29,
     "url": "https://docs.qq.com/doc/DWHl3am5Zb05QbGVs",
     "tag": "ai",
-    "type": "reference$document",
+    "type": "reference",
+    "props": {
+      "category": "document"
+    },
     "pos": [
       [2, 3],
       [1, 2]
@@ -176,5 +183,52 @@
       "favicon": "https://docs.idqqimg.com/tim/docs/docs-design-resources/pc/png@2x/file_web_doc_64@2x-77242f419d.png",
       "cover": "https://docs.gtimg.com/docs-design-resources/mobile/png@3x/file_doc_64@3x-58ec57f56b.png"
     }
+  },
+  {
+    "week": 29,
+    "url": "https://mp.weixin.qq.com/s/B1RZokLQRqiki2Iqq4Mpdg",
+    "tag": "ai",
+    "type": "twitter_share",
+    "props": {
+      "comment": true,
+      "gradient": true
+    },
+    "pos": [
+      [2, 4],
+      [2, 3]
+    ],
+    "summary": "工程化你的生活。有点类似用 [[OKR]] 来管理你的生活。 #productivity  \n - 我有点从其中如何学习到了如何使用 OKR。首先 OKR 会有个小目标，以及数值化的这个目标，比如我要到达 xx。通常情况下，会在月末打分。但是其中缺少了很关键的步骤就是，完成这个数值化目标你需要把实现它的步骤拆分为若干小步骤，细节来说就是，你每天要干点什么，保证进度。工作上比较难的事，实现的 OKR 中间的步骤会比较不明确，有可能你像是无头苍蝇来实现这个目标。\n - 其实 OKR 的 life 版本也是这个思路，但是会比较容易点，因为健身，学习这些目标（我只是举例）都比较明确。你可以通过我每周要进行多少次健身，看多少书来确定进度，也就是说 [[routine]] 非常重要。积少成多总是会实现的。文中介绍了一个非常重要的步骤，就是每天的 review 打分。提升自己的进度。  ",
+    "meta": {
+      "description": "找到你不为之焦虑的路，或许可以试试从你的习惯开始。",
+      "author": "fonter",
+      "open_graph": {
+        "title": "工程化你的习惯",
+        "url": "http://mp.weixin.qq.com/s?__biz=MzA4MjkwMDcyOQ==&mid=2647743768&idx=1&sn=7e8bb4538413b1225e22dceb97ca4df0&chksm=87db5e8eb0acd7987c00bd9177aa732e8c4c9ffb33829d5684fe45db8f7a300e90cd1203fb76#rd",
+        "images": [
+          {
+            "url": "http://mmbiz.qpic.cn/mmbiz_jpg/8qCNluNm86WFHK2VDwIjQTSsOLmeEjYA3OicJYmB0d0clZQmvL2Pv5tA6RNtH0EzoVRBy1Skicyytve0dcRnfDxQ/0?wx_fmt=jpeg"
+          }
+        ],
+        "description": "找到你不为之焦虑的路，或许可以试试从你的习惯开始。",
+        "site_name": "微信公众平台",
+        "type": "article"
+      },
+      "twitter_card": {
+        "card": "summary",
+        "images": [
+          {
+            "url": "http://mmbiz.qpic.cn/mmbiz_jpg/8qCNluNm86WFHK2VDwIjQTSsOLmeEjYA3OicJYmB0d0clZQmvL2Pv5tA6RNtH0EzoVRBy1Skicyytve0dcRnfDxQ/0?wx_fmt=jpeg"
+          }
+        ],
+        "title": "工程化你的习惯",
+        "creator": "fonter",
+        "site": "微信公众平台",
+        "description": "找到你不为之焦虑的路，或许可以试试从你的习惯开始。"
+      },
+      "title": "工程化你的习惯",
+      "favicon": "https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico",
+      "cover": "http://mmbiz.qpic.cn/mmbiz_jpg/8qCNluNm86WFHK2VDwIjQTSsOLmeEjYA3OicJYmB0d0clZQmvL2Pv5tA6RNtH0EzoVRBy1Skicyytve0dcRnfDxQ/0?wx_fmt=jpeg"
+    },
+    "size": [1, 2]
   }
 ]
