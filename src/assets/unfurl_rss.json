@@ -230,6 +230,42 @@
   },
   {
     "week": 29,
+    "url": "https://vercel.com/blog/turbopack",
+    "tag": "toolkit",
+    "title": "turbopack",
+    "type": "announcement",
+    "pos": [
+      [3, 4],
+      [1, 2]
+    ],
+    "meta": {
+      "title": "turbopack",
+      "twitter_card": {
+        "card": "summary_large_image",
+        "site": "@vercel",
+        "images": [
+          {
+            "url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/7BttWlDN0aYE7Hmjdeu7yR/f7141661521c8c12b2fa5b0ac4dd7536/Turbopack.png"
+          }
+        ]
+      },
+      "open_graph": {
+        "title": "Introducing Turbopack: Rust-based successor to Webpack – Vercel",
+        "url": "https://vercel.com/blog/turbopack",
+        "description": "Introducing Turbopack, the Rust-based successor to Webpack.",
+        "images": [
+          {
+            "url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/7BttWlDN0aYE7Hmjdeu7yR/f7141661521c8c12b2fa5b0ac4dd7536/Turbopack.png"
+          }
+        ]
+      },
+      "description": "Introducing Turbopack, the Rust-based successor to Webpack.",
+      "favicon": "https://vercel.com/favicon.ico",
+      "cover": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/7BttWlDN0aYE7Hmjdeu7yR/f7141661521c8c12b2fa5b0ac4dd7536/Turbopack.png"
+    }
+  },
+  {
+    "week": 29,
     "url": "https://web.dev/state-of-css-2022/",
     "tag": "css-is-awesome",
     "type": "reference",
@@ -239,7 +275,7 @@
     },
     "pos": [
       [3, 4],
-      [1, 2]
+      [3, 5]
     ],
     "meta": {
       "title": "State of CSS 2022",

@@ -1,4 +1,4 @@
-import React, { useMemo, useRef, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Canvas, useThree } from '@react-three/fiber'
 import * as THREE from 'three'
 import { Html, OrbitControls, OrthographicCamera } from '@react-three/drei'
@@ -6,6 +6,7 @@ import { useSpring, animated } from '@react-spring/three'
 import { useDrag } from '@use-gesture/react'
 import clsx from 'clsx'
 import Markdownit from 'markdown-it'
+import { annotate } from 'rough-notation'
 
 import rss from '@/assets/unfurl_rss.json'
 import { ReactComponent as Link } from '@/assets/icons/link.svg'
@@ -222,12 +223,41 @@ const IframeBlock = (item: BlockProps) => {
   )
 }
 
+const AnnouncementBlock = (item: BlockProps) => {
+  const ref = useRef<HTMLHeadingElement>(null)
+  useEffect(() => {
+    if (!ref.current) {
+      return
+    }
+    const annotation = annotate(ref.current!, { type: 'highlight', color: 'rgb(192 132 252)' })
+    annotation.show()
+  }, [ref])
+  return (
+    <Block className="flex flex-col justify-between" pos={item.pos}>
+      <div className="flex flex-1 justify-center items-center">
+        <h1 ref={ref} className="mb-2 capitalize font-bold text-7xl text-white">
+          {item.meta.title}
+        </h1>
+      </div>
+      <div className="flex flex-col gap-4">
+        <div className="w-full flex justify-between items-center opacity-70 hover:opacity-90">
+          <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+          <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
+            <Link className="w-full h-full" />
+          </a>
+        </div>
+      </div>
+    </Block>
+  )
+}
+
 const components = {
   comment: CommentsBlock,
   bg: BgBlock,
   twitter_share: TwitterShareBlock,
   iframe: IframeBlock,
   reference: RefBlock,
+  announcement: AnnouncementBlock,
 }
 
 /**
