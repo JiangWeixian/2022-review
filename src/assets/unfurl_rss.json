@@ -306,5 +306,73 @@
       "favicon": "https://web.dev/images/favicon-16x16.png",
       "cover": "https://web-dev.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/iOfuipzyniP6aec4cOss.png?auto=format&fit=max&w=1200&fm=auto"
     }
+  },
+  {
+    "week": 29,
+    "url": "https://blog.jim-nielsen.com/2022/scroll-to-text-fragments/",
+    "tag": "tutorial",
+    "type": "reference",
+    "summary": "支持在分享链接中如何跳转到复制的内容。比之前调整到标题力度要更小一点。",
+    "props": {
+      "category": "tutorial"
+    },
+    "pos": [
+      [3, 4],
+      [5, 6]
+    ],
+    "meta": {
+      "title": "Scroll to Text Fragments - Jim Nielsen’s Blog",
+      "author": "p-author",
+      "open_graph": {
+        "title": "Scroll to Text Fragments",
+        "type": "article",
+        "url": "https://blog.jim-nielsen.com/2022/scroll-to-text-fragments/"
+      },
+      "twitter_card": {
+        "card": "summary",
+        "site": "@jimniels",
+        "creator": "@jimniels",
+        "title": "Scroll to Text Fragments",
+        "images": [
+          {
+            "url": "https://blog.jim-nielsen.com/assets/img/twitter-card.png",
+            "alt": "Jim Nielsen’s initials (JN) in a hand-written style."
+          }
+        ]
+      },
+      "favicon": "https://blog.jim-nielsen.com/favicon.ico",
+      "cover": "https://blog.jim-nielsen.com/assets/img/twitter-card.png"
+    }
+  },
+  {
+    "week": 29,
+    "url": "https://beta.nextjs.org/docs/routing/fundamentals",
+    "tag": "front-end",
+    "title": "nextjs 13",
+    "type": "announcement",
+    "pos": [
+      [3, 4],
+      [6, 7]
+    ],
+    "meta": {
+      "title": "nextjs 13",
+      "twitter_card": {
+        "site": "@vercel",
+        "card": "summary_large_image"
+      },
+      "open_graph": {
+        "title": "Routing: Fundamentals | Next.js",
+        "url": "https://nextjs.org/docs/routing/fundamentals",
+        "description": "...",
+        "images": [
+          {
+            "url": "https://beta.nextjs.org/static/twitter-cards/docs.png"
+          }
+        ]
+      },
+      "description": "...",
+      "favicon": "https://beta.nextjs.org/static/favicon/favicon.ico",
+      "cover": "https://beta.nextjs.org/static/twitter-cards/docs.png"
+    }
   }
 ]

@@ -86,7 +86,9 @@ const CommentsBlock = (item: BlockProps) => {
       <div className="w-full">
         <div className="flex items-center gap-2">
           <img src={item.meta.favicon} className="w-6 h-6" />
-          <h1 className="mb-2 font-bold text-3xl text-white">{item.meta.title}</h1>
+          <h1 title={item.meta.title} className="mb-2 font-bold text-3xl text-white truncate">
+            {item.meta.title}
+          </h1>
         </div>
         <p className="text-gray-400 text-xs">{item.meta.description}</p>
       </div>
@@ -184,7 +186,9 @@ const RefBlock = (item: BlockProps) => {
           </span>
           <div className="flex items-center gap-2 mb-2">
             <img src={item.meta.favicon} className="w-4 h-4" />
-            <h1 className="font-bold text-xl text-white">{item.meta.title}</h1>
+            <h1 title={item.meta.title} className="font-bold text-xl text-white truncate">
+              {item.meta.title}
+            </h1>
           </div>
           <p className="text-gray-400 text-xs">{item.meta.description}</p>
           {item.summary ? (
