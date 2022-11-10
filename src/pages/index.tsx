@@ -5,10 +5,13 @@ import { Html, OrbitControls, OrthographicCamera } from '@react-three/drei'
 import { useSpring, animated } from '@react-spring/three'
 import { useDrag } from '@use-gesture/react'
 import clsx from 'clsx'
+import Markdownit from 'markdown-it'
 
 import rss from '@/assets/unfurl_rss.json'
 import { ReactComponent as Link } from '@/assets/icons/link.svg'
 import avatar from '@/assets/imgs/avatar_circle.png'
+
+const md = new Markdownit()
 
 // TODO: will fixed or remove later
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -119,39 +122,21 @@ const TwitterShareBlock = (item: BlockProps) => {
           })}
           style={{ backgroundImage: useImage ? `url(${item.meta.cover})` : undefined }}
         >
-          <h1 className="mb-2 font-bold text-3xl text-white font-sans font-carter drop-shadow">
+          <h1 className="mb-2 font-bold text-3xl text-white font-carter drop-shadow">
             {item.meta.title}
           </h1>
           <p className="text-gray-200 text-xs italic">{item.meta.description}</p>
         </div>
         <div className="flex flex-col gap-2 text-white px-8">
-          {useComment ? (
-            <div className="flex gap-2">
-              <span className="w-6 h-6 inline-block flex-0">
-                <img src={avatar} className="w-full h-full" />
-              </span>
-              <p className="text-sm inline-block flex-1 line-clamp-3">{item.summary}</p>
-            </div>
-          ) : (
-            <>
-              <span className="w-6 h-6 mb-4 inline-block flex-0 font-carter underline">
-                {item.meta.twitter_card.creator}
-              </span>
-              {Array.isArray(item.summary) ? (
-                <ul className="h-1/2 line-clamp-6">
-                  {item.summary.map((item, key) => {
-                    return (
-                      <li className="list-disc list-inside text-sm" key={key}>
-                        {item}
-                      </li>
-                    )
-                  })}
-                </ul>
-              ) : (
-                <p className="text-sm inline-block flex-1 text-ellipsis">{item.summary}</p>
-              )}
-            </>
-          )}
+          <div className="flex flex-col gap-2">
+            <span className="w-6 h-6 inline-block flex-0 font-carter underline">
+              {useComment ? '@summary' : item.meta.twitter_card.creator}
+            </span>
+            <div
+              className="prose prose-invert prose-sm line-clamp-[11]"
+              dangerouslySetInnerHTML={{ __html: md.render(item.summary) }}
+            />
+          </div>
         </div>
       </div>
       <div className="w-full px-8 flex flex-0 h-4 justify-between items-center justify-self-end opacity-70 hover:opacity-90">
