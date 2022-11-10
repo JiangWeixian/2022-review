@@ -167,32 +167,40 @@ const BgBlock = (item: BlockProps) => {
 }
 
 const RefBlock = (item: BlockProps) => {
-  const { category } = item.props ?? {}
+  const { category, image } = item.props ?? {}
   return (
-    <Block className="flex flex-col justify-center overflow-hidden" pos={item.pos}>
-      <div className="w-full flex-1 flex flex-col justify-center items-start">
-        <span className="text-xs uppercase bg-opacity-10 text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-pink-500 text-pink-500 flex gap-2 mb-2">
-          {category}
-        </span>
-        <div className="flex items-center gap-2 mb-2">
-          <img src={item.meta.favicon} className="w-4 h-4" />
-          <h1 className="font-bold text-xl text-white">{item.meta.title}</h1>
-        </div>
-        <p className="text-gray-400 text-xs">{item.meta.description}</p>
-        {item.summary ? (
-          <div className="flex gap-2 text-gray-500">
-            <span className="w-6 h-6 inline-block flex-0">
-              <img src={avatar} className="w-full h-full" />
-            </span>
-            <p className="text-xs inline-block flex-1">{item.summary}</p>
+    <Block className="flex flex-row overflow-hidden p-0 pb-0" pos={item.pos}>
+      {image && (
+        <div
+          className={clsx('bg-cover aspect-video')}
+          style={{ backgroundImage: `url(${item.meta.cover})` }}
+        />
+      )}
+      <div className="flex flex-1 flex-col justify-center px-8 py-4">
+        <div className="w-full flex-1 flex flex-col justify-center items-start">
+          <span className="text-xs uppercase bg-opacity-10 text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-pink-500 text-pink-500 flex gap-2 mb-2">
+            {category}
+          </span>
+          <div className="flex items-center gap-2 mb-2">
+            <img src={item.meta.favicon} className="w-4 h-4" />
+            <h1 className="font-bold text-xl text-white">{item.meta.title}</h1>
           </div>
-        ) : null}
-      </div>
-      <div className="w-full flex flex-0 justify-between items-center opacity-70 hover:opacity-90 mix-blend-exclusion">
-        <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
-        <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
-          <Link className="w-full h-full" />
-        </a>
+          <p className="text-gray-400 text-xs">{item.meta.description}</p>
+          {item.summary ? (
+            <div className="flex gap-2 text-gray-500">
+              <span className="w-6 h-6 inline-block flex-0">
+                <img src={avatar} className="w-full h-full" />
+              </span>
+              <p className="text-xs inline-block flex-1">{item.summary}</p>
+            </div>
+          ) : null}
+        </div>
+        <div className="w-full flex flex-0 justify-between items-center opacity-70 hover:opacity-90 mix-blend-exclusion">
+          <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+          <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
+            <Link className="w-full h-full" />
+          </a>
+        </div>
       </div>
     </Block>
   )

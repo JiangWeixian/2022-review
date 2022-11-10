@@ -227,5 +227,48 @@
       "cover": "http://mmbiz.qpic.cn/mmbiz_jpg/8qCNluNm86WFHK2VDwIjQTSsOLmeEjYA3OicJYmB0d0clZQmvL2Pv5tA6RNtH0EzoVRBy1Skicyytve0dcRnfDxQ/0?wx_fmt=jpeg"
     },
     "size": [1, 2]
+  },
+  {
+    "week": 29,
+    "url": "https://web.dev/state-of-css-2022/",
+    "tag": "css-is-awesome",
+    "type": "reference",
+    "props": {
+      "category": "report",
+      "image": true
+    },
+    "pos": [
+      [3, 4],
+      [1, 2]
+    ],
+    "meta": {
+      "title": "State of CSS 2022",
+      "description": "Web styling features of today and tomorrow, as seen at Google IO 2022, plus some extras.",
+      "open_graph": {
+        "locale": "en_US",
+        "type": "article",
+        "url": "https://web.dev/state-of-css-2022/",
+        "site_name": "web.dev",
+        "title": "State of CSS 2022",
+        "description": "Web styling features of today and tomorrow, as seen at Google IO 2022, plus some extras.",
+        "images": [
+          {
+            "url": "https://web-dev.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/iOfuipzyniP6aec4cOss.png?auto=format&fit=max&w=1200&fm=auto"
+          }
+        ]
+      },
+      "twitter_card": {
+        "card": "summary_large_image",
+        "title": "State of CSS 2022",
+        "description": "Web styling features of today and tomorrow, as seen at Google IO 2022, plus some extras.",
+        "images": [
+          {
+            "url": "https://web-dev.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/iOfuipzyniP6aec4cOss.png?auto=format&fit=max&w=1200&fm=auto"
+          }
+        ]
+      },
+      "favicon": "https://web.dev/images/favicon-16x16.png",
+      "cover": "https://web-dev.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/iOfuipzyniP6aec4cOss.png?auto=format&fit=max&w=1200&fm=auto"
+    }
   }
 ]
