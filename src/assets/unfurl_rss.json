@@ -6,14 +6,8 @@
     "summary": "提供了多个色版，目的是解决网站色彩方案选择的问题。看起来还挺有用的，因为它还提供了思路。第一个知道色版的每个颜色都应该用在什么位置，比如 1/2 是属于背景",
     "type": "comment",
     "pos": [
-      [
-        1,
-        2
-      ],
-      [
-        1,
-        2
-      ]
+      [1, 2],
+      [1, 2]
     ],
     "meta": {
       "title": "Colors – Radix UI",
@@ -42,14 +36,8 @@
     "tag": "resource",
     "type": "bg",
     "pos": [
-      [
-        1,
-        2
-      ],
-      [
-        2,
-        3
-      ]
+      [1, 2],
+      [2, 3]
     ],
     "meta": {
       "twitter_card": {
@@ -93,14 +81,8 @@
       "Secondly, nothing is free. My code traded the ability to change requirements for reduced duplication, and it was not a good trade. For example, we later needed many special cases and behaviors for different handles on different shapes. My abstraction would have to become several times more convoluted to afford that, whereas with the original “messy” version such changes stayed easy as cake."
     ],
     "pos": [
-      [
-        1,
-        3
-      ],
-      [
-        3,
-        4
-      ]
+      [1, 3],
+      [3, 4]
     ],
     "meta": {
       "title": "Goodbye, Clean Code — Overreacted",
@@ -118,10 +100,7 @@
       },
       "favicon": "https://overreacted.io/favicon-32x32.png?v=8c19a894ebc3f54d282a8f2418cf5398"
     },
-    "size": [
-      1,
-      2
-    ]
+    "size": [1, 2]
   },
   {
     "week": 29,
@@ -129,24 +108,15 @@
     "tag": "css-is-awesome",
     "type": "iframe",
     "pos": [
-      [
-        1,
-        3
-      ],
-      [
-        4,
-        6
-      ]
+      [1, 3],
+      [4, 6]
     ],
     "meta": {
       "title": "Pokémon Cards CSS Holographic Effect",
       "description": "An exploration of what's possible with CSS for Pokemon Cards, simeydotme (Simon Goellner)",
       "favicon": "https://deck-24abcd.netlify.app/favicon.png"
     },
-    "size": [
-      2,
-      2
-    ]
+    "size": [2, 2]
   },
   {
     "week": 29,
@@ -154,14 +124,8 @@
     "tag": "design",
     "type": "twitter_share$comment",
     "pos": [
-      [
-        1,
-        2
-      ],
-      [
-        6,
-        7
-      ]
+      [1, 3],
+      [6, 7]
     ],
     "summary": "如何设计一个右键 menu ，很多时候借鉴了 mac 设计思路。有几个设计的很好: \n - 比如在二级菜单切换时，保证上一次三级菜单显示。提到了安全三角的概念。\n - 加入快捷键进行导航和三级菜单选择。\n - 禁用二级三级菜单动画看起来效果不错。",
     "meta": {
@@ -193,14 +157,8 @@
     "tag": "ai",
     "type": "reference$document",
     "pos": [
-      [
-        2,
-        3
-      ],
-      [
-        1,
-        2
-      ]
+      [2, 3],
+      [1, 2]
     ],
     "meta": {
       "open_graph": {

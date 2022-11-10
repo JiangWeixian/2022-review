@@ -25,7 +25,3 @@
 .article {
   background-color: rgba(13, 13, 14);
 }
-
-.rows-2 {
-  height: calc(var(--row-height) * 2);
-}
