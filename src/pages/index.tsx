@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useMemo, useRef, useState } from 'react'
 import { Canvas, useThree } from '@react-three/fiber'
 import * as THREE from 'three'
 import { Html, OrbitControls, OrthographicCamera } from '@react-three/drei'
@@ -32,6 +32,7 @@ type BlockProps = {
   tag: string
   summary: string
   url: string
+  pos?: [number[], number[]]
   meta: {
     title: string
     description: string
@@ -41,15 +42,32 @@ type BlockProps = {
       creator: string
     }
   }
+  className?: string
 }
 
-const Block = (props: React.PropsWithChildren<{ className: string }>) => {
+const Block = ({
+  pos,
+  ...props
+}: React.PropsWithChildren<Pick<BlockProps, 'className' | 'pos'>>) => {
+  const style: React.CSSProperties = useMemo(() => {
+    if (!pos) {
+      return {}
+    }
+    const [rows, cols] = pos
+    return {
+      gridRowStart: rows[0],
+      gridRowEnd: rows[1],
+      gridColumnStart: cols[0],
+      gridColumnEnd: cols[1],
+    }
+  }, [pos])
   return (
     <div
       className={clsx(
         'article relative cursor-grab antialiased rounded shadow p-8 pb-4',
         props.className,
       )}
+      style={style}
     >
       {props.children}
     </div>
@@ -59,7 +77,7 @@ const Block = (props: React.PropsWithChildren<{ className: string }>) => {
 // TODO: should merge with ref block
 const CommentsBlock = (item: BlockProps) => {
   return (
-    <Block className="aspect-video flex flex-col justify-between">
+    <Block className="flex flex-col justify-between" pos={item.pos}>
       <div className="w-full">
         <div className="flex items-center gap-2">
           <img src={item.meta.favicon} className="w-6 h-6" />
@@ -86,16 +104,28 @@ const CommentsBlock = (item: BlockProps) => {
 }
 
 const TwitterShareBlock = (item: BlockProps) => {
+  const [_, type] = item.type.split('$')
   return (
-    <Block className="p-0 flex flex-col justify-between overflow-hidden row-start-1 row-end-3">
-      <div className="flex-1 overflow-hidden pb-4">
-        <div className="w-auto p-8 mb-8 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+    <Block className="p-0 flex flex-col justify-between overflow-hidden" pos={item.pos}>
+      <div className="flex-1 overflow-hidden">
+        <div
+          className={clsx('w-auto p-8 mb-8 bg-cover', {
+            'bg-gradient-to-r from-violet-500 to-fuchsia-500': !item.meta.cover,
+          })}
+          style={{ backgroundImage: item.meta.cover ? `url(${item.meta.cover})` : undefined }}
+        >
           <h1 className="mb-2 font-bold text-3xl text-white font-carter drop-shadow">
             {item.meta.title}
           </h1>
           <p className="text-gray-200 text-xs italic">{item.meta.description}</p>
         </div>
         <div className="flex flex-col gap-2 text-white px-8">
+          {type === 'comment' ? <div className="flex gap-2">
+            <span className="w-6 h-6 inline-block flex-0">
+              <img src={avatar} className="w-full h-full" />
+            </span>
+            <p className="text-sm inline-block flex-1 line-clamp-3">{item.summary}</p>
+          </div> : <>
           <span className="w-6 h-6 mb-4 inline-block flex-0 font-carter underline">
             {item.meta.twitter_card.creator}
           </span>
@@ -112,9 +142,33 @@ const TwitterShareBlock = (item: BlockProps) => {
           ) : (
             <p className="text-sm inline-block flex-1 text-ellipsis">{item.summary}</p>
           )}
+          </>}
         </div>
       </div>
-      <div className="w-full px-8 flex h-4 justify-between items-center justify-self-end opacity-70 hover:opacity-90">
+      <div className="w-full px-8 flex flex-0 h-4 justify-between items-center justify-self-end opacity-70 hover:opacity-90">
+        <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+        <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
+          <Link className="w-full h-full" />
+        </a>
+      </div>
+    </Block>
+  )
+}
+
+const TwitterShareImageBlock = (item: BlockProps) => {
+  return (
+    <Block className="p-0 pb-0 flex flex-col justify-between overflow-hidden" pos={item.pos}>
+      <div
+        className={clsx('w-auto h-full flex items-center overflow-hidden p-8 bg-cover', {
+          'bg-gradient-to-r from-violet-500 to-fuchsia-500': !item.meta.cover,
+        })}
+        style={{ backgroundImage: item.meta.cover ? `url(${item.meta.cover})` : undefined }}
+      >
+        <h1 className="mb-2 font-bold text-3xl text-white font-carter drop-shadow">
+          {item.meta.title}
+        </h1>
+      </div>
+      <div className="w-full absolute bottom-4 px-8 flex h-4 justify-between items-center justify-self-end opacity-70 hover:opacity-90 mix-blend-exclusion">
         <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
         <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
           <Link className="w-full h-full" />
@@ -126,7 +180,7 @@ const TwitterShareBlock = (item: BlockProps) => {
 
 const BgBlock = (item: BlockProps) => {
   return (
-    <Block className="aspect-video flex flex-col justify-end overflow-hidden">
+    <Block className=" aspect-video flex flex-col justify-end overflow-hidden" pos={item.pos}>
       <div
         className="w-full h-full absolute top-0 left-0 z-0 flex justify-center items-center bg-cover"
         style={{ backgroundImage: `url(${item.meta.cover})` }}
@@ -145,7 +199,7 @@ const RefBlock = (item: BlockProps) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_, type] = item.type.split('$')
   return (
-    <Block className="aspect-video flex flex-col justify-center overflow-hidden">
+    <Block className="flex flex-col justify-center overflow-hidden" pos={item.pos}>
       <div className="w-full flex-1 flex flex-col justify-center items-start">
         <span className="text-xs uppercase bg-opacity-10 text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-pink-500 text-pink-500 flex gap-2 mb-2">
           {type}
@@ -176,7 +230,7 @@ const RefBlock = (item: BlockProps) => {
 
 const IframeBlock = (item: BlockProps) => {
   return (
-    <Block className="flex flex-col overflow-hidden col-start-1 col-end-3 row-start-2 row-end-4">
+    <Block className="flex flex-col overflow-hidden" pos={item.pos}>
       <iframe className="w-full h-full" src={item.url} />
       <div className="w-full flex flex-col justify-end absolute left-0 bottom-0 h-32 p-8 pb-4 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent">
         <p className="w-full flex justify-between items-center mix-blend-exclusion">
@@ -194,6 +248,8 @@ const components = {
   comment: CommentsBlock,
   bg: BgBlock,
   twitter_share: TwitterShareBlock,
+  twitter_share$comment: TwitterShareBlock,
+  twitter_share$image: TwitterShareImageBlock,
   iframe: IframeBlock,
   reference$document: RefBlock,
 }
