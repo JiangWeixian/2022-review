@@ -61,7 +61,8 @@
     "tag": "ai",
     "type": "reference",
     "props": {
-      "category": "document"
+      "category": "document",
+      "image": true
     },
     "pos": [
       [2, 3],
@@ -115,7 +116,8 @@
     "type": "reference",
     "summary": "支持在分享链接中如何跳转到复制的内容。比之前调整到标题力度要更小一点。",
     "props": {
-      "category": "tutorial"
+      "category": "tutorial",
+      "image": true
     },
     "pos": [
       [3, 4],
@@ -336,7 +338,8 @@
     "tag": "product",
     "type": "reference",
     "props": {
-      "category": "collections"
+      "category": "collections",
+      "image": true
     },
     "pos": [
       [7, 8],
@@ -371,7 +374,8 @@
     "tag": "resource",
     "type": "reference",
     "props": {
-      "category": "cool"
+      "category": "cool",
+      "image": true
     },
     "pos": [
       [8, 9],
@@ -434,7 +438,8 @@
     "tag": "toolkit",
     "type": "reference",
     "props": {
-      "category": "typescript"
+      "category": "typescript",
+      "image": true
     },
     "pos": [
       [9, 10],
@@ -448,7 +453,8 @@
     "type": "reference",
     "summary": "WebGL 实现的动画效果",
     "props": {
-      "category": "threejs"
+      "category": "threejs",
+      "image": true
     },
     "pos": [
       [9, 10],
@@ -512,7 +518,8 @@
     "type": "reference",
     "summary": "使用 stable-diffusion 生成 blender 纹理，ai 生图比较实际的应用。",
     "props": {
-      "category": "blender"
+      "category": "blender",
+      "image": true
     },
     "pos": [
       [10, 11],
@@ -525,7 +532,8 @@
     "tag": "resource",
     "type": "reference",
     "props": {
-      "category": "fonts"
+      "category": "fonts",
+      "image": true
     },
     "summary": "像素风格的字体，为编程字符做了很多适配。",
     "pos": [
@@ -563,7 +571,8 @@
     "tag": "ai",
     "type": "reference",
     "props": {
-      "category": "product"
+      "category": "product",
+      "image": true
     },
     "pos": [
       [11, 12],
@@ -632,7 +641,8 @@
     "tag": "toolkit",
     "type": "reference",
     "props": {
-      "category": "performance"
+      "category": "performance",
+      "image": true
     },
     "pos": [
       [13, 14],
@@ -645,7 +655,8 @@
     "tag": "cool",
     "type": "reference",
     "props": {
-      "category": "game"
+      "category": "game",
+      "image": true
     },
     "pos": [
       [13, 14],
@@ -1014,7 +1025,7 @@
     "props": {
       "horizontal": true
     },
-    "summary": "关于 [[Web-Components]] 讨论，虽然目前 React 类似框架是主流，但是还是给了它很高的预期，主要是现阶段的 [[SSR]] 等问题都有大公司在推出框架解决，比如 https://github.com/github/catalyst 因为这样对这些公司来说演进的幅度更小一些。不过按照 W3C 的速度，一些 API 支持可能没有那么快。",
+    "summary": "关于 Web-Components 讨论，虽然目前 React 类似框架是主流，但是还是给了它很高的预期，主要是现阶段的 SSR 等问题都有大公司在推出框架解决，比如 https://github.com/github/catalyst 因为这样对这些公司来说演进的幅度更小一些。不过按照 W3C 的速度，一些 API 支持可能没有那么快。",
     "pos": [
       [21, 22],
       [5, 7]
@@ -1026,7 +1037,8 @@
     "tag": "cool",
     "type": "reference",
     "props": {
-      "category": "product"
+      "category": "product",
+      "image": true
     },
     "pos": [
       [22, 23],
@@ -1054,7 +1066,8 @@
     "type": "reference",
     "summary": "Window 平台上的。Mac 上的有 https://github.com/keycastr/keycastr 录制视频教程时十分有用",
     "props": {
-      "category": "product"
+      "category": "product",
+      "image": true
     },
     "pos": [
       [22, 23],
@@ -1323,7 +1336,8 @@
     "tag": "resource",
     "type": "reference",
     "props": {
-      "category": "performance"
+      "category": "performance",
+      "image": true
     },
     "summary": "对仓库文件进行排名，如果是为了重构的话。可以找到优先重构的文件？",
     "pos": [
@@ -1372,7 +1386,8 @@
     "tag": "css-is-awesome",
     "type": "reference",
     "props": {
-      "category": "document"
+      "category": "document",
+      "image": true
     },
     "summary": "figma 中 grid 的使用例子",
     "pos": [
@@ -1665,7 +1680,8 @@
     "tag": "product",
     "type": "reference",
     "props": {
-      "category": "map"
+      "category": "map",
+      "image": true
     },
     "pos": [
       [33, 34],
@@ -1678,7 +1694,8 @@
     "tag": "resource",
     "type": "reference",
     "props": {
-      "category": "toolkit"
+      "category": "toolkit",
+      "image": true
     },
     "pos": [
       [33, 34],
@@ -1705,7 +1722,8 @@
     "type": "reference",
     "summary": "PWA 的应用，已经看起来和真的没有什么区别了",
     "props": {
-      "category": "pwa"
+      "category": "pwa",
+      "image": true
     },
     "pos": [
       [34, 35],
@@ -1803,7 +1821,8 @@
     "tag": "resource",
     "summary": "类似 threejs-fiber 的 vue 版本",
     "props": {
-      "category": "threejs"
+      "category": "threejs",
+      "image": true
     },
     "pos": [
       [35, 36],
@@ -1831,7 +1850,8 @@
     "tag": "toolkit",
     "summary": "在 twitter 上找是否有人分享过了当前页面的链接。",
     "props": {
-      "category": "ext"
+      "category": "ext",
+      "image": true
     },
     "pos": [
       [35, 36],

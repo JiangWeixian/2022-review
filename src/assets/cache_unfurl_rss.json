@@ -15,7 +15,6 @@
         2
       ]
     ],
-    "id": 1,
     "meta": {
       "title": "Colors – Radix UI",
       "description": "An open-source color system for designing beautiful, accessible websites and apps.",
@@ -52,7 +51,6 @@
         3
       ]
     ],
-    "id": 2,
     "meta": {
       "twitter_card": {
         "card": "summary_large_image",
@@ -104,7 +102,6 @@
         4
       ]
     ],
-    "id": 3,
     "meta": {
       "title": "Goodbye, Clean Code — Overreacted",
       "description": "Let clean code guide you. Then let it go.",
@@ -120,7 +117,11 @@
         "description": "Let clean code guide you. Then let it go."
       },
       "favicon": "https://overreacted.io/favicon-32x32.png?v=8c19a894ebc3f54d282a8f2418cf5398"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 29,
@@ -137,12 +138,15 @@
         6
       ]
     ],
-    "id": 4,
     "meta": {
       "title": "Pokémon Cards CSS Holographic Effect",
       "description": "An exploration of what's possible with CSS for Pokemon Cards, simeydotme (Simon Goellner)",
       "favicon": "https://deck-24abcd.netlify.app/favicon.png"
-    }
+    },
+    "size": [
+      2,
+      2
+    ]
   },
   {
     "week": 29,
@@ -160,7 +164,6 @@
       ]
     ],
     "summary": "如何设计一个右键 menu ，很多时候借鉴了 mac 设计思路。有几个设计的很好: \n - 比如在二级菜单切换时，保证上一次三级菜单显示。提到了安全三角的概念。\n - 加入快捷键进行导航和三级菜单选择。\n - 禁用二级三级菜单动画看起来效果不错。",
-    "id": 5,
     "meta": {
       "title": "Building like it's 1984: A comprehensive guide to creating intuitive context menus - Height",
       "open_graph": {
@@ -182,7 +185,11 @@
       },
       "favicon": "https://height.app/a/statics/assets/favicon-ZBAA3W6E.png",
       "cover": "https://height-blog.ghost.io/content/images/2022/01/blog-post-contextMenu-1.png"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 29,
@@ -190,8 +197,7 @@
     "tag": "ai",
     "type": "reference",
     "props": {
-      "category": "document",
-      "image": true
+      "category": "document"
     },
     "pos": [
       [
@@ -200,10 +206,9 @@
       ],
       [
         1,
-        3
+        2
       ]
     ],
-    "id": 6,
     "meta": {
       "open_graph": {
         "title": "元素法典——Novel AI 元素魔法全收录",
@@ -232,16 +237,15 @@
     },
     "pos": [
       [
-        3,
-        5
+        2,
+        4
       ],
       [
-        1,
-        2
+        2,
+        3
       ]
     ],
     "summary": "工程化你的生活。有点类似用 OKR 来管理你的生活  \n - 我有点从其中如何学习到了如何使用 OKR。首先 OKR 会有个小目标，以及数值化的这个目标，比如我要到达 xx。通常情况下，会在月末打分。但是其中缺少了很关键的步骤就是，完成这个数值化目标你需要把实现它的步骤拆分为若干小步骤，细节来说就是，你每天要干点什么，保证进度。工作上比较难的事，实现的 OKR 中间的步骤会比较不明确，有可能你像是无头苍蝇来实现这个目标。\n - 其实 OKR 的 life 版本也是这个思路，但是会比较容易点，因为健身，学习这些目标（我只是举例）都比较明确。你可以通过我每周要进行多少次健身，看多少书来确定进度，也就是说 [[routine]] 非常重要。积少成多总是会实现的。文中介绍了一个非常重要的步骤，就是每天的 review 打分。提升自己的进度。  ",
-    "id": 7,
     "meta": {
       "description": "找到你不为之焦虑的路，或许可以试试从你的习惯开始。",
       "author": "fonter",
@@ -272,7 +276,11 @@
       "title": "工程化你的习惯",
       "favicon": "https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico",
       "cover": "http://mmbiz.qpic.cn/mmbiz_jpg/8qCNluNm86WFHK2VDwIjQTSsOLmeEjYA3OicJYmB0d0clZQmvL2Pv5tA6RNtH0EzoVRBy1Skicyytve0dcRnfDxQ/0?wx_fmt=jpeg"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 29,
@@ -286,11 +294,10 @@
         4
       ],
       [
-        2,
-        3
+        1,
+        2
       ]
     ],
-    "id": 8,
     "meta": {
       "title": "turbopack",
       "twitter_card": {
@@ -336,7 +343,6 @@
         5
       ]
     ],
-    "id": 9,
     "meta": {
       "title": "State of CSS 2022",
       "description": "Web styling features of today and tomorrow, as seen at Google IO 2022, plus some extras.",
@@ -374,8 +380,7 @@
     "type": "reference",
     "summary": "支持在分享链接中如何跳转到复制的内容。比之前调整到标题力度要更小一点。",
     "props": {
-      "category": "tutorial",
-      "image": true
+      "category": "tutorial"
     },
     "pos": [
       [
@@ -384,10 +389,9 @@
       ],
       [
         5,
-        7
+        6
       ]
     ],
-    "id": 10,
     "meta": {
       "title": "Scroll to Text Fragments - Jim Nielsen’s Blog",
       "author": "p-author",
@@ -420,15 +424,14 @@
     "type": "announcement",
     "pos": [
       [
-        4,
-        5
+        3,
+        4
       ],
       [
-        2,
-        3
+        6,
+        7
       ]
     ],
-    "id": 11,
     "meta": {
       "title": "nextjs 13",
       "twitter_card": {
@@ -465,11 +468,10 @@
         5
       ],
       [
-        3,
-        4
+        1,
+        2
       ]
     ],
-    "id": 12,
     "meta": {
       "title": "Limboy",
       "favicon": "https://limboy.me/assets/favicon.png"
@@ -490,11 +492,10 @@
         5
       ],
       [
-        4,
-        5
+        2,
+        3
       ]
     ],
-    "id": 13,
     "meta": {
       "title": "pi",
       "open_graph": {
@@ -536,11 +537,10 @@
         6
       ],
       [
-        5,
-        6
+        3,
+        4
       ]
     ],
-    "id": 14,
     "meta": {
       "twitter_card": {
         "description": "The Dirty Work Theory: The lamentable work that many people avoid are great places to look for high impact, low hanging fruit.",
@@ -574,7 +574,11 @@
       "description": "The Dirty Work Theory: The lamentable work that many people avoid are great places to look for high impact, low hanging fruit.",
       "favicon": "https://staysaasy.com/favicon.ico",
       "cover": "https://staysaasy.com/assets/template/stay-saasy-black.jpg"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 28,
@@ -587,15 +591,14 @@
     },
     "pos": [
       [
-        5,
-        6
+        4,
+        5
       ],
       [
-        1,
-        3
+        4,
+        6
       ]
     ],
-    "id": 15,
     "meta": {
       "open_graph": {
         "title": "Books people (re)read",
@@ -632,7 +635,6 @@
         7
       ]
     ],
-    "id": 16,
     "meta": {
       "title": "SSR, Streaming, and CSS-in-JS",
       "author": "Shu Ding",
@@ -661,7 +663,11 @@
       },
       "favicon": "https://shud.in/favicon.ico",
       "cover": "https://shud-og.vercel.app/api/og?title=SSR,%20Streaming,%20and%20CSS-in-JS."
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 28,
@@ -678,11 +684,10 @@
         6
       ],
       [
-        3,
-        4
+        1,
+        2
       ]
     ],
-    "id": 17,
     "meta": {
       "title": "prompt",
       "keywords": [
@@ -720,11 +725,10 @@
         6
       ],
       [
-        4,
-        5
+        2,
+        3
       ]
     ],
-    "id": 18,
     "meta": {
       "title": "2019 柳暗花明",
       "open_graph": {
@@ -774,15 +778,14 @@
     },
     "pos": [
       [
-        6,
-        7
+        5,
+        6
       ],
       [
-        1,
-        3
+        4,
+        6
       ]
     ],
-    "id": 19,
     "meta": {
       "title": "Website Fidelity - Jim Nielsen’s Blog",
       "author": "p-author",
@@ -805,7 +808,11 @@
       },
       "favicon": "https://blog.jim-nielsen.com/favicon.ico",
       "cover": "https://blog.jim-nielsen.com/assets/img/twitter-card.png"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 27,
@@ -822,11 +829,10 @@
         7
       ],
       [
-        3,
-        4
+        1,
+        2
       ]
     ],
-    "id": 20,
     "meta": {
       "title": "模仿陷阱",
       "open_graph": {
@@ -861,11 +867,10 @@
         7
       ],
       [
-        4,
-        5
+        2,
+        3
       ]
     ],
-    "id": 21,
     "meta": {
       "title": "Problems with the Magic Zero · Issue #221 · semver/semver · GitHub",
       "description": "The \"anything may change at any time\" nature of a leading zero major version is somewhat disruptive for authors who may feel intimidated at the perceived commitment involved in a 1.0.0 release. We may all have see The Light, and realized...",
@@ -914,11 +919,10 @@
         8
       ],
       [
-        5,
-        6
+        3,
+        4
       ]
     ],
-    "id": 22,
     "meta": {
       "title": "Delightful UI Animations With Shared Element Transitions API (Part 2) — Smashing Magazine",
       "description": "In this article, Adrian Bece will show how to create same-document page transitions for Single Page Apps using Shared Element Transitions API and check out its future implementation and potential for creating cross-document transitions in Multi-Page Apps.",
@@ -964,7 +968,11 @@
       },
       "favicon": "https://www.smashingmagazine.com/images/favicon/favicon.svg",
       "cover": "https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/24c75fda-847f-4fc5-b9c2-9118523bda6b/ui-animations-shared-element-transitions-api.jpg"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 27,
@@ -981,11 +989,10 @@
         7
       ],
       [
-        6,
-        7
+        4,
+        5
       ]
     ],
-    "id": 23,
     "meta": {
       "title": "HTML Color Names",
       "open_graph": {
@@ -1014,15 +1021,14 @@
     },
     "pos": [
       [
-        7,
-        8
+        6,
+        7
       ],
       [
-        1,
-        3
+        5,
+        7
       ]
     ],
-    "id": 24,
     "meta": {
       "title": "New patterns for amazing apps",
       "description": "This blog post announces a new collection of patterns for amazing apps, including clipboard patterns, file patterns, and advanced app patterns.",
@@ -1068,11 +1074,10 @@
         8
       ],
       [
-        3,
-        5
+        1,
+        3
       ]
     ],
-    "id": 25,
     "meta": {
       "twitter_card": {
         "card": "summary_large_image",
@@ -1094,7 +1099,11 @@
       "title": "Behind the feature: find and replace",
       "favicon": "https://static.figma.com/app/icon/1/favicon.svg",
       "cover": "https://cdn.sanity.io/images/599r6htc/localized/4bdef980a683245a8e218ec905cae8cb0f230829-2120x1000.png?w=1200&q=70&fit=max&auto=format"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 27,
@@ -1103,15 +1112,14 @@
     "type": "iframe",
     "pos": [
       [
-        8,
-        10
+        7,
+        9
       ],
       [
-        1,
-        3
+        4,
+        6
       ]
     ],
-    "id": 26,
     "meta": {
       "title": "CSS Mask Transition | Demo 1 | Codrops",
       "description": "Experimental demos of the tutorial on how to use CSS Masks for creating interesting looking slide transitions",
@@ -1125,7 +1133,11 @@
       ],
       "author": "Robin Delaporte for Codrops",
       "favicon": "https://tympanus.net/Tutorials/CSSMaskTransition/favicon.ico"
-    }
+    },
+    "size": [
+      2,
+      2
+    ]
   },
   {
     "week": 26,
@@ -1133,20 +1145,18 @@
     "tag": "product",
     "type": "reference",
     "props": {
-      "category": "collections",
-      "image": true
+      "category": "collections"
     },
     "pos": [
       [
-        8,
-        9
+        7,
+        8
       ],
       [
-        3,
-        5
+        6,
+        7
       ]
     ],
-    "id": 27,
     "meta": {
       "description": "Explore infinite canvas tools that work the way we think",
       "open_graph": {
@@ -1183,15 +1193,14 @@
     "summary": "这里的说法，JSX 或者 HTML 元素在 GFM 其实是不会被渲染的。",
     "pos": [
       [
-        7,
-        8
+        8,
+        9
       ],
       [
-        6,
-        7
+        1,
+        2
       ]
     ],
-    "id": 28,
     "meta": {
       "title": "[mdx-loader] How to use HTML in markdown (original: how to bypass web components in markdown files?) · Discussion #2114 · mdx-js/mdx · GitHub",
       "description": "[mdx-loader] How to use HTML in markdown (original: how to bypass web components in markdown files?)",
@@ -1236,11 +1245,10 @@
         9
       ],
       [
-        5,
-        6
+        2,
+        3
       ]
     ],
-    "id": 29,
     "meta": {
       "description": "Search across a half million git repos. Search by regular expression.",
       "title": "grep.app",
@@ -1253,20 +1261,18 @@
     "tag": "resource",
     "type": "reference",
     "props": {
-      "category": "cool",
-      "image": true
+      "category": "cool"
     },
     "pos": [
       [
-        9,
-        10
+        8,
+        9
       ],
       [
         3,
-        5
+        4
       ]
     ],
-    "id": 30,
     "meta": {
       "title": "GitHub - Rezmason/matrix: matrix (web-based green code rain, made with love)",
       "description": "matrix (web-based green code rain, made with love) - GitHub - Rezmason/matrix: matrix (web-based green code rain, made with love)",
@@ -1313,7 +1319,6 @@
         7
       ]
     ],
-    "id": 31,
     "meta": {
       "title": "Who Is In Space",
       "open_graph": {
@@ -1358,11 +1363,10 @@
         10
       ],
       [
-        5,
-        6
+        1,
+        2
       ]
     ],
-    "id": 32,
     "meta": {
       "title": "Someone is pretending to be me.",
       "description": "One random day - someone spills the beans. They were picked to impersonate me and get a job using my information.",
@@ -1421,11 +1425,10 @@
         11
       ],
       [
-        6,
-        7
+        2,
+        3
       ]
     ],
-    "id": 33,
     "meta": {
       "title": "GitHub - t-mart/kill-sticky: Bookmarklet to remove sticky elements and restore scrolling to web pages!",
       "description": "Bookmarklet to remove sticky elements and restore scrolling to web pages! - GitHub - t-mart/kill-sticky: Bookmarklet to remove sticky elements and restore scrolling to web pages!",
@@ -1456,7 +1459,11 @@
       },
       "favicon": "https://github.githubassets.com/favicons/favicon.svg",
       "cover": "https://opengraph.githubassets.com/50ee1966fcb98fc7ab3d1233e4f046709f6741bc8034f89988dc0b1a451f5c3b/t-mart/kill-sticky"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 25,
@@ -1469,15 +1476,14 @@
     },
     "pos": [
       [
-        10,
-        11
+        9,
+        10
       ],
       [
-        1,
-        2
+        3,
+        4
       ]
     ],
-    "id": 34,
     "meta": {
       "title": "resumability",
       "description": "You don’t need a framework for everything, but if you use one, this article will help you use it in the most performant way.",
@@ -1528,20 +1534,18 @@
     "tag": "toolkit",
     "type": "reference",
     "props": {
-      "category": "typescript",
-      "image": true
+      "category": "typescript"
     },
     "pos": [
       [
-        10,
-        11
+        9,
+        10
       ],
       [
-        2,
-        4
+        4,
+        5
       ]
     ],
-    "id": 35,
     "meta": {
       "title": "GitHub - ronami/HypeScript: 🐬 A simplified implementation of TypeScript's type system written in TypeScript's type system",
       "description": "🐬 A simplified implementation of TypeScript's type system written in TypeScript's type system - GitHub - ronami/HypeScript: 🐬 A simplified implementation of TypeScript's type system written in TypeScript's type system",
@@ -1581,20 +1585,18 @@
     "type": "reference",
     "summary": "WebGL 实现的动画效果",
     "props": {
-      "category": "threejs",
-      "image": true
+      "category": "threejs"
     },
     "pos": [
       [
-        10,
-        11
+        9,
+        10
       ],
       [
-        4,
+        5,
         6
       ]
     ],
-    "id": 36,
     "meta": {
       "title": "Michal Zalobny - GLSL Image Transitions",
       "description": "Michal Zalobny portfolio 2022 WebGL & GLSL",
@@ -1628,15 +1630,14 @@
     },
     "pos": [
       [
-        11,
-        12
+        9,
+        10
       ],
       [
-        1,
-        2
+        6,
+        7
       ]
     ],
-    "id": 37,
     "meta": {
       "title": "7 tools for visualizing a codebase | by Ming | Medium",
       "twitter_card": {
@@ -1693,15 +1694,14 @@
     },
     "pos": [
       [
-        11,
-        12
+        10,
+        11
       ],
       [
-        2,
-        3
+        1,
+        2
       ]
     ],
-    "id": 38,
     "meta": {}
   },
   {
@@ -1712,15 +1712,14 @@
     "summary": "slidev 做一样事情的框架，主要目的就是对开发友好的 PPT。",
     "pos": [
       [
-        11,
-        12
+        10,
+        11
       ],
       [
-        3,
-        4
+        2,
+        3
       ]
     ],
-    "id": 39,
     "meta": {
       "title": "GitHub - hakimel/reveal.js: The HTML Presentation Framework",
       "description": "The HTML Presentation Framework. Contribute to hakimel/reveal.js development by creating an account on GitHub.",
@@ -1759,15 +1758,14 @@
     "title": "灵动岛可以养宠物了",
     "pos": [
       [
-        11,
-        12
+        10,
+        11
       ],
       [
-        4,
-        5
+        3,
+        4
       ]
     ],
-    "id": 40,
     "meta": {
       "open_graph": {
         "site_name": "Twitter",
@@ -1793,20 +1791,18 @@
     "type": "reference",
     "summary": "使用 stable-diffusion 生成 blender 纹理，ai 生图比较实际的应用。",
     "props": {
-      "category": "blender",
-      "image": true
+      "category": "blender"
     },
     "pos": [
       [
-        11,
-        12
+        10,
+        11
       ],
       [
-        5,
-        7
+        4,
+        5
       ]
     ],
-    "id": 41,
     "meta": {
       "title": "GitHub - carson-katri/dream-textures: Stable Diffusion built-in to the Blender shader editor",
       "description": "Stable Diffusion built-in to the Blender shader editor - GitHub - carson-katri/dream-textures: Stable Diffusion built-in to the Blender shader editor",
@@ -1843,21 +1839,19 @@
     "tag": "resource",
     "type": "reference",
     "props": {
-      "category": "fonts",
-      "image": true
+      "category": "fonts"
     },
     "summary": "像素风格的字体，为编程字符做了很多适配。",
     "pos": [
       [
-        12,
-        13
+        10,
+        11
       ],
       [
-        1,
-        3
+        5,
+        6
       ]
     ],
-    "id": 42,
     "meta": {
       "title": "GitHub - carson-katri/dream-textures: Stable Diffusion built-in to the Blender shader editor",
       "description": "Stable Diffusion built-in to the Blender shader editor - GitHub - carson-katri/dream-textures: Stable Diffusion built-in to the Blender shader editor",
@@ -1895,15 +1889,14 @@
     "type": "bg",
     "pos": [
       [
-        12,
-        13
+        10,
+        11
       ],
       [
-        3,
-        4
+        6,
+        7
       ]
     ],
-    "id": 43,
     "meta": {
       "title": "Animal & Pets Illustrations | DrawKit",
       "description": "25 vector illustrations of dogs, cats, hamsters, guinea pigs, birds, rabbits, goldfish and more",
@@ -1942,15 +1935,14 @@
     "summary": "AI 是否会导致失业。作者认为这是同步进化的，AI 会进化，人也会。会逐渐适应。",
     "pos": [
       [
-        12,
-        13
+        11,
+        12
       ],
       [
-        4,
-        6
+        1,
+        3
       ]
     ],
-    "id": 44,
     "meta": {
       "title": " AI 会抢人类的饭碗吗？ - @Lenciel",
       "author": "Lenciel",
@@ -1970,7 +1962,11 @@
         ]
       },
       "favicon": "https://cdn.lenciel.com/favicon-16x16.png"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 23,
@@ -1978,20 +1974,18 @@
     "tag": "ai",
     "type": "reference",
     "props": {
-      "category": "product",
-      "image": true
+      "category": "product"
     },
     "pos": [
       [
-        13,
-        14
+        11,
+        12
       ],
       [
-        1,
-        3
+        3,
+        4
       ]
     ],
-    "id": 45,
     "meta": {
       "title": "GitHub - divamgupta/diffusionbee-stable-diffusion-ui: Diffusion Bee is the easiest way to run Stable Diffusion locally on your M1 Mac. Comes with a one-click installer. No dependencies or technical knowledge needed.",
       "description": "Diffusion Bee is the easiest way to run Stable Diffusion locally on your M1 Mac. Comes with a one-click installer. No dependencies or technical knowledge needed. - GitHub - divamgupta/diffusionbee-stable-diffusion-ui: Diffusion Bee is the easiest way to run Stable Diffusion locally on your M1 Mac. Comes with a one-click installer. No dependencies or technical knowledge needed.",
@@ -2032,15 +2026,14 @@
     "summary": "使用原生 TSC 查看什么让项目变得更慢。",
     "pos": [
       [
-        12,
-        13
+        11,
+        12
       ],
       [
-        6,
-        7
+        4,
+        5
       ]
     ],
-    "id": 46,
     "meta": {
       "title": "What's TypeScript compiling? Use a treemap to find out.",
       "description": "Effective TypeScript: What's TypeScript compiling? Use a treemap to find out.",
@@ -2071,19 +2064,22 @@
     "type": "iframe",
     "pos": [
       [
-        13,
-        15
+        11,
+        13
       ],
       [
-        3,
-        5
+        5,
+        7
       ]
     ],
-    "id": 47,
     "meta": {
       "title": "Literature Clock",
       "favicon": "https://literature-clock.jenevoldsen.com/favicon.ico"
-    }
+    },
+    "size": [
+      2,
+      2
+    ]
   },
   {
     "week": 23,
@@ -2093,15 +2089,14 @@
     "summary": "最短的 URL，试试在浏览器输入 http://ai",
     "pos": [
       [
-        13,
-        14
+        12,
+        13
       ],
       [
-        5,
-        6
+        1,
+        2
       ]
     ],
-    "id": 48,
     "meta": {
       "title": "Shortest URLs on the Internet | Hacker News",
       "favicon": "https://news.ycombinator.com/favicon.ico"
@@ -2114,20 +2109,23 @@
     "type": "iframe",
     "pos": [
       [
-        14,
-        16
+        12,
+        14
       ],
       [
-        1,
-        3
+        2,
+        4
       ]
     ],
-    "id": 49,
     "meta": {
       "title": "Living Worlds in HTML5",
       "author": "Joseph Huckaby",
       "favicon": "http://www.effectgames.com/favicon.ico"
-    }
+    },
+    "size": [
+      2,
+      2
+    ]
   },
   {
     "week": 23,
@@ -2140,15 +2138,14 @@
     "summary": "realm 与 iframe 不同的 JS 沙盒实现方式。特点是更加的灵活（不需要 iframe 元素）",
     "pos": [
       [
-        13,
-        15
+        12,
+        14
       ],
       [
-        6,
-        7
+        4,
+        5
       ]
     ],
-    "id": 50,
     "meta": {
       "description": "最新提案！",
       "author": "ConardLi",
@@ -2179,7 +2176,11 @@
       "title": "比 eval 和 iframe 更强的新一代 JavaScript 沙箱！",
       "favicon": "https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico",
       "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/zPh0erYjkib37O1X3XIzKssh6a7hRwulryS9Gk7bGMWpLh1yOWDichU7Xib5yeIdU7U1qtSQDtial2bksR5ib9fdysA/0?wx_fmt=jpeg"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 23,
@@ -2187,20 +2188,18 @@
     "tag": "toolkit",
     "type": "reference",
     "props": {
-      "category": "performance",
-      "image": true
+      "category": "performance"
     },
     "pos": [
       [
-        15,
-        16
+        13,
+        14
       ],
       [
-        3,
-        5
+        5,
+        6
       ]
     ],
-    "id": 51,
     "meta": {
       "title": "GitHub - facebook/memlab: A framework for finding JavaScript memory leaks and analyzing heap snapshots",
       "description": "A framework for finding JavaScript memory leaks and analyzing heap snapshots - GitHub - facebook/memlab: A framework for finding JavaScript memory leaks and analyzing heap snapshots",
@@ -2239,20 +2238,18 @@
     "tag": "cool",
     "type": "reference",
     "props": {
-      "category": "game",
-      "image": true
+      "category": "game"
     },
     "pos": [
       [
-        15,
-        16
+        13,
+        14
       ],
       [
-        5,
+        6,
         7
       ]
     ],
-    "id": 52,
     "meta": {
       "title": "GitHub - mantou132/nesbox: Online multiplayer NES(FC) games",
       "description": "Online multiplayer NES(FC) games. Contribute to mantou132/nesbox development by creating an account on GitHub.",
@@ -2293,15 +2290,14 @@
     "summary": "官方 CLI 插件，可视化 Issue PR 等",
     "pos": [
       [
-        14,
-        15
+        13,
+        14
       ],
       [
-        5,
-        6
+        1,
+        2
       ]
     ],
-    "id": 53,
     "meta": {
       "title": "GitHub - dlvhdr/gh-dash: A beautiful CLI dashboard for GitHub 🚀",
       "description": "A beautiful CLI dashboard for GitHub 🚀 . Contribute to dlvhdr/gh-dash development by creating an account on GitHub.",
@@ -2343,15 +2339,14 @@
     },
     "pos": [
       [
-        16,
-        17
+        14,
+        15
       ],
       [
         1,
         3
       ]
     ],
-    "id": 54,
     "meta": {
       "title": "Rectangles",
       "description": "Visualize your day as 144 rectangles, where each rectangle represents 10 minutes.",
@@ -2368,7 +2363,11 @@
       },
       "favicon": "https://rectangles.app/assets/favicon.png",
       "cover": "https://rectangles.app/assets/apple-touch-icon.png"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 22,
@@ -2381,15 +2380,14 @@
     "type": "announcement",
     "pos": [
       [
-        16,
-        17
+        14,
+        15
       ],
       [
         3,
-        4
+        5
       ]
     ],
-    "id": 55,
     "meta": {
       "author": "Alberto Romero",
       "open_graph": {
@@ -2430,19 +2428,22 @@
     },
     "pos": [
       [
-        16,
-        17
+        14,
+        15
       ],
       [
-        4,
-        6
+        5,
+        7
       ]
     ],
-    "id": 56,
     "meta": {
       "title": "AI 淘金热消逝，人工智能的黄金时代刚开始丨TECH TUESDAY",
       "favicon": "https://www.latepost.com/favicon.ico"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 22,
@@ -2452,15 +2453,14 @@
     "summary": "在前端领域一个很喜欢的作者，在 Remix 工作过一段时间，现在离开要开始新的路程了。可以很清楚介绍了作为他这种角色，在公司需要承担什么工作。和大多数国内公司一致。",
     "pos": [
       [
-        16,
-        18
+        15,
+        17
       ],
       [
-        6,
-        7
+        1,
+        2
       ]
     ],
-    "id": 57,
     "meta": {
       "title": "A review of my time at Remix",
       "description": "As I move on to my next adventure, I want to take this opportunity to review what I accomplished while at Remix.",
@@ -2494,7 +2494,11 @@
       },
       "favicon": "https://kentcdodds.com/favicon.ico",
       "cover": "https://kentcdodds.com/img/social?type=2&title=A+review+of+my+time+at+Remix&preTitle=Check+out+this+article&img=unsplash%2Fphoto-1487640228478-7a32e30a9e40&url=kentcdodds.com%2Fblog%2Fa-review-of-my-time-at-remix"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 22,
@@ -2504,15 +2508,14 @@
     "summary": "可以说是关于独立开发者宝藏级别的文章了，统一分析了做了独立开发者能够实现独立的方式，以及在这个领域比较出名的人。并给予了一定的建议（在文章的论述条件下是成立的）。万变不离其宗，让别人为你的专业付费，当然你可能需要尝试更多东西找到你的专业。",
     "pos": [
       [
-        17,
-        19
+        15,
+        17
       ],
       [
-        1,
-        2
+        2,
+        3
       ]
     ],
-    "id": 58,
     "meta": {
       "title": "Becoming a Full-Time Creator as a Software Engineer: Controversial Advice - The Pragmatic Engineer",
       "description": "I'm a full-time creator. With remote work becoming more common in tech, I get more messages from people asking: how can they do what I do?",
@@ -2551,7 +2554,11 @@
       },
       "favicon": "https://blog.pragmaticengineer.com/favicon.png",
       "cover": "https://blog.pragmaticengineer.com/content/images/2022/04/Screenshot-2022-04-08-at-17.08.24.png"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 22,
@@ -2560,15 +2567,14 @@
     "type": "bg",
     "pos": [
       [
-        17,
-        18
+        15,
+        16
       ],
       [
-        2,
-        3
+        3,
+        4
       ]
     ],
-    "id": 59,
     "meta": {
       "title": "Mutant Standard - Demo",
       "description": "A new kind of emoji set. Mutant Standard breaks the traditional conventions of emoji to give you more inclusivity, choice and freedom.",
@@ -2602,15 +2608,14 @@
     "type": "bg",
     "pos": [
       [
-        17,
-        18
+        15,
+        16
       ],
       [
         3,
         4
       ]
     ],
-    "id": 60,
     "meta": {
       "title": "DJI Mavic 3 Flies Over The Top Of Mount Everest At 30,292 Ft",
       "description": "Not the first time that we've seen DJI drones utilized at great altitudes, but this footage of the DJI Mavic 3 flying above the peak of Mount Everest...",
@@ -2687,15 +2692,14 @@
     "type": "comment",
     "pos": [
       [
-        17,
-        18
+        15,
+        16
       ],
       [
         4,
         5
       ]
     ],
-    "id": 61,
     "meta": {
       "title": "Facebook has started to encrypt links to counter privacy-improving URL Stripping - gHacks Tech News",
       "description": "Facebook has started to use a different URL scheme for site links to combat URL stripping technologies that browsers use to improve privacy and prevent user tracking.",
@@ -2752,15 +2756,14 @@
     "type": "comment",
     "pos": [
       [
-        17,
-        18
+        15,
+        16
       ],
       [
         5,
         6
       ]
     ],
-    "id": 62,
     "meta": {
       "title": "Default Exports in JavaScript Modules Are Terrible - Lloyd Atkinson",
       "description": "Default exports lead to mismatched and confusing names. Named exports should be used instead.",
@@ -2820,15 +2823,14 @@
     "type": "twitter_share",
     "pos": [
       [
-        18,
-        20
+        15,
+        17
       ],
       [
-        2,
-        3
+        6,
+        7
       ]
     ],
-    "id": 63,
     "meta": {
       "title": "An animated product demo in 34 lines of code.",
       "description": "We'll build a cool product demo using some simple techniques and hardly any code.",
@@ -2847,7 +2849,11 @@
       },
       "favicon": "https://blog.pointer.gg/favicon.ico",
       "cover": "https://pointer-blog.vercel.app/product-demo-15-fps.gif"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 21,
@@ -2860,15 +2866,14 @@
     },
     "pos": [
       [
-        18,
-        19
+        16,
+        17
       ],
       [
         3,
         5
       ]
     ],
-    "id": 64,
     "meta": {
       "title": "DALL·E: Introducing Outpainting",
       "open_graph": {
@@ -2908,7 +2913,11 @@
       },
       "favicon": "https://openai.com/content/images/size/w256h256/2020/09/icon-1.png",
       "cover": "https://openai.com/content/images/2022/08/outpainting-social.png"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 21,
@@ -2918,15 +2927,14 @@
     "type": "comment",
     "pos": [
       [
-        18,
-        19
+        16,
+        17
       ],
       [
         5,
         6
       ]
     ],
-    "id": 65,
     "meta": {
       "description": "可变字体「络黑」源自刘育黎的毕业设计项目「面向动态图形的中文可变字体」，由两个变量作用于笔画粗细，产生不同的对比样式。",
       "open_graph": {
@@ -2946,15 +2954,14 @@
     "type": "iframe",
     "pos": [
       [
-        19,
-        21
+        17,
+        19
       ],
       [
-        3,
-        5
+        1,
+        3
       ]
     ],
-    "id": 66,
     "meta": {
       "title": "Hex clock",
       "description": "A precise hexadecimal color clock that goes the whole 24 hours color range, from #000000 to #235959.",
@@ -2967,7 +2974,11 @@
       },
       "favicon": "https://www.jacopocolo.com/hexclock/favicon-32x32.png",
       "cover": "https://www.jacopocolo.com/hexclock/preview.jpg"
-    }
+    },
+    "size": [
+      2,
+      2
+    ]
   },
   {
     "week": 21,
@@ -2976,20 +2987,23 @@
     "type": "iframe",
     "pos": [
       [
-        19,
-        21
+        17,
+        19
       ],
       [
-        5,
-        7
+        3,
+        5
       ]
     ],
-    "id": 67,
     "meta": {
       "description": "Interactive Emitter Cursors | Marlène BRUHAT for Codrops",
       "title": "Interactive Emitter Cursors | Marlène BRUHAT for Codrops",
       "favicon": "https://tympanus.net/Development/EmitterCursor/favicon.75f06e20.ico"
-    }
+    },
+    "size": [
+      2,
+      2
+    ]
   },
   {
     "week": 21,
@@ -2999,15 +3013,14 @@
     "type": "comment",
     "pos": [
       [
-        18,
-        19
+        17,
+        18
       ],
       [
-        6,
-        7
+        5,
+        6
       ]
     ],
-    "id": 68,
     "meta": {
       "title": "Notable people",
       "favicon": "https://tjukanovt.github.io/favicon.ico"
@@ -3021,15 +3034,14 @@
     "type": "comment",
     "pos": [
       [
-        19,
-        20
+        17,
+        18
       ],
       [
-        1,
-        2
+        6,
+        7
       ]
     ],
-    "id": 69,
     "meta": {
       "title": "Why do arrays start at 0? • Buttondown",
       "description": "It's not the reason you think. No, it's not that reason either.",
@@ -3078,15 +3090,14 @@
     "type": "twitter_share",
     "pos": [
       [
-        20,
-        22
+        18,
+        19
       ],
       [
-        1,
-        2
+        5,
+        7
       ]
     ],
-    "id": 70,
     "meta": {
       "title": "Rare Natural Phenomenon Observed in Saint Petersburg - English Russia",
       "open_graph": {
@@ -3115,7 +3126,11 @@
       },
       "favicon": "https://englishrussia.com/wp-content/uploads/2019/06/icon.jpg",
       "cover": "https://englishrussia.com/wp-content/uploads/2022/03/16601979.jpg"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 20,
@@ -3125,15 +3140,14 @@
     "type": "twitter_share",
     "pos": [
       [
-        20,
-        22
+        19,
+        21
       ],
       [
-        2,
-        3
+        1,
+        2
       ]
     ],
-    "id": 71,
     "meta": {
       "title": "Don't Build Your Own Framework",
       "description": "Delusions of having the ability to solve something once and for all.",
@@ -3163,7 +3177,11 @@
       },
       "favicon": "https://dodov.dev/media/site/d0298ef0fd-1614418428/favicon-monokai.png",
       "cover": "https://dodov.dev/media/pages/blog/dont-build-your-own-framework/cd00f44ca0-1655633637/rm-rf-git-cover-1280x.png"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 20,
@@ -3172,15 +3190,14 @@
     "type": "bg",
     "pos": [
       [
-        21,
-        22
+        19,
+        20
       ],
       [
-        3,
-        4
+        2,
+        3
       ]
     ],
-    "id": 72,
     "meta": {
       "title": "\r\n            stickerlife.org \r\n        ",
       "description": "web archive of stickers in and around #infosec | project by @koronkowy | friends of @dcstickerswap | #stickerlife send stickers to stickerlife.org PO Box 3732 Seattle, WA 98124 | donate:...",
@@ -3240,15 +3257,14 @@
     },
     "pos": [
       [
-        21,
-        22
+        19,
+        20
       ],
       [
-        4,
-        5
+        2,
+        3
       ]
     ],
-    "id": 73,
     "meta": {
       "description": "收藏夹+1",
       "author": "猴子",
@@ -3288,15 +3304,14 @@
     "type": "bg",
     "pos": [
       [
-        21,
-        22
+        19,
+        20
       ],
       [
-        5,
-        6
+        3,
+        4
       ]
     ],
-    "id": 74,
     "meta": {
       "open_graph": {
         "title": "Pixel Birds (and Other Animals)",
@@ -3334,15 +3349,14 @@
     "summary": "之前看到 slidev 这个工具时候就想过为什么写 PPT 不是像 notion 那种方式，提供一些内置的布局组件，让你可以通过 nocode 的方式写 PPT。现在这个工具做了类似的事情，而且关注度很高。",
     "pos": [
       [
-        21,
-        23
+        19,
+        21
       ],
       [
-        6,
-        7
+        4,
+        5
       ]
     ],
-    "id": 75,
     "meta": {
       "title": "Gamma",
       "description": "The fast alternative to slides. Write like a doc, present like a deck.",
@@ -3373,7 +3387,11 @@
       },
       "favicon": "https://assets.website-files.com/60de2701a7b28f308f619d3d/60f0806d4319fd52f3797273_g-32.png",
       "cover": "https://cdn.gamma.app/_app_static/images/og_image_8_10_22_85e43e81bac01f83.png"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 19,
@@ -3383,15 +3401,14 @@
     "summary": "原来 scroll-snap-type 可以自动让滚动行为定位到下个你需要定位的元素（需要在下一个元素做标记）。很适合 tweet 这种场景。",
     "pos": [
       [
-        22,
-        24
+        19,
+        21
       ],
       [
-        1,
-        2
+        5,
+        6
       ]
     ],
-    "id": 76,
     "meta": {
       "title": "How I Added Scroll Snapping To My Twitter Timeline | CSS-Tricks - CSS-Tricks",
       "description": "CSS Scroll Snap allows websites to snap the web page or any other scroll container to a specific scroll position when the user performs a scrolling operation.",
@@ -3461,7 +3478,11 @@
         ]
       },
       "cover": "https://css-tricks.com/wp-json/social-image-generator/v1/image/367283"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 19,
@@ -3474,15 +3495,14 @@
     "summary": "不依靠 threejs 框架实现的 3d 效果。一个在页面上的小蜘蛛，火柴人风格。但是效果非常不错。",
     "pos": [
       [
-        22,
-        23
+        19,
+        20
       ],
       [
-        2,
-        3
+        6,
+        7
       ]
     ],
-    "id": 77,
     "meta": {
       "open_graph": {
         "site_name": "CodeSandbox",
@@ -3531,15 +3551,14 @@
     "summary": "分享了在日本做工作机会发布的网站的经历，里面的心路历程非常真实。本身是全职，空余时间来实现功能。并没有那种做出了网站之后立马火的经历，最开始也是一个小项目，长期没有收入。但是靠自己去推广，公司发布职业招聘来投钱，才一点点有收入。但是有几点铁律是不变的：\n- 用心做产品，推广广告都会有力气一些。\n - 用户反馈很重要，因为日本的招聘和其他地方不太一样，需求也不一样。\n - 宣传自己，可能不是宣传产品。写博客这些都是宣传自己的方式。  ",
     "pos": [
       [
-        22,
-        24
+        20,
+        22
       ],
       [
-        3,
-        4
+        2,
+        3
       ]
     ],
-    "id": 78,
     "meta": {
       "title": "How and why I built Japan Dev | Japan Dev",
       "description": "Japan Dev started as a list of companies I wanted to work for back in 2014.  Here's the story of how that idea morphed into a job board showcasing hundreds of Japan's best tech companies.",
@@ -3570,7 +3589,11 @@
       },
       "favicon": "https://japan-dev.com/favicon.ico",
       "cover": "https://cdn.japan-dev.com/blog_images/how-and-why-i-built-japan-dev/6.png"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 18,
@@ -3582,15 +3605,14 @@
     },
     "pos": [
       [
-        22,
-        23
+        20,
+        21
       ],
       [
-        4,
-        5
+        6,
+        7
       ]
     ],
-    "id": 79,
     "meta": {
       "twitter_card": {
         "card": "summary_large_image"
@@ -3620,15 +3642,14 @@
     "summary": "因为今年比较重要的事情是写作。写作技巧可以看看。",
     "pos": [
       [
-        22,
-        23
+        20,
+        21
       ],
       [
-        5,
-        6
+        3,
+        4
       ]
     ],
-    "id": 80,
     "meta": {
       "title": "Thread by @coolXiao on Thread Reader App – Thread Reader App",
       "description": "@coolXiao: 写作是可以改变人生的超级技能 但学校从没有好好教过我如何写作 于是我花了数百小时学习大师的写作方法 这里是我觉得最实用的10个技巧👇 1. 删掉“我认为”、“我觉得”、“我相信”等 为什么？ 你写的本来就代表你的观点，不需要再重申，另外这些词会弱化你文章的可信度 • 我觉得你会喜欢这些技巧 • 你会喜欢这些技巧 第二句比第一句好100倍 我从 Nat Eliason 那里学到这个技巧 nateliason...…",
@@ -3671,15 +3692,14 @@
     "summary": "any unknown never 区别。学到了很多。any unknown 是 top type，比如 never 是最小类型单元(bottom type)，所以任何类型和它的交际是空，联合集合是和它联合的那个类型。",
     "pos": [
       [
-        23,
-        24
+        21,
+        22
       ],
       [
-        2,
-        3
+        1,
+        2
       ]
     ],
-    "id": 81,
     "meta": {
       "description": "TypeScript 在版本 2.0 和 3.0 分别引入了 “never” 和 “unknown” 两个基本类型，在引入这两个类型之后，TypeScript 的类型系统得到了极大的完善。",
       "author": "longgeng",
@@ -3720,15 +3740,14 @@
     "summary": "在 Github 上推荐类似仓库的插件 ，会在某个仓库主页右边显示，感觉挺有用的。",
     "pos": [
       [
-        23,
-        24
+        21,
+        22
       ],
       [
-        4,
-        5
+        3,
+        4
       ]
     ],
-    "id": 82,
     "meta": {
       "title": "indexStorm - Storm the index",
       "description": "indexStorm - Most wanted projects made by the most talented team.",
@@ -3760,15 +3779,14 @@
     "summary": "有时候想知道使用的包升级之后修改了什么（出现 BUG，debug 时候使用）可以使用这个看看 diff",
     "pos": [
       [
-        23,
-        24
+        21,
+        22
       ],
       [
-        5,
-        6
+        4,
+        5
       ]
     ],
-    "id": 83,
     "meta": {
       "title": "Package Diff: mini-css-extract-plugin @  0.4.5 .. 0.6.0",
       "open_graph": {
@@ -3791,18 +3809,17 @@
     "props": {
       "horizontal": true
     },
-    "summary": "关于 Web-Components 讨论，虽然目前 React 类似框架是主流，但是还是给了它很高的预期，主要是现阶段的 SSR 等问题都有大公司在推出框架解决，比如 https://github.com/github/catalyst 因为这样对这些公司来说演进的幅度更小一些。不过按照 W3C 的速度，一些 API 支持可能没有那么快。",
+    "summary": "关于 [[Web-Components]] 讨论，虽然目前 React 类似框架是主流，但是还是给了它很高的预期，主要是现阶段的 [[SSR]] 等问题都有大公司在推出框架解决，比如 https://github.com/github/catalyst 因为这样对这些公司来说演进的幅度更小一些。不过按照 W3C 的速度，一些 API 支持可能没有那么快。",
     "pos": [
       [
-        24,
-        25
+        21,
+        22
       ],
       [
-        1,
-        3
+        5,
+        7
       ]
     ],
-    "id": 84,
     "meta": {
       "title": "Are Web Components Dead?. Recently, I published an article with a… | by Marius Bongarts | Level Up Coding",
       "twitter_card": {
@@ -3847,7 +3864,11 @@
       "author": "Marius Bongarts",
       "favicon": "https://miro.medium.com/fit/c/256/256/1*MMpkJtmeCME-6BmGNH5l8A.png",
       "cover": "https://miro.medium.com/max/1200/1*g-iH_T_gw-LQ7cmxoyoONA.jpeg"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 18,
@@ -3855,20 +3876,18 @@
     "tag": "cool",
     "type": "reference",
     "props": {
-      "category": "product",
-      "image": true
+      "category": "product"
     },
     "pos": [
       [
-        24,
-        25
+        22,
+        23
       ],
       [
-        3,
-        5
+        1,
+        2
       ]
     ],
-    "id": 85,
     "meta": {
       "title": "Txtmoji | Encrypt Text to Emojis",
       "description": "Txtmoji lets you encrypt your Text into Emojis and decrypt if you know the Password.",
@@ -3911,15 +3930,14 @@
     },
     "pos": [
       [
-        23,
-        24
+        22,
+        23
       ],
       [
-        6,
-        7
+        2,
+        3
       ]
     ],
-    "id": 86,
     "meta": {
       "title": "I replaced all our blog thumbnails using DALL·E 2 for $45: here’s what I learned | Deephaven",
       "twitter_card": {
@@ -3961,20 +3979,18 @@
     "type": "reference",
     "summary": "Window 平台上的。Mac 上的有 https://github.com/keycastr/keycastr 录制视频教程时十分有用",
     "props": {
-      "category": "product",
-      "image": true
+      "category": "product"
     },
     "pos": [
       [
-        24,
-        25
+        22,
+        23
       ],
       [
-        5,
-        7
+        3,
+        4
       ]
     ],
-    "id": 87,
     "meta": {
       "title": "GitHub - mulaRahul/keyviz: Keyviz is a free and open-source tool to visualize your keystrokes ⌨️ in real-time.",
       "description": "Keyviz is a free and open-source tool to visualize your keystrokes ⌨️ in real-time. - GitHub - mulaRahul/keyviz: Keyviz is a free and open-source tool to visualize your keystrokes ⌨️ in real-time.",
@@ -4016,15 +4032,14 @@
     },
     "pos": [
       [
-        25,
-        26
+        22,
+        23
       ],
       [
-        1,
-        2
+        4,
+        5
       ]
     ],
-    "id": 88,
     "meta": {
       "title": "CSS Scan - Chrome Web Store",
       "open_graph": {
@@ -4053,15 +4068,14 @@
     },
     "pos": [
       [
-        25,
-        26
+        22,
+        23
       ],
       [
-        2,
-        3
+        5,
+        6
       ]
     ],
-    "id": 89,
     "meta": {
       "description": "Check if your location is actually hidden.",
       "author": "z0ccc",
@@ -4093,15 +4107,14 @@
     "summary": "npm 支持了 query 的命令，语法有点像是 CSS query",
     "pos": [
       [
-        25,
-        26
+        22,
+        23
       ],
       [
-        3,
-        4
+        6,
+        7
       ]
     ],
-    "id": 90,
     "meta": {
       "title": "Introducing the new npm Dependency Selector Syntax | GitHub Changelog",
       "open_graph": {
@@ -4135,15 +4148,14 @@
     "type": "bg",
     "pos": [
       [
-        25,
-        26
+        23,
+        24
       ],
       [
-        4,
-        5
+        1,
+        2
       ]
     ],
-    "id": 91,
     "meta": {
       "twitter_card": {
         "card": "summary_large_image",
@@ -4184,15 +4196,14 @@
     "summary": "CSS 实现的手电筒效果，关键是它可以和图片交互",
     "pos": [
       [
-        25,
-        26
+        23,
+        24
       ],
       [
-        5,
-        6
+        2,
+        3
       ]
     ],
-    "id": 92,
     "meta": {
       "title": "Browser in the Dark: flashlights with CSS and canvas",
       "favicon": "https://voussoir.net/favicon.ico"
@@ -4206,15 +4217,14 @@
     "summary": "CSS 实现的手电筒效果，关键是它可以和图片交互",
     "pos": [
       [
-        25,
-        26
+        23,
+        24
       ],
       [
-        6,
-        7
+        3,
+        4
       ]
     ],
-    "id": 93,
     "meta": {
       "title": "Browser in the Dark: flashlights with CSS and canvas",
       "favicon": "https://voussoir.net/favicon.ico"
@@ -4227,16 +4237,19 @@
     "type": "iframe",
     "pos": [
       [
-        26,
-        28
+        23,
+        25
       ],
       [
-        1,
-        3
+        4,
+        6
       ]
     ],
-    "id": 94,
-    "meta": {}
+    "meta": {},
+    "size": [
+      2,
+      2
+    ]
   },
   {
     "week": 16,
@@ -4246,15 +4259,14 @@
     "summary": "HTML 居然有标签可以显示 diff 的效果",
     "pos": [
       [
-        26,
-        27
+        23,
+        24
       ],
       [
-        3,
-        4
+        6,
+        7
       ]
     ],
-    "id": 95,
     "meta": {}
   },
   {
@@ -4267,15 +4279,14 @@
     },
     "pos": [
       [
-        26,
-        27
+        24,
+        25
       ],
       [
-        4,
-        5
+        1,
+        2
       ]
     ],
-    "id": 96,
     "meta": {
       "description": "search and click.",
       "title": "    Wooshy\n",
@@ -4290,16 +4301,19 @@
     "summary": "原来一些外包机构是这么工作的。可以向他们购买时间开发（比如 40 小时），他们会评估开发工作所需要的时间。之后就是拆解任务，可能会在固定时间汇报任务的情况，以及开发进度。\n - 评估时间很重要 \n - 外包机构比个人收费贵 \n - 详细的任务记录对于客户来说很重要，可以了解任务进度。  ",
     "pos": [
       [
-        26,
-        28
+        24,
+        26
       ],
       [
-        5,
-        6
+        2,
+        3
       ]
     ],
-    "id": 97,
-    "meta": {}
+    "meta": {},
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 16,
@@ -4312,15 +4326,14 @@
     },
     "pos": [
       [
-        26,
-        27
+        24,
+        25
       ],
       [
-        6,
-        7
+        3,
+        4
       ]
     ],
-    "id": 98,
     "meta": {
       "author": "马大伟",
       "description": "本文是《Software Engineering at Google》的读书笔记，同时会穿插分享我对软件工程的理解。本文主要介绍软件工程中人的因素，也就是文化部分。",
@@ -4381,15 +4394,14 @@
     },
     "pos": [
       [
-        27,
-        28
+        24,
+        25
       ],
       [
-        3,
-        4
+        6,
+        7
       ]
     ],
-    "id": 99,
     "meta": {
       "title": "Emoji Kitchen Browser",
       "open_graph": {
@@ -4408,15 +4420,14 @@
     "summary": "独立开发的个人项目总结，看到了一些不错的 idea，项目价值与否与它是否帮助到了别人有关；另外，在你写项目的同时，你可以很好的提升你的编程技能",
     "pos": [
       [
-        27,
-        29
+        25,
+        27
       ],
       [
-        4,
-        5
+        1,
+        2
       ]
     ],
-    "id": 100,
     "meta": {
       "title": "I Spent 2 years Launching Tiny Projects | Tiny Projects",
       "description": "Two years ago, frustrated with a long list of unfulfilled project ideas in my phone notes, I decided to give myself one week to try each idea out in its tiniest form.",
@@ -4452,7 +4463,11 @@
       },
       "favicon": "https://tinyprojects.dev/img/favicon/favicon-16x16.png",
       "cover": "https://i.imgur.com/ow5xQtT.jpg"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 15,
@@ -4462,19 +4477,22 @@
     "summary": "写博客是否是一件有价值的事情。有人通过它获得了工作；现在视频是主流，本来应该在 30s 获得的知识，现在可能需要看 30s 的广告；但是个人认为不能一概而论，视频还是有好处的，对于一些软件教程（比如 blender）来说，一个视频或许能够讲的更加清楚。",
     "pos": [
       [
-        27,
-        29
+        25,
+        27
       ],
       [
-        6,
-        7
+        3,
+        4
       ]
     ],
-    "id": 101,
     "meta": {
       "title": "Ask HN: Is having a personal blog/brand worth it for you? | Hacker News",
       "favicon": "https://news.ycombinator.com/favicon.ico"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 15,
@@ -4484,15 +4502,14 @@
     "summary": "可以看到一些项目的收入情况",
     "pos": [
       [
-        28,
-        29
+        25,
+        26
       ],
       [
-        1,
-        2
+        4,
+        5
       ]
     ],
-    "id": 102,
     "meta": {
       "title": "Revenue Watcher",
       "description": "Curated Revenue Signals",
@@ -4508,15 +4525,14 @@
     "summary": "如何提交 PR 的建议，有几个比较有用，因为最近我发现有不好的习惯，在一个 PR 中可能会带上其他功能的修复或者实现。带上的原因也很简单  \n - 实现很简单，可能只需要修改一行代码就可以实现，所以就加上了。这是非常不好的习惯。\n - 对于 commit 记录，在使用 emoji-commit 的工具的时候我就发现了，它是基于原子 commit 的实现。安装一个 npm 以及使用相关包的 api 被分成两个 commit。这是好习惯，需要保持。\n - 除了 commit 之外，还有一个比较少被使用的是 PR 的描述。首先你肯定需要描述你干了什么（即使你有良好的 commit 记录）。如果你看到了不太好的实现（相关，不相关的话最好放在 issue 中）。可以描述一下未来应该如何修复它（个人感觉代码注释更好）。临时修复（紧急修复）最好说明出于什么理由，因为临时修复的代码可能会比较丑。",
     "pos": [
       [
-        28,
-        30
+        25,
+        27
       ],
       [
-        2,
-        3
+        5,
+        6
       ]
     ],
-    "id": 103,
     "meta": {
       "title": "How to Make Reviewers Love Your Big Pull Requests · Ilija Eftimov 👨‍🚀",
       "description": "Documenting my experiences and learnings, with the goal of helping other software engineers on their journey",
@@ -4552,7 +4568,11 @@
       "author": "Ilija Eftimov",
       "favicon": "https://ieftimov.com/favicon-16x16.png",
       "cover": "https://ieftimov.com/cards/how-to-make-reviewers-love-your-big-pull-requests.jpg"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 15,
@@ -4565,15 +4585,14 @@
     "summary": "集合随机返回图片，文字的功能",
     "pos": [
       [
-        28,
-        29
+        25,
+        26
       ],
       [
-        3,
-        4
+        6,
+        7
       ]
     ],
-    "id": 104,
     "meta": {
       "description": "Never search for placeholders again. With UI Filler, you can design content with better placeholder text and images. It’s as easy as copy & pasting, so you can build and design faster (and better). Made with ❤️ for designers & developers.",
       "title": "Sweetfont",
@@ -4597,15 +4616,14 @@
     "summary": "试着拉那根绳子，效果惊人",
     "pos": [
       [
-        28,
-        29
+        26,
+        27
       ],
       [
-        5,
-        6
+        2,
+        3
       ]
     ],
-    "id": 105,
     "meta": {
       "title": "cohost! - post from @blackle",
       "open_graph": {
@@ -4649,15 +4667,14 @@
     "summary": "教你叠各种纸飞机",
     "pos": [
       [
-        29,
-        30
+        26,
+        27
       ],
       [
-        1,
-        2
+        4,
+        5
       ]
     ],
-    "id": 106,
     "meta": {
       "title": "Fold 'N Fly » Paper Airplane Folding Instructions",
       "keywords": [
@@ -4704,15 +4721,14 @@
     "summary": "个人项目的建议，减少成本以及快乐最好。成本最少（指钱）的个人项目就是开发一个包了。之前也看到一个类似的对于项目的区别，能够赚钱的是产品，不能够赚钱就是慈善项目",
     "pos": [
       [
-        29,
-        30
+        26,
+        27
       ],
       [
-        3,
-        4
+        6,
+        7
       ]
     ],
-    "id": 107,
     "meta": {
       "title": "Side Project 成本最小化运行 | 卡瓦邦噶！",
       "open_graph": {
@@ -4754,15 +4770,14 @@
     "summary": "一个喜欢编程但是讨厌自己工作的讨论。但是我不认同评论说的小公司不尊重你的技术。因为如果你写个人项目的话，可以发现你其实很容易提高你的编程技能。",
     "pos": [
       [
-        29,
-        30
+        27,
+        28
       ],
       [
-        4,
-        5
+        1,
+        2
       ]
     ],
-    "id": 108,
     "meta": {
       "title": "Ask HN: I love programming but hate the industry. Can anyone relate? | Hacker News",
       "favicon": "https://news.ycombinator.com/favicon.ico"
@@ -4776,15 +4791,14 @@
     "summary": "SOLID 原则在 React 中应用和解释",
     "pos": [
       [
-        29,
-        30
+        27,
+        28
       ],
       [
-        5,
-        6
+        2,
+        3
       ]
     ],
-    "id": 109,
     "meta": {
       "twitter_card": {
         "images": [
@@ -4819,21 +4833,19 @@
     "tag": "resource",
     "type": "reference",
     "props": {
-      "category": "performance",
-      "image": true
+      "category": "performance"
     },
     "summary": "对仓库文件进行排名，如果是为了重构的话。可以找到优先重构的文件？",
     "pos": [
       [
-        30,
-        31
+        27,
+        28
       ],
       [
-        1,
-        3
+        3,
+        4
       ]
     ],
-    "id": 110,
     "meta": {
       "title": "GitHub - codemix/deprank: Use PageRank to find the most important files in your codebase.",
       "description": "Use PageRank to find the most important files in your codebase. - GitHub - codemix/deprank: Use PageRank to find the most important files in your codebase.",
@@ -4876,15 +4888,14 @@
     },
     "pos": [
       [
-        29,
-        30
+        27,
+        28
       ],
       [
-        6,
-        7
+        4,
+        5
       ]
     ],
-    "id": 111,
     "meta": {
       "title": "Dracula — Dark theme for 280+ apps",
       "open_graph": {
@@ -4915,19 +4926,22 @@
     "summary": "乔布斯说过一句名言：问消费者他们需要什么是没有意义的，因为他们不知道，只有当你把新事物拿到他们眼前，他们才会意识到自己需要它。他的意思就是开发未知领域，再把消费者领进去，他们会惊叹新世界是多么美妙，而你就成为这里的王者。",
     "pos": [
       [
-        30,
-        32
+        27,
+        29
       ],
       [
-        3,
-        4
+        5,
+        6
       ]
     ],
-    "id": 112,
     "meta": {
       "title": "科技爱好者周刊（第 214 期）：你的地图是错的 - 阮一峰的网络日志",
       "favicon": "http://www.ruanyifeng.com/favicon.ico"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 14,
@@ -4937,15 +4951,14 @@
     "summary": "不依赖 react-router 的路由实现",
     "pos": [
       [
-        30,
-        31
+        27,
+        28
       ],
       [
-        4,
-        5
+        6,
+        7
       ]
     ],
-    "id": 113,
     "meta": {
       "title": "react-snippets/Router.js at main · ashok-khanna/react-snippets · GitHub",
       "description": "A sample of useful snippets in React. Contribute to ashok-khanna/react-snippets development by creating an account on GitHub.",
@@ -4984,21 +4997,19 @@
     "tag": "css-is-awesome",
     "type": "reference",
     "props": {
-      "category": "document",
-      "image": true
+      "category": "document"
     },
     "summary": "figma 中 grid 的使用例子",
     "pos": [
       [
-        30,
-        31
+        28,
+        29
       ],
       [
-        5,
-        7
+        1,
+        2
       ]
     ],
-    "id": 114,
     "meta": {
       "title": "\n    The CSS behind Figma -\n    Ahmad Shadeed\n  ",
       "description": "A look at some interesting use-cases for CSS flexbox and grid in Figma app.",
@@ -5047,15 +5058,14 @@
     },
     "pos": [
       [
-        31,
-        32
+        28,
+        29
       ],
       [
-        1,
-        2
+        2,
+        3
       ]
     ],
-    "id": 115,
     "meta": {
       "title": "devaslife - YouTube",
       "description": "I'm an indie app developer based in Osaka, Japan.I'm currently living off of my own product called Inkdrop - a Markdown note-taking app (https://www.inkdrop....",
@@ -5120,15 +5130,14 @@
     "summary": "这个 Hack 的团队文化可以说是非常喜欢了。因为很喜欢这种毫无意义（可能），但是很有诚意的小惊喜。",
     "pos": [
       [
-        31,
-        32
+        28,
+        29
       ],
       [
-        4,
-        6
+        3,
+        5
       ]
     ],
-    "id": 116,
     "meta": {
       "open_graph": {
         "type": "website",
@@ -5148,7 +5157,11 @@
       "title": "We hack every Friday - Raycast Blog",
       "favicon": "https://www.raycast.com/favicon-production.png",
       "cover": "https://cdn.sanity.io/images/jqu50r9b/production/7255218af709328bbff9b39915f26d736a3d7ac3-1720x630.png?rect=260,0,1200,630&w=1200&h=630"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 13,
@@ -5161,15 +5174,14 @@
     "summary": "CSS 实现的极光效果，看起来非常棒。",
     "pos": [
       [
-        31,
-        32
+        28,
+        29
       ],
       [
-        2,
-        3
+        6,
+        7
       ]
     ],
-    "id": 117,
     "meta": {
       "title": "Holograms, light-leaks and how to build CSS-only shaders - Robb Owen",
       "description": "Get a shiny WebGL look without actually using WebGL. In this article we take a look at how CSS blend modes unleash the potential of cool compositing effects without the need for JavaScript",
@@ -5208,15 +5220,14 @@
     },
     "pos": [
       [
-        31,
-        32
+        29,
+        30
       ],
       [
-        6,
-        7
+        1,
+        2
       ]
     ],
-    "id": 118,
     "meta": {
       "title": "Software Engineering at Google",
       "description": "Description",
@@ -5230,15 +5241,14 @@
     "type": "comment",
     "pos": [
       [
-        32,
-        33
+        29,
+        30
       ],
       [
-        1,
-        2
+        2,
+        3
       ]
     ],
-    "id": 119,
     "meta": {
       "title": "Defensive CSS - Background repeat",
       "description": "This is a post on My Blog about agile frameworks.",
@@ -5269,15 +5279,14 @@
     "summary": "grid 的 marsonry 布局，目前应该是一个 draft 阶段。",
     "pos": [
       [
-        32,
-        33
+        29,
+        30
       ],
       [
-        2,
-        3
+        3,
+        4
       ]
     ],
-    "id": 120,
     "meta": {
       "keywords": [
         "css",
@@ -5312,15 +5321,14 @@
     "summary": "一个抓取 SPA 页面的方案",
     "pos": [
       [
-        32,
-        33
+        29,
+        30
       ],
       [
-        3,
-        4
+        4,
+        5
       ]
     ],
-    "id": 121,
     "meta": {
       "title": "Web Scraping via Javascript Runtime Heap Snapshots - Adrian Cooney's Blog",
       "description": "Web Scraping via Javascript Runtime Heap Snapshots",
@@ -5358,15 +5366,14 @@
     "summary": "预览社交媒体上的网页",
     "pos": [
       [
-        32,
-        33
+        29,
+        30
       ],
       [
-        4,
-        5
+        5,
+        6
       ]
     ],
-    "id": 122,
     "meta": {
       "title": "Social Share Preview - Chrome 線上應用程式商店",
       "open_graph": {
@@ -5392,15 +5399,14 @@
     "summary": "肯尼亚居然使用通话时间作为移动支付货币。",
     "pos": [
       [
-        32,
-        33
+        29,
+        30
       ],
       [
-        5,
-        6
+        6,
+        7
       ]
     ],
-    "id": 123,
     "meta": {
       "title": "How M-Pesa, Kenya’s mobile money banking, transformed the lives of the poor - Vox",
       "open_graph": {
@@ -5448,15 +5454,14 @@
     "summary": "肯尼亚居然使用通话时间作为移动支付货币。",
     "pos": [
       [
-        32,
-        33
+        30,
+        31
       ],
       [
-        6,
-        7
+        1,
+        2
       ]
     ],
-    "id": 124,
     "meta": {
       "title": "Bacteria species found in glacial ice could pose disease risk as glaciers melt from global warming",
       "open_graph": {
@@ -5496,20 +5501,23 @@
     "summary": "你不会有人偷走你的钱，但是会让人偷走你的时间。因为你觉得时间很长，可以浪费。",
     "pos": [
       [
-        33,
-        34
+        30,
+        31
       ],
       [
-        1,
-        3
+        2,
+        4
       ]
     ],
-    "id": 125,
     "meta": {
       "title": " Life Is Not Short | DKB Show",
       "description": "The most surprising thing is that you wouldn’t let anyone steal your property, but you consistently let people steal your time, which is infinitely more valuable.",
       "favicon": "https://dkb.show/favicon.ico"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 12,
@@ -5522,15 +5530,14 @@
     "summary": "屏蔽 F12，屏蔽右键的一些代码片段",
     "pos": [
       [
-        33,
-        34
+        30,
+        31
       ],
       [
-        3,
-        4
+        4,
+        5
       ]
     ],
-    "id": 126,
     "meta": {
       "title": "js禁止鼠标右键及禁止F12查看源代码 | Lenix Blog",
       "description": "js禁止鼠标右键及禁止F12查看源代码 | F12审查元素的情况下，可以随机更改代码，注入恶意JS等等，避免这种情况如下： 一、屏蔽F12 审查元素 &l",
@@ -5579,15 +5586,14 @@
     "summary": "如何在 fragment 组件上添加事件，虽然没有遇到这种需求，但是里面提到一个 css 属性 display: contents 十分有趣。能够做到只应用 child 的样式，但是忽略本身设置的样式。",
     "pos": [
       [
-        33,
-        35
+        30,
+        32
       ],
       [
-        4,
-        5
+        5,
+        6
       ]
     ],
-    "id": 127,
     "meta": {
       "author": "mebtte",
       "keywords": [
@@ -5609,7 +5615,11 @@
       "description": "[React Fragment](https://reactjs.org/docs/fragments.html) 支持**不添加额外节点**的情况下对子元素进行分组, 在文档上中 `Fragment` 的 Props 只有 `key`, 我们给 Fragment 添加任何事件监听例如 `onCli......",
       "favicon": "https://mebtte.com/6ed5faa0573b2a5a9d47232c9a71fb88.png",
       "cover": "https://mebtte.com/6ed5faa0573b2a5a9d47232c9a71fb88.png"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 12,
@@ -5621,15 +5631,14 @@
     },
     "pos": [
       [
-        33,
-        34
+        30,
+        31
       ],
       [
-        5,
-        6
+        6,
+        7
       ]
     ],
-    "id": 128,
     "meta": {
       "title": "Free Country Flags in SVG | flag-icons",
       "favicon": "https://flagicons.lipis.dev/favicon.ico"
@@ -5642,18 +5651,21 @@
     "type": "iframe",
     "pos": [
       [
-        34,
-        36
+        31,
+        33
       ],
       [
         1,
         3
       ]
     ],
-    "id": 129,
     "meta": {
       "favicon": "https://musicforprogramming.net/favicon.png"
-    }
+    },
+    "size": [
+      2,
+      2
+    ]
   },
   {
     "week": 12,
@@ -5663,15 +5675,14 @@
     "summary": "悬浮到物体上，然后将鼠标变得和目标物体一样。这个交互效果太好了。",
     "pos": [
       [
-        33,
-        34
+        31,
+        32
       ],
       [
-        6,
-        7
+        3,
+        4
       ]
     ],
-    "id": 130,
     "meta": {
       "title": "Touch-First Cursor: Round Pointers vs. Mouse Arrows ",
       "description": "Apple reinvented the mouse cursor to be 'touch-first' on the iPadOS, building on the original mouse pointer, and adding 'Pointer Magnetism' and more accessibility features. Here's a look at rounded pointers vs arrow pointers. ",
@@ -5705,15 +5716,14 @@
     },
     "pos": [
       [
-        34,
-        35
+        31,
+        32
       ],
       [
-        3,
-        4
+        4,
+        5
       ]
     ],
-    "id": 131,
     "meta": {
       "title": "Gimli",
       "description": "A Visual Studio Code extension for front-end developers.",
@@ -5742,15 +5752,14 @@
     "summary": "挺有意思的，每天一个小问题关于你身边的人。目的也是为了让你更加关心他人。",
     "pos": [
       [
-        34,
-        35
+        31,
+        32
       ],
       [
-        5,
-        6
+        6,
+        7
       ]
     ],
-    "id": 132,
     "meta": {
       "title": "AddEvent",
       "open_graph": {
@@ -5777,15 +5786,14 @@
     },
     "pos": [
       [
-        35,
-        36
+        32,
+        33
       ],
       [
-        3,
-        5
+        5,
+        7
       ]
     ],
-    "id": 133,
     "meta": {
       "title": "Patterns",
       "open_graph": {
@@ -5805,7 +5813,11 @@
       },
       "favicon": "https://www.patterns.dev/img/favicon/favicon-192x192.png?hash=b4b7ad3f7c",
       "cover": "https://patterns.dev/img/remote/Z10gc9i.jpg"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 11,
@@ -5815,15 +5827,14 @@
     "type": "announcement",
     "pos": [
       [
-        34,
-        35
+        33,
+        34
       ],
       [
-        6,
-        7
+        1,
+        2
       ]
     ],
-    "id": 134,
     "meta": {
       "open_graph": {
         "type": "website",
@@ -5865,15 +5876,14 @@
     "type": "iframe",
     "pos": [
       [
-        35,
-        37
+        32,
+        34
       ],
       [
-        5,
-        7
+        3,
+        5
       ]
     ],
-    "id": 135,
     "meta": {
       "title": "Earth Clock",
       "twitter_card": {
@@ -5900,7 +5910,11 @@
       },
       "favicon": "http://earthclock.cwandt.com/favicon.ico",
       "cover": "http://earthclock.cwandt.com/earthclock-20.11.png"
-    }
+    },
+    "size": [
+      2,
+      2
+    ]
   },
   {
     "week": 10,
@@ -5910,15 +5924,14 @@
     "summary": "现在才知道，原来 addEventListener 有第三个参数，用文中的 AbortContoller 可以控制是否移除监听事件。",
     "pos": [
       [
-        36,
-        38
+        33,
+        35
       ],
       [
-        1,
-        2
+        2,
+        3
       ]
     ],
-    "id": 136,
     "meta": {
       "title": "AbortController is your friend",
       "author": "Sam Thorogood",
@@ -5947,7 +5960,11 @@
       },
       "favicon": "https://whistlr.info/i128.png?4e605afa",
       "cover": "https://storage.googleapis.com/hwhistlr.appspot.com/og/abortcontroller-is-your-friend.jpeg"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 10,
@@ -5957,15 +5974,14 @@
     "summary": "有人真的在认真研究如何让应用看起来像是真的 macOS App",
     "pos": [
       [
-        36,
-        37
+        33,
+        34
       ],
       [
-        2,
-        3
+        1,
+        2
       ]
     ],
-    "id": 137,
     "meta": {
       "title": "How to make absolutely any app look like a macOS app—Martian Chronicles, Evil Martians’ team blog",
       "open_graph": {
@@ -6013,20 +6029,18 @@
     "tag": "product",
     "type": "reference",
     "props": {
-      "category": "map",
-      "image": true
+      "category": "map"
     },
     "pos": [
       [
-        36,
-        37
+        33,
+        34
       ],
       [
-        3,
-        5
+        5,
+        6
       ]
     ],
-    "id": 138,
     "meta": {
       "title": "GitHub - pissang/little-big-city",
       "description": "Contribute to pissang/little-big-city development by creating an account on GitHub.",
@@ -6065,20 +6079,18 @@
     "tag": "resource",
     "type": "reference",
     "props": {
-      "category": "toolkit",
-      "image": true
+      "category": "toolkit"
     },
     "pos": [
       [
-        37,
-        38
+        33,
+        34
       ],
       [
-        2,
-        4
+        6,
+        7
       ]
     ],
-    "id": 139,
     "meta": {
       "title": "GitHub - mxgmn/MarkovJunior: Probabilistic language based on pattern matching and constraint propagation, 153 examples",
       "description": "Probabilistic language based on pattern matching and constraint propagation, 153 examples - GitHub - mxgmn/MarkovJunior: Probabilistic language based on pattern matching and constraint propagation, 153 examples",
@@ -6121,15 +6133,14 @@
     },
     "pos": [
       [
-        37,
-        38
+        34,
+        35
       ],
       [
-        4,
-        5
+        1,
+        2
       ]
     ],
-    "id": 140,
     "meta": {
       "title": "Skware – icon pack - Danyl P.",
       "description": "Skware is a free pixel icon pack, open-for contribution, CC FREE licensed. With Skware you can pixelate any project you're working on in seconds...",
@@ -6188,20 +6199,18 @@
     "type": "reference",
     "summary": "PWA 的应用，已经看起来和真的没有什么区别了",
     "props": {
-      "category": "pwa",
-      "image": true
+      "category": "pwa"
     },
     "pos": [
       [
-        37,
-        38
+        34,
+        35
       ],
       [
-        5,
-        7
+        3,
+        4
       ]
     ],
-    "id": 141,
     "meta": {
       "title": "Journalistic – Micro Journaling App for Android, iOS, and Web",
       "keywords": [
@@ -6248,15 +6257,14 @@
     "summary": "一些现在不常听到的声音，比如诺基亚开机。",
     "pos": [
       [
-        38,
-        39
+        34,
+        35
       ],
       [
-        1,
-        2
+        4,
+        5
       ]
     ],
-    "id": 142,
     "meta": {
       "title": "** Museum of Endangered Sounds **",
       "favicon": "http://savethesounds.info/favicon.ico"
@@ -6270,15 +6278,14 @@
     "summary": "AI 生成动画真人效果，效果非常好。",
     "pos": [
       [
-        38,
-        39
+        34,
+        35
       ],
       [
-        2,
-        3
+        5,
+        6
       ]
     ],
-    "id": 143,
     "meta": {
       "title": "Artist Uses AI To Create Photorealistic Versions Of Disney And 'Simpsons' Characters",
       "description": "If Disney ever decides to do a live-action \"Simpsons\" spin-off, it may look something like this.",
@@ -6344,15 +6351,14 @@
     },
     "pos": [
       [
-        38,
-        39
+        34,
+        35
       ],
       [
-        3,
-        4
+        6,
+        7
       ]
     ],
-    "id": 144,
     "meta": {
       "title": "Next Generation"
     }
@@ -6365,15 +6371,14 @@
     "summary": "周末看了 Nomand List 作者写的关于独立开发者的经验分享 https://readmake.com/ （不免费）。如果你经常逛独立开发者社区，无论是独立的论坛还是来自 Hacker News，再看他的书可以获得一些想法的再次验证（比如某某观点它和我想的一样）。但是还是能获得一些不一样的看法，比如你真的需要成为某个领域专家，才能让为你的服务付费，又比如项目管理，没有给你反馈（可以是情感，可以是金钱）的项目，及时终止你的项目；如果你刚刚萌生了独立开发者想法，会更有收获，保持冷静，这条路并不好走。",
     "pos": [
       [
-        38,
-        40
+        35,
+        37
       ],
       [
-        4,
-        5
+        1,
+        2
       ]
     ],
-    "id": 145,
     "meta": {
       "title": "\n\t\t\t\t\t\tMAKE: The Indie Maker Handbook\n\t\t",
       "twitter_card": {
@@ -6404,7 +6409,11 @@
       "description": "Learn to build startups the indie way",
       "favicon": "https://readmake.com/favicon-16x16.png?2",
       "cover": "https://readmake.com/media.png?1640852070"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 8,
@@ -6416,15 +6425,14 @@
     },
     "pos": [
       [
-        38,
-        39
+        35,
+        36
       ],
       [
-        5,
-        6
+        2,
+        3
       ]
     ],
-    "id": 146,
     "meta": {
       "title": "冒名顶替综合症",
       "open_graph": {
@@ -6444,15 +6452,14 @@
     },
     "pos": [
       [
-        38,
-        39
+        35,
+        36
       ],
       [
-        6,
-        7
+        3,
+        4
       ]
     ],
-    "id": 147,
     "meta": {
       "title": "Drawing a manga character with CSS... from scratch! - YouTube",
       "description": "The process of drawing a manga character from scratch with HTML and CSS.Source code and live demo: https://codepen.io/alvaromontoro/full/ExQbYbwIn this video...",
@@ -6576,15 +6583,14 @@
     "summary": "RSS 格式最佳实践。",
     "pos": [
       [
-        39,
-        40
+        35,
+        36
       ],
       [
-        1,
-        2
+        4,
+        5
       ]
     ],
-    "id": 148,
     "meta": {
       "title": "RSS Feed Best Practises - Kevin Cox",
       "favicon": "https://kevincox.ca/logo.svg"
@@ -6597,20 +6603,18 @@
     "tag": "resource",
     "summary": "类似 threejs-fiber 的 vue 版本",
     "props": {
-      "category": "threejs",
-      "image": true
+      "category": "threejs"
     },
     "pos": [
       [
-        39,
-        40
+        35,
+        36
       ],
       [
-        2,
-        4
+        5,
+        6
       ]
     ],
-    "id": 149,
     "meta": {
       "title": "GitHub - breakfast-studio/lunchboxjs: Custom Vue 3 renderer for ThreeJS - https://docs.lunchboxjs.com/",
       "description": "Custom Vue 3 renderer for ThreeJS - https://docs.lunchboxjs.com/ - GitHub - breakfast-studio/lunchboxjs: Custom Vue 3 renderer for ThreeJS - https://docs.lunchboxjs.com/",
@@ -6654,15 +6658,14 @@
     },
     "pos": [
       [
-        39,
-        40
+        35,
+        36
       ],
       [
         5,
         6
       ]
     ],
-    "id": 150,
     "meta": {
       "title": "uBlacklist - Chrome 線上應用程式商店",
       "open_graph": {
@@ -6687,20 +6690,18 @@
     "tag": "toolkit",
     "summary": "在 twitter 上找是否有人分享过了当前页面的链接。",
     "props": {
-      "category": "ext",
-      "image": true
+      "category": "ext"
     },
     "pos": [
       [
-        40,
-        41
+        35,
+        36
       ],
       [
-        1,
-        3
+        6,
+        7
       ]
     ],
-    "id": 151,
     "meta": {
       "title": "GitHub - round/Twitter-Links-beta: A browser extension to show the latest tweets that link to the current page.",
       "description": "A browser extension to show the latest tweets that link to the current page. - GitHub - round/Twitter-Links-beta: A browser extension to show the latest tweets that link to the current page.",
@@ -6742,15 +6743,14 @@
     },
     "pos": [
       [
-        39,
-        40
+        36,
+        37
       ],
       [
-        6,
-        7
+        1,
+        2
       ]
     ],
-    "id": 152,
     "meta": {
       "title": "Video Speed Controller - Chrome Web Store",
       "open_graph": {
@@ -6776,15 +6776,14 @@
     "summary": "Modern JS  的定义之前一直不太清楚，https://web.dev/publish-modern-javascript/ 这篇文章讲的对我来说很有启发的一点是，Modern 其实是一个动态的词，并不是 ES2019（or ES2017） 就一定是 Modern，因为 JS 世界一直在发展，所以现在 ES2019 的高级语法在未来也会变为 legacy，所以 Modern 是动态。文章中因此定义个一个阈值来简单判断是否是 Modern 的代码，即你写的代码的浏览器的覆盖率是不是 >= 95%。就目前 2022 来说， ES2017 是 95% 支持率，所以是最接近的。\n - 为什么需要 Modern 的语法，反过来想因为浏览器支持率都已经达到了 95%，我们是否需要支持那 5% 剩下的用户。**因为从 Modern JS 4行代码编译为支持那 5% 的用户，可能需要增加 100 多行的代码，会导致加载性能的问题**  \n - https://estimator.dev/#github.com web.dev 出了一个分析工具，如果你的代码转换为 Modern 的写法，可以是提升多少的速度。  ",
     "pos": [
       [
-        40,
-        42
+        36,
+        38
       ],
       [
-        3,
-        4
+        2,
+        3
       ]
     ],
-    "id": 153,
     "meta": {
       "title": "Publish, ship, and install modern JavaScript for faster applications",
       "description": "Modern JavaScript offers size and performance improvements over transpiled ES5, and is supported in 95% of web browsers. Enabling modern JavaScript output brings these benefits to your application, but the impact is limited by dependencies that are already transpiled to ES5. This guide demonstrates how to publish modern packages to npm, and how to install and optimally bundle modern JavaScript packages. ",
@@ -6813,7 +6812,11 @@
       },
       "favicon": "https://web.dev/images/favicon-16x16.png",
       "cover": "https://web-dev.imgix.net/image/admin/UQbMiPKbXL1EDjtWsLju.jpg?auto=format&fit=max&w=1200&fm=auto"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 6,
@@ -6825,15 +6828,14 @@
     },
     "pos": [
       [
-        40,
-        41
+        36,
+        37
       ],
       [
-        4,
-        5
+        3,
+        4
       ]
     ],
-    "id": 154,
     "meta": {
       "title": "\n      \n        \n             \n            \n              Stacker Font\n            \n           \n           \n          | Webfont & Desktop\n           \n           \n           \n            | MyFonts\n          \n        \n      \n    ",
       "description": "Stacker Font: Introducing Neon Sci-fi Futuristic Font called Stacker A unique Fonts with Futuristic Style can make your logotype become more interesting. ins...",
@@ -6868,15 +6870,14 @@
     },
     "pos": [
       [
-        40,
-        41
+        36,
+        37
       ],
       [
-        5,
-        6
+        4,
+        5
       ]
     ],
-    "id": 155,
     "meta": {
       "title": "How to use | Relingo",
       "favicon": "https://relingo.net/favicon.ico"
@@ -6893,15 +6894,14 @@
     },
     "pos": [
       [
-        40,
-        41
+        36,
+        37
       ],
       [
-        6,
-        7
+        5,
+        6
       ]
     ],
-    "id": 156,
     "meta": {
       "title": "Emoji Mart • One component to pick them all",
       "twitter_card": {
@@ -6940,15 +6940,14 @@
     },
     "pos": [
       [
-        41,
-        42
+        36,
+        37
       ],
       [
-        1,
-        2
+        6,
+        7
       ]
     ],
-    "id": 157,
     "meta": {
       "title": "我们基于 Disco-diffusion  为 50 句中国古诗词生成了画面 （开源代码） - 王登科-DK博客",
       "keywords": [
@@ -6977,19 +6976,22 @@
     "tag": "game",
     "pos": [
       [
-        41,
-        43
+        37,
+        39
       ],
       [
-        4,
-        6
+        1,
+        3
       ]
     ],
-    "id": 158,
     "meta": {
       "title": "Dead Trees",
       "favicon": "https://unit520.net/favicon.ico"
-    }
+    },
+    "size": [
+      2,
+      2
+    ]
   },
   {
     "week": 4,
@@ -6999,15 +7001,14 @@
     "summary": "github 不知道什么时候上线了 API 以及对应的 schema 预览。对于长期住在 github 上来说还是挺有用的。",
     "pos": [
       [
-        41,
-        42
+        37,
+        38
       ],
       [
-        2,
-        3
+        3,
+        4
       ]
     ],
-    "id": 159,
     "meta": {
       "title": "Labels - GitHub Docs",
       "description": "Get started, troubleshoot, and make the most of GitHub. Documentation for new users, developers, administrators, and all of GitHub's products.",
@@ -7037,15 +7038,14 @@
     "summary": "使用 UI 组件库，比如说 ant design，前期或许可以加速开发，但是随着项目推进会拖累项目进度，原因是组件库并不能覆盖全部的需求，可能这个组件库有 select，但是却没有 modal（这两个组件一般都会有，只是举例）。自定义组件又往往无法符合原先框架的风格。\n - 但是 tailwindcss 在作者排除之外，因为 tailwindcss 定义的是 design token，并没有提供组件。\n - chara-ui 虽然也是 UI 组件，但是它定义的组件比较原子化。\n - 所以结论是，使用的 UI 组件不要太过于高度的封闭，应该使用原子化的能力如 tailwindcss。",
     "pos": [
       [
-        41,
-        43
+        37,
+        39
       ],
       [
-        6,
-        7
+        4,
+        5
       ]
     ],
-    "id": 160,
     "meta": {
       "title": "You Don’t Need A UI Framework — Smashing Magazine",
       "description": "Developers often reach for UI frameworks like Bootstrap or Material UI, hoping that they’ll save a bunch of time and quickly build a professional-looking app. Unfortunately, things rarely work out this way. Let’s talk about it.",
@@ -7090,7 +7090,11 @@
       },
       "favicon": "https://www.smashingmagazine.com/images/favicon/favicon.svg",
       "cover": "https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7fae9333-8fe0-468f-bc90-274417de15c3/you-dont-need-ui-framework.jpg"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 4,
@@ -7103,15 +7107,14 @@
     "summary": "字体，但是支持黑白的 emoji",
     "pos": [
       [
-        42,
-        43
+        37,
+        38
       ],
       [
-        1,
-        2
+        5,
+        6
       ]
     ],
-    "id": 161,
     "meta": {
       "description": "Noto Emoji is an open source font that has you covered for all your emoji needs, including support for the latest Unicode emoji specification. It has multiple w",
       "open_graph": {
@@ -7153,15 +7156,14 @@
     "summary": "微软出的 PWA 课程。",
     "pos": [
       [
-        42,
-        43
+        37,
+        38
       ],
       [
-        2,
-        3
+        6,
+        7
       ]
     ],
-    "id": 162,
     "meta": {
       "title": "30 Days of PWA - Learn Progressive Web Apps in 30 Days",
       "description": "For 30 days, we publish articles that aim to introduce developers to Progressive Web App. We have content that covers 0-level to 200-level topics. Each post takes 5-10 minutes to read and is followed by a sample snippet or exercise.",
@@ -7198,15 +7200,14 @@
     "tag": "fun",
     "pos": [
       [
-        43,
-        45
+        38,
+        40
       ],
       [
-        1,
-        3
+        5,
+        7
       ]
     ],
-    "id": 163,
     "meta": {
       "description": "Please hold still while we locate your pointer...",
       "open_graph": {
@@ -7223,7 +7224,11 @@
       "title": "Pointer Pointer",
       "favicon": "https://pointerpointer.com/favicon.ico",
       "cover": "https://pointerpointer.com/like3.jpg"
-    }
+    },
+    "size": [
+      2,
+      2
+    ]
   },
   {
     "week": 2,
@@ -7233,15 +7238,14 @@
     "tag": "front-end",
     "pos": [
       [
-        42,
-        44
+        38,
+        40
       ],
       [
         3,
         4
       ]
     ],
-    "id": 164,
     "meta": {
       "title": "WakeLock - Web API 接口参考 | MDN",
       "description": "WakeLock 接口允许一个文件获取屏幕唤醒锁定。",
@@ -7261,7 +7265,11 @@
       },
       "favicon": "https://developer.mozilla.org/favicon-48x48.cbbd161b.png",
       "cover": "https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 1,
@@ -7274,15 +7282,14 @@
     },
     "pos": [
       [
-        43,
-        44
+        39,
+        40
       ],
       [
-        4,
-        6
+        1,
+        3
       ]
     ],
-    "id": 165,
     "meta": {
       "title": "Inspecting Web Views in macOS - Jim Nielsen’s Blog",
       "author": "p-author",
@@ -7305,7 +7312,11 @@
       },
       "favicon": "https://blog.jim-nielsen.com/favicon.ico",
       "cover": "https://blog.jim-nielsen.com/assets/img/twitter-card.png"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 1,
@@ -7318,15 +7329,14 @@
     "tag": "resource",
     "pos": [
       [
-        43,
-        44
+        39,
+        40
       ],
       [
-        6,
-        7
+        4,
+        5
       ]
     ],
-    "id": 166,
     "meta": {
       "title": "Blog Surf | Blog Search Engine",
       "description": "Blog Surf is the internet's only search engine for blogs. Explore the best writing on the internet.",
@@ -7344,15 +7354,14 @@
     "tag": "articles",
     "pos": [
       [
-        44,
-        45
+        40,
+        41
       ],
       [
-        3,
-        5
+        1,
+        3
       ]
     ],
-    "id": 167,
     "meta": {
       "title": "一文拆解BAYC成功之路 — Metascan.Pro | Twitterscan",
       "open_graph": {
@@ -7369,7 +7378,11 @@
       },
       "favicon": "https://mirror.xyz/icon/favicon-16x16.png",
       "cover": "https://mirror-media.imgix.net/publication-images/3RsnwUkmfSkUIwXLP3OiP.png?h=512&w=512"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   },
   {
     "week": 1,
@@ -7382,15 +7395,14 @@
     "tag": "developers",
     "pos": [
       [
-        44,
-        46
+        40,
+        42
       ],
       [
-        5,
-        6
+        3,
+        4
       ]
     ],
-    "id": 168,
     "meta": {
       "title": "javascript-testing-best-practices/readme-zh-CN.md at master · goldbergyoni/javascript-testing-best-practices · GitHub",
       "description": "📗🌐 🚢 Comprehensive and exhaustive JavaScript & Node.js testing best practices (April 2022) - javascript-testing-best-practices/readme-zh-CN.md at master · goldbergyoni/javascript-testing-best-practices",
@@ -7421,6 +7433,10 @@
       },
       "favicon": "https://github.githubassets.com/favicons/favicon.svg",
       "cover": "https://opengraph.githubassets.com/62092f33e192ea088c88f7324703ce9d1732a247714804636ce59ab2214400d5/goldbergyoni/javascript-testing-best-practices"
-    }
+    },
+    "size": [
+      1,
+      2
+    ]
   }
 ]

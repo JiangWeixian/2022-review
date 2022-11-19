@@ -10,6 +10,7 @@ specifiers:
   '@tailwindcss/line-clamp': ^0.4.2
   '@tailwindcss/typography': 0.5.7
   '@types/fs-extra': ^9.0.13
+  '@types/lodash-es': ^4.17.6
   '@types/markdown-it': ^12.2.3
   '@types/node': ^18.8.4
   '@types/react': ^18.0.21
@@ -26,6 +27,7 @@ specifiers:
   fs-extra: ^10.1.0
   husky: ^8.0.1
   lint-staged: ^13.0.3
+  lodash-es: ^4.17.21
   markdown-it: ^13.0.1
   picocolors: ^1.0.0
   postcss: 8.4.16
@@ -67,6 +69,7 @@ devDependencies:
   '@aiou/eslint-config': 0.5.1_fdomv3zgdgzindvpvsebnd5mnq
   '@changesets/cli': 2.24.4
   '@types/fs-extra': 9.0.13
+  '@types/lodash-es': 4.17.6
   '@types/markdown-it': 12.2.3
   '@types/node': 18.8.4
   '@types/react': 18.0.21
@@ -80,6 +83,7 @@ devDependencies:
   fs-extra: 10.1.0
   husky: 8.0.1
   lint-staged: 13.0.3
+  lodash-es: 4.17.21
   picocolors: 1.0.0
   postcss: 8.4.16
   prettier: 2.7.1
@@ -1288,6 +1292,16 @@ packages:
 
   /@types/linkify-it/3.0.2:
     resolution: {integrity: sha512-HZQYqbiFVWufzCwexrvh694SOim8z2d+xJl5UNamcvQFejLY/2YUtzXHYi3cHdI7PMlS8ejH2slRAOJQ32aNbA==}
+    dev: true
+
+  /@types/lodash-es/4.17.6:
+    resolution: {integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==}
+    dependencies:
+      '@types/lodash': 4.14.189
+    dev: true
+
+  /@types/lodash/4.14.189:
+    resolution: {integrity: sha512-kb9/98N6X8gyME9Cf7YaqIMvYGnBSWqEci6tiettE6iJWH1XdJz/PO8LB0GtLCG7x8dU3KWhZT+lA1a35127tA==}
     dev: true
 
   /@types/markdown-it/12.2.3:
@@ -4158,6 +4172,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-locate: 5.0.0
+    dev: true
+
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
     dev: true
 
   /lodash.castarray/4.4.0:
