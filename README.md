@@ -1,6 +1,8 @@
 # 2022-review
 
-## types
+These are what I read during 2022, you can visit my [newsletter](https://weixian.hedwig.pub/) for more detail. Welcome subscribe me.
+
+## developers
 
 - twitter_share - with detail url meta info with site background image, useful for large comments
 - comments - url meta info like title and description, but with comments
