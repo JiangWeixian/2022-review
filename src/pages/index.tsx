@@ -191,15 +191,12 @@ const RefBlock = (item: BlockProps) => {
           <span className="text-xs uppercase bg-opacity-10 text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-pink-500 text-pink-500 flex gap-2 mb-2">
             {category}
           </span>
-          <div className="w-full flex items-start gap-2 mb-2">
-            {item.meta.favicon && <img src={item.meta.favicon} className="w-4 h-4 mt-1.5" />}
-            <h1
-              title={item.meta.title}
-              className="font-bold text-xl text-white overflow-hidden line-clamp-2"
-            >
-              {item.meta.title || item.url}
-            </h1>
-          </div>
+          <h1
+            title={item.meta.title}
+            className="font-bold text-xl text-white overflow-hidden line-clamp-2 mb-2"
+          >
+            {item.meta.title || item.url}
+          </h1>
           {item.summary ? (
             <div className="flex gap-2 text-gray-500">
               <span className="w-6 h-6 inline-block flex-0">
