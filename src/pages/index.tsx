@@ -84,14 +84,12 @@ const CommentsBlock = (item: BlockProps) => {
   return (
     <Block className="flex flex-col justify-between" pos={item.pos}>
       <div className="w-full">
-        <div className="flex items-center gap-3 mb-2">
+        <h1 title={item.meta.title} className="flex gap-3 mb-2">
           {item.meta.favicon && (
-            <img src={item.meta.favicon} className="w-6 h-6 mix-blend-lighten" />
+            <img src={item.meta.favicon} className="w-6 h-6 mix-blend-lighten pt-1" />
           )}
-          <h1 title={item.meta.title} className="font-bold text-3xl text-white truncate">
-            {item.meta.title}
-          </h1>
-        </div>
+          <p className="font-bold text-white line-clamp-2">{item.meta.title}</p>
+        </h1>
         <p className="text-gray-400 text-xs">{item.meta.description}</p>
       </div>
       <div className="flex flex-col gap-4">
@@ -193,11 +191,11 @@ const RefBlock = (item: BlockProps) => {
           <span className="text-xs uppercase bg-opacity-10 text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-pink-500 text-pink-500 flex gap-2 mb-2">
             {category}
           </span>
-          <div className="w-full flex items-center gap-2 mb-2">
-            {item.meta.favicon && <img src={item.meta.favicon} className="w-4 h-4" />}
+          <div className="w-full flex items-start gap-2 mb-2">
+            {item.meta.favicon && <img src={item.meta.favicon} className="w-4 h-4 mt-1.5" />}
             <h1
               title={item.meta.title}
-              className="font-bold text-xl text-white truncate overflow-hidden"
+              className="font-bold text-xl text-white overflow-hidden line-clamp-2"
             >
               {item.meta.title || item.url}
             </h1>
