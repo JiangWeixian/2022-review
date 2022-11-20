@@ -5,7 +5,7 @@ import colors from 'picocolors'
 import { fetch } from 'ofetch'
 
 import rss from './rss.json'
-import cached from '../src/assets/cache_unfurl_rss.json'
+import cached from '../src/assets/unfurl_rss.json'
 import type { Metadata } from 'unfurl.js/dist/types'
 
 type Item = Record<string, unknown> & {
@@ -24,6 +24,8 @@ type Item = Record<string, unknown> & {
  * @description if item card type changed, re-unfurl meta info
  */
 const isInvalid = (prev: Item, current: Item) => {
+  // force update
+  return true
   if (!prev?.meta) {
     return true
   }
@@ -169,6 +171,14 @@ const main = async () => {
       console.log(`${colors.bgBlue(colors.black(`[${item.week}] unfurling: `))} ${item.url}`)
       try {
         result = await unfurl(item.url)
+        if (result.favicon) {
+          const isDeadLink = await fetch(result.favicon)
+            .then((res) => res.status !== 200)
+            .catch(() => true)
+          if (isDeadLink) {
+            result.favicon = undefined
+          }
+        }
       } catch (e) {
         console.log(
           `${colors.bgRed(colors.black(`[${item.week}] unfurling failed: `))} ${item.url}`,
@@ -186,14 +196,6 @@ const main = async () => {
     unfurlItem.meta.cover =
       result.twitter_card?.images?.[0]?.url || result.open_graph?.images?.[0].url
     unfurlItem.meta.creator = result.twitter_card?.creator
-    if (result.favicon) {
-      const isDeadLink = await fetch(result.favicon)
-        .then((res) => res.status !== 200)
-        .catch(() => true)
-      if (isDeadLink) {
-        unfurlItem.meta.favicon = undefined
-      }
-    }
     delete unfurlItem.meta.twitter_card
     delete unfurlItem.meta.open_graph
     delete unfurlItem.meta.keywords

@@ -1,5 +1,155 @@
 [
   {
+    "week": 31,
+    "url": "https://www.latepost.com/news/dj_detail?id=1390",
+    "tag": "articles",
+    "summary": "介绍了为什么特斯拉最近事故的原因，说到底还是驾车习惯的原因，如果车企能够远程升级控制一些驾驶细节，确实有点令人担忧",
+    "type": "comment"
+  },
+  {
+    "week": 31,
+    "url": "https://news.ycombinator.com/item?id=33613862",
+    "tag": "css-is-awesome",
+    "summary": "完美的工作是 5-7 小时专注的有趣的工作，而不是 2 个小时无聊的工作",
+    "type": "twitter_share",
+    "props": {
+      "horizontal": true
+    }
+  },
+  {
+    "week": 31,
+    "url": "https://css-tricks.com/making-static-noise-from-a-weird-css-gradient-bug/",
+    "tag": "css-is-awesome",
+    "summary": "实现小时候电视不能看的雪花图",
+    "type": "reference",
+    "props": {
+      "category": "tutorial"
+    }
+  },
+  {
+    "week": 31,
+    "url": "https://listening.io/",
+    "tag": "product",
+    "type": "reference",
+    "props": {
+      "category": "productivity"
+    }
+  },
+  {
+    "week": 31,
+    "url": "https://wix-ux.com/when-life-gives-you-lemons-write-better-error-messages-46c5223e1a2f",
+    "tag": "resource",
+    "type": "reference",
+    "summary": "如何写错误信息，感觉挺有价值的",
+    "props": {
+      "category": "document"
+    }
+  },
+  {
+    "week": 31,
+    "url": "https://larsenwork.com/easing-gradients/",
+    "tag": "css-is-awesome",
+    "type": "reference",
+    "summary": "一个在线创建平滑 gradients 工具。",
+    "props": {
+      "category": "toolkit",
+      "image": true
+    }
+  },
+  {
+    "week": 31,
+    "url": "https://zh.m.wikipedia.org/zh-hans/%E8%AA%98%E9%A4%8C%E6%95%88%E6%87%89",
+    "tag": "what-is",
+    "type": "announcement",
+    "title": "诱饵效应",
+    "props": {
+      "shape": "bracket"
+    }
+  },
+  {
+    "week": 31,
+    "url": "https://growing-products.paralect.com/a-development-process-startup-founders-should-use-to-ship-features-weirdly-fast",
+    "tag": "developers",
+    "type": "comment",
+    "summary": "介绍如何在早期迭代产品，对于非技术和技术都有价值。比如每周进行演示，有助于沟通进度。"
+  },
+  {
+    "week": 30,
+    "url": "https://arc.net/",
+    "tag": "product",
+    "summary": "最近在使用 arc 浏览器，确实使用体验比 chrome 要好。因为我会开很多浏览器区分不同工作场景，比如说在看 RSS 的，在写代码的，写代码可能还会区分不同项目的，这个可以通过 space 的方式来解决。但是有些地方还是有点不方便，比如全文翻译功能。",
+    "type": "reference",
+    "props": {
+      "category": "productivity",
+      "image": true
+    }
+  },
+  {
+    "week": 30,
+    "url": "https://bytes.dev/archives/132",
+    "tag": "articles",
+    "summary": "解释了为什么 remix 加入了 shopify https://remix.run/blog/remixing-shopify",
+    "type": "twitter_share"
+  },
+  {
+    "week": 30,
+    "url": "https://preply.com/en/d/laughing-around-the-world-map--lp",
+    "tag": "articles",
+    "summary": "世界各地在网络上如何表达笑",
+    "type": "comment"
+  },
+  {
+    "week": 30,
+    "url": "https://osxdaily.com/2022/11/03/how-remove-search-button-home-screen-iphone/",
+    "tag": "tutorial",
+    "summary": "如何移除 iphone 主屏幕上的搜索",
+    "type": "comment"
+  },
+  {
+    "week": 30,
+    "url": "https://www.rewind.ai/",
+    "tag": "product",
+    "summary": "搜索你在电脑上面的使用记录，可以跨越多个 App，甚至 OCR。有个时间轴可以回溯你在电脑上面的所有记录，就像是时间机器。",
+    "type": "reference",
+    "props": {
+      "category": "productivity",
+      "image": true
+    }
+  },
+  {
+    "week": 30,
+    "url": "https://css-tricks.com/the-new-css-media-query-range-syntax/",
+    "tag": "new-api",
+    "summary": "media query 支持了新的语法，不需要通过 min-width 和 max-width 来选择访问了，而是通过 >=",
+    "type": "comment"
+  },
+  {
+    "week": 30,
+    "url": "https://www.lofi.cafe/",
+    "tag": "resource",
+    "type": "iframe"
+  },
+  {
+    "week": 30,
+    "url": "https://codesandbox.io/s/inter-epoxy-resin-lxvqek?file=/src/index.js",
+    "tag": "threejs",
+    "summary": "基于 threejs 实现的非常好看的 3D 字体 能这么好看主要也是因为 shaders",
+    "type": "reference",
+    "props": {
+      "category": "tutorial"
+    }
+  },
+  {
+    "week": 30,
+    "url": "https://darkmodes.com/",
+    "tag": "resource",
+    "summary": "好看的黑暗模式网站参考。",
+    "type": "reference",
+    "props": {
+      "category": "collections"
+    }
+  },
+  {
     "week": 29,
     "url": "https://www.radix-ui.com/colors",
     "tag": "toolkit",
