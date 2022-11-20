@@ -1022,9 +1022,6 @@
     "url": "https://levelup.gitconnected.com/are-web-components-dead-12e404e0f4b0",
     "tag": "front-end",
     "type": "twitter_share",
-    "props": {
-      "horizontal": true
-    },
     "summary": "关于 Web-Components 讨论，虽然目前 React 类似框架是主流，但是还是给了它很高的预期，主要是现阶段的 SSR 等问题都有大公司在推出框架解决，比如 https://github.com/github/catalyst 因为这样对这些公司来说演进的幅度更小一些。不过按照 W3C 的速度，一些 API 支持可能没有那么快。",
     "pos": [
       [21, 22],

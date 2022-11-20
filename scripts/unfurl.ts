@@ -2,6 +2,7 @@ import { unfurl } from 'unfurl.js'
 import fse from 'fs-extra'
 import path from 'path'
 import colors from 'picocolors'
+import { fetch } from 'ofetch'
 
 import rss from './rss.json'
 import cached from '../src/assets/cache_unfurl_rss.json'
@@ -183,6 +184,14 @@ const main = async () => {
       item.title ?? result.title ?? (result.twitter_card?.title || result.open_graph?.title)
     unfurlItem.meta.cover =
       result.twitter_card?.images?.[0]?.url || result.open_graph?.images?.[0].url
+    if (result.favicon) {
+      const isDeadLink = await fetch(result.favicon)
+        .then((res) => res.status !== 200)
+        .catch(() => true)
+      if (isDeadLink) {
+        unfurlItem.meta.favicon = undefined
+      }
+    }
     unfurlRSS.push(unfurlItem)
   }
   calc(2, 6, unfurlRSS)
