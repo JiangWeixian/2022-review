@@ -26,9 +26,7 @@ type BlockProps = {
     description: string
     favicon: string
     cover: string
-    twitter_card: {
-      creator: string
-    }
+    creator: string
   }
   className?: string
 }
@@ -125,7 +123,7 @@ const TwitterShareBlock = (item: BlockProps) => {
         <div className="flex flex-col gap-2 text-white px-8">
           <div className="flex flex-col gap-2">
             <span className="w-6 h-6 inline-block flex-0 font-carter underline">
-              {useComment ? '@summary' : item.meta.twitter_card.creator}
+              {useComment ? '@summary' : item.meta.creator}
             </span>
             <div
               // FIXME: how to display more content

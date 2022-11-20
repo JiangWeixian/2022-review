@@ -12,7 +12,7 @@ type Item = Record<string, unknown> & {
   url: string
   id: number
   type: string
-  meta?: Record<string, unknown>
+  meta?: Partial<Metadata> & { cover?: string; creator?: string }
   pos: number[][]
   props: {
     horizontal: true
@@ -180,10 +180,12 @@ const main = async () => {
     const unfurlItem = Object.assign({}, item)
     result = result ?? {}
     unfurlItem.meta = result
-    unfurlItem.meta.title =
-      item.title ?? result.title ?? (result.twitter_card?.title || result.open_graph?.title)
+    unfurlItem.meta.title = (item.title ??
+      result.title ??
+      (result.twitter_card?.title || result.open_graph?.title)) as string
     unfurlItem.meta.cover =
       result.twitter_card?.images?.[0]?.url || result.open_graph?.images?.[0].url
+    unfurlItem.meta.creator = result.twitter_card?.creator
     if (result.favicon) {
       const isDeadLink = await fetch(result.favicon)
         .then((res) => res.status !== 200)
@@ -192,6 +194,10 @@ const main = async () => {
         unfurlItem.meta.favicon = undefined
       }
     }
+    delete unfurlItem.meta.twitter_card
+    delete unfurlItem.meta.open_graph
+    delete unfurlItem.meta.keywords
+    delete unfurlItem.meta.oEmbed
     unfurlRSS.push(unfurlItem)
   }
   calc(2, 6, unfurlRSS)
