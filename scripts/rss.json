@@ -884,7 +884,10 @@
     "week": 20,
     "url": "https://stickerlife.org/",
     "tag": "resource",
-    "type": "bg",
+    "type": "reference",
+    "props": {
+      "category": "collections"
+    },
     "pos": [
       [19, 20],
       [2, 3]

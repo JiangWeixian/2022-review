@@ -14,23 +14,6 @@ import avatar from '@/assets/imgs/avatar_circle.png'
 
 const md = new Markdownit()
 
-// TODO: will fixed or remove later
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const BlockPlaceholder = () => {
-  return (
-    <div className="article w-48 cursor-grab antialiased rounded shadow p-4">
-      <div>
-        <h3 className="mb-2">Lorem, ipsum.</h3>
-        <p className="text-gray-300 text-xs">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dolorem natus quas corporis
-          fuga nesciunt incidunt aut enim quis ratione sunt quo neque atque sapiente, eos nostrum!
-          Facere, maxime deserunt.
-        </p>
-      </div>
-    </div>
-  )
-}
-
 type BlockProps = {
   type: string
   tag: string
@@ -124,17 +107,19 @@ const TwitterShareBlock = (item: BlockProps) => {
       pos={item.pos}
     >
       <div
-        className={clsx('w-auto p-8 bg-cover', {
+        className={clsx('w-auto p-8 bg-cover relative', {
           'bg-gradient-to-r from-violet-500 to-fuchsia-500': useGradient,
           'h-full aspect-square': !!horizontal,
         })}
         style={{ backgroundImage: useImage ? `url(${item.meta.cover})` : undefined }}
       >
-        {/* TODO: add gray mask on image */}
+        {useImage && (
+          <div className="absolute top-0 left-0 bottom-0 right-0 bg-gradient-to-r from-black via-black/75 to-transparent z-0" />
+        )}
         <h1 className="mb-2 font-bold text-3xl text-white font-carter drop-shadow">
           {item.meta.title}
         </h1>
-        <p className="text-gray-200 text-xs italic">{item.meta.description}</p>
+        <p className="text-gray-400 text-xs italic z-1 relative">{item.meta.description}</p>
       </div>
       <div className="flex flex-1 flex-col justify-between py-4">
         <div className="flex flex-col gap-2 text-white px-8">
@@ -143,7 +128,8 @@ const TwitterShareBlock = (item: BlockProps) => {
               {useComment ? '@summary' : item.meta.twitter_card.creator}
             </span>
             <div
-              className="prose prose-invert prose-sm line-clamp-[11]"
+              // FIXME: how to display more content
+              className="prose prose-invert prose-sm line-clamp-[8]"
               dangerouslySetInnerHTML={{ __html: md.render(item.summary) }}
             />
           </div>
