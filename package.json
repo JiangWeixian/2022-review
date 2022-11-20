@@ -1,11 +1,11 @@
 {
   "name": "2022-review",
-  "version": "0.0.0",
-  "description": "2022 personal review",
+  "version": "0.0.1",
+  "description": "what i read in 2022",
   "keywords": [
     "2022",
     "review",
-    "JiangWeixian"
+    "rss"
   ],
   "license": "MIT",
   "homepage": "https://github.com/JiangWeixian/2022-review#readme",
