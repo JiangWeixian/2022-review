@@ -25,7 +25,7 @@ type Item = Record<string, unknown> & {
  */
 const isInvalid = (prev: Item, current: Item) => {
   // force update
-  return true
+  // return true
   if (!prev?.meta) {
     return true
   }
@@ -165,7 +165,7 @@ const main = async () => {
   for (const [id, item] of _rss.entries()) {
     item.id = id + 1
     const cachedItem = cached.find((i) => i.url === item.url) as unknown as Item
-    let result = cachedItem?.meta as unknown as Metadata
+    let result = cachedItem?.meta as unknown as Item['meta']
     // validte cache
     if (isInvalid(cachedItem, item)) {
       console.log(`${colors.bgBlue(colors.black(`[${item.week}] unfurling: `))} ${item.url}`)
@@ -194,7 +194,7 @@ const main = async () => {
       result.title ??
       (result.twitter_card?.title || result.open_graph?.title)) as string
     unfurlItem.meta.cover =
-      result.twitter_card?.images?.[0]?.url || result.open_graph?.images?.[0].url
+      result.cover ?? (result.twitter_card?.images?.[0]?.url || result.open_graph?.images?.[0].url)
     unfurlItem.meta.creator = result.twitter_card?.creator
     delete unfurlItem.meta.twitter_card
     delete unfurlItem.meta.open_graph
