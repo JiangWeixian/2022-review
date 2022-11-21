@@ -81,7 +81,9 @@ const CommentsBlock = (item: BlockProps) => {
           <p className="text-xs inline-block flex-1">{item.summary}</p>
         </div>
         <div className="w-full flex justify-between items-center opacity-70 hover:opacity-90">
-          <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+          <span className="font-carter rounded-full py-1/2 px-2 text-xs text-gray-300">
+            {item.tag}
+          </span>
           <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
             <Link className="w-full h-full" />
           </a>
@@ -133,7 +135,9 @@ const TwitterShareBlock = (item: BlockProps) => {
           </div>
         </div>
         <div className="w-full px-8 flex flex-0 h-4 justify-between items-center justify-self-end opacity-70 hover:opacity-90">
-          <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+          <span className="font-carter rounded-full py-1/2 px-2 text-xs text-gray-300">
+            {item.tag}
+          </span>
           <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
             <Link className="w-full h-full" />
           </a>
@@ -151,7 +155,9 @@ const BgBlock = (item: BlockProps) => {
         style={{ backgroundImage: `url(${item.meta.cover})` }}
       />
       <div className="w-full flex justify-between items-center opacity-70 hover:opacity-90 mix-blend-exclusion">
-        <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+        <span className="font-carter rounded-full py-1/2 px-2 text-xs text-gray-300">
+          {item.tag}
+        </span>
         <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
           <Link className="w-full h-full" />
         </a>
@@ -193,7 +199,9 @@ const RefBlock = (item: BlockProps) => {
           )}
         </div>
         <div className="w-full flex flex-0 justify-between items-center opacity-70 hover:opacity-90 mix-blend-exclusion">
-          <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+          <span className="font-carter rounded-full py-1/2 px-2 text-xs text-gray-300">
+            {item.tag}
+          </span>
           <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
             <Link className="w-full h-full" />
           </a>
@@ -209,7 +217,9 @@ const IframeBlock = (item: BlockProps) => {
       <iframe className="w-full h-full" src={item.url} />
       <div className="w-full flex flex-col justify-end absolute left-0 bottom-0 h-32 p-8 pb-4 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent">
         <p className="w-full flex justify-between items-center mix-blend-exclusion">
-          <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+          <span className="font-carter rounded-full py-1/2 px-2 text-xs text-gray-300">
+            {item.tag}
+          </span>
           <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
             <Link className="w-full h-full" />
           </a>
@@ -242,13 +252,36 @@ const AnnouncementBlock = (item: BlockProps) => {
       </div>
       <div className="flex flex-col gap-4">
         <div className="w-full flex justify-between items-center opacity-70 hover:opacity-90">
-          <span className="type rounded-full py-1/2 px-2 text-xs text-gray-300">{item.tag}</span>
+          <span className="font-carter rounded-full py-1/2 px-2 text-xs text-gray-300">
+            {item.tag}
+          </span>
           <a href={item.url} title={item.meta.title} className="w-4 h-4 text-gray-300 text-xs">
             <Link className="w-full h-full" />
           </a>
         </div>
       </div>
     </Block>
+  )
+}
+
+const Footer = () => {
+  const ref = useRef<HTMLHeadingElement>(null)
+  useEffect(() => {
+    if (!ref.current) {
+      return
+    }
+    const annotation = annotate(ref.current!, {
+      type: 'highlight',
+      color: 'rgb(192 132 252)',
+    })
+    annotation.show()
+  }, [ref])
+  return (
+    <div className="absolute z-[99999999] top-0 bottom-0 left-0 right-0 font-carter footer">
+      <h1 className="text-2xl w-fit absolute right-10 bottom-10" ref={ref}>
+        #whatiread2022
+      </h1>
+    </div>
   )
 }
 
@@ -381,7 +414,7 @@ const AttachDrag = () => {
         transform={true}
         occlude={true}
         ref={g}
-        className="articles-layout border-box grid grid-cols-6 gap-4 p-8 select-none"
+        className="articles-layout border-box grid grid-cols-6 gap-4 p-8 select-none z-10"
       >
         {lists.map((item, i) => {
           const Block: any = components[item.type as keyof typeof components]
@@ -394,20 +427,23 @@ const AttachDrag = () => {
 
 const Home = () => {
   return (
-    <Canvas>
-      <ambientLight />
-      <pointLight position={[10, 10, 10]} />
-      {/* set enableRotate: true for detail debug */}
-      <OrthographicCamera makeDefault={true} position={[0, 0, 5]} zoom={DEFAULT_ZOOM} />
-      <OrbitControls
-        enableRotate={false}
-        makeDefault={true}
-        enableZoom={true}
-        maxZoom={60}
-        minZoom={DEFAULT_ZOOM}
-      />
-      <AttachDrag />
-    </Canvas>
+    <>
+      <Canvas>
+        <ambientLight />
+        <pointLight position={[10, 10, 10]} />
+        {/* set enableRotate: true for detail debug */}
+        <OrthographicCamera makeDefault={true} position={[0, 0, 5]} zoom={DEFAULT_ZOOM} />
+        <OrbitControls
+          enableRotate={false}
+          makeDefault={true}
+          enableZoom={true}
+          maxZoom={60}
+          minZoom={DEFAULT_ZOOM}
+        />
+        <AttachDrag />
+      </Canvas>
+      <Footer />
+    </>
   )
 }
 
