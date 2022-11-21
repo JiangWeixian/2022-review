@@ -287,7 +287,7 @@ const AttachDrag = () => {
   const [spring, api] = useSpring(() => ({
     position: [0, 0, 0],
     onRest: () => {
-      console.log('resolved')
+      // console.log('resolved')
       bounding.current = null
     },
   }))
@@ -372,7 +372,6 @@ const AttachDrag = () => {
   )
 
   const [lists] = useState(rss)
-  console.log(lists)
 
   return (
     // @ts-expect-error -- https://github.com/pmndrs/use-gesture/discussions/287
