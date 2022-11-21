@@ -1,6 +1,6 @@
 # 2022-review
 
-![2022](./screenshots/whatiread2022.png)  
+![2022](./public/whatiread2022.png)  
 *▲ These are what I read during 2022, you can visit my [newsletter](https://weixian.hedwig.pub/) for more detail. Welcome subscribe me.*
 
 <details>
