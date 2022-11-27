@@ -17,7 +17,12 @@
 .articles-layout {
   grid-template-rows: repeat(auto-fill, var(--row-height));
   height: 1500vh;
-  width: 200vw;
+}
+
+@media (min-width: 375px) {
+  .articles-layout {
+    width: 600vw;
+  }
 }
 
 .article {
