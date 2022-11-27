@@ -1,5 +1,45 @@
 [
   {
+    "week": 32,
+    "url": "https://deno.com/blog/the-future-of-web-is-on-the-edge",
+    "type": "twitter_share",
+    "summary": "边缘计算为什么是未来。边缘计算类似于把内容放到了更靠近用户的服务器上，所以网络性能会更好。",
+    "tag": "front-end"
+  },
+  {
+    "week": 32,
+    "url": "https://d2-lang.com/tour/containers",
+    "type": "reference",
+    "props": {
+      "category": "toolkit"
+    },
+    "tag": "markdown"
+  },
+  {
+    "week": 32,
+    "url": "https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/",
+    "type": "twitter_share",
+    "summary": "和 flexbox 相关的很有趣的文章，解决之前很多 flex 使用上遇到的奇奇怪怪的问题 \n - 如果遇到由于兄弟元素宽度不够导致的变形，可以试试 flex-shirnk \n - 如果遇到元素高度和父类原生一样高了，而不是自身的高度，可以试试 align-self",
+    "tag": "css-is-awesome"
+  },
+  {
+    "week": 32,
+    "url": "https://iamkate.com/code/tree-views/",
+    "type": "comment",
+    "summary": "纯 css 实现 treeview 的效果，利用了 summary 的特性",
+    "tag": "css-is-awesome"
+  },
+  {
+    "week": 32,
+    "url": "https://www.screen.studio/",
+    "type": "reference",
+    "props": {
+      "category": "productivity"
+    },
+    "summary": "一个屏幕录制的软件，有种 focus 的效果，好奇这种跟随鼠标进行不断放大缩小是如何实现的呢。是根据焦点的文字大小吗？",
+    "tag": "product"
+  },
+  {
     "week": 31,
     "url": "https://www.latepost.com/news/dj_detail?id=1390",
     "tag": "articles",

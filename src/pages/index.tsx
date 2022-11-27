@@ -414,7 +414,7 @@ const AttachDrag = () => {
         transform={true}
         occlude={true}
         ref={g}
-        className="articles-layout border-box grid grid-cols-6 gap-4 p-8 select-none z-10"
+        className="articles-layout w-[600vw] lg:w-[200vw] border-box grid grid-cols-6 gap-4 p-8 select-none z-10"
       >
         {lists.map((item, i) => {
           const Block: any = components[item.type as keyof typeof components]
