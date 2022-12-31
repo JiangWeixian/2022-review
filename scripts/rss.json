@@ -1,5 +1,211 @@
 [
   {
+    "week": 35,
+    "url": "https://mp.weixin.qq.com/s/ixMp0Jqc_sfNMPDrCYnPPw",
+    "type": "twitter_share",
+    "summary": "使用 CSS Houdini 可以在 CSS 中使用 JS 代码，类似在 CSS 中使用 canvas 画一些图案，但是是在 CSS 的生命周期中实现，所以可以获取到全局状态变量等。这个文章是实现了一种波浪的效果。",
+    "tag": "css-is-awesome"
+  },
+  {
+    "week": 35,
+    "url": "https://www.readmargins.com/p/doordash-and-pizza-arbitrage",
+    "type": "twitter_share",
+    "summary": "之前听说类似的故事，餐厅没有加入外卖平台，但是用户却可以下单，这是平台私人行为，如果数据很好，它会拿着这个数据去餐厅要求加入，抽取费用。它们甚至会赔钱做这个测试，就是为了拿到更好的数据。",
+    "tag": "articles"
+  },
+  {
+    "week": 35,
+    "url": "https://chat.openai.com/",
+    "type": "announcement",
+    "title": "ChatGPT",
+    "tag": "ai"
+  },
+  {
+    "week": 35,
+    "url": "https://twitter.com/akella/status/1601169580055203846",
+    "type": "comment",
+    "summary": "简单介绍了下如何实现下面这种网站的方案。很酷的是，它的翻页效果是 WebGL 的视频，内容则全是 html https://www.themagicalpantry.com/",
+    "tag": "threejs"
+  },
+  {
+    "week": 35,
+    "url": "https://emiozaki.com/works?type=grid",
+    "type": "reference",
+    "props": {
+      "category": "website"
+    },
+    "summary": "做的很好看的个人网站，风格像是手机上的漫画，切换做的十分丝滑。",
+    "tag": "design"
+  },
+  {
+    "week": 35,
+    "url": "https://calendar.perfplanet.com/2022/lcpfe/",
+    "type": "twitter_share",
+    "summary": "LCP 会搜到网络因素影响，如果要优化 LCP 为什么不直接优化减去网络因素的时间呢。",
+    "tag": "performance"
+  },
+  {
+    "week": 35,
+    "url": "https://www.lydiahallie.io/blog/optimizing-webfonts-in-nextjs-13",
+    "type": "twitter_share",
+    "summary": "字体的性能优化方案，手段主要是两个方面 \n - 提前建立连接，提前字体资源请求 \n - 使用 size-adjust 来保证字体切换中，页面的闪烁 \n - next/font 可以帮助你更好的实现第一个方案  ",
+    "tag": "performance"
+  },
+  {
+    "week": 34,
+    "url": "https://www.kive.ai/canvas",
+    "type": "reference",
+    "summary": "ai 新玩法，可以多人在房间内一起作画。",
+    "props": {
+      "category": "product"
+    },
+    "tag": "ai"
+  },
+  {
+    "week": 34,
+    "url": "https://elai.io/",
+    "type": "reference",
+    "summary": "ai 能够换脸之后，像这种文本生成视频，同时让一个 ai 生成的人物来念出来，看起来也是一个比较有趣的思路",
+    "props": {
+      "category": "product"
+    },
+    "tag": "ai"
+  },
+  {
+    "week": 34,
+    "url": "https://addyosmani.com/blog/first-principles-thinking-software-engineers/",
+    "type": "comment",
+    "summary": "解决问题关键在于分解问题 ",
+    "tag": "developers"
+  },
+  {
+    "week": 34,
+    "url": "https://sspai.com/post/77144",
+    "type": "twitter_share",
+    "summary": "知识库存在三种笔记类型，分别是闪念笔记，文献笔记，以及最后的文章。",
+    "tag": "articles"
+  },
+  {
+    "week": 34,
+    "url": "https://ideaclarity.co/",
+    "type": "comment",
+    "summary": "作为独立开发者来说，比较难的是如何确定你的 idea 是否是有效的，所以当你有机会和这个领域的从业者聊天之后，或许可以快速的验证的你需求是否有市场。",
+    "tag": "solo"
+  },
+  {
+    "week": 34,
+    "url": "https://stackdiary.com/css-media-queries",
+    "type": "reference",
+    "props": {
+      "category": "tutorial"
+    },
+    "summary": "media-query 文章",
+    "tag": "css-is-awesome"
+  },
+  {
+    "week": 34,
+    "url": "https://github.com/Kaiyiwing/qwerty-learner",
+    "type": "reference",
+    "props": {
+      "category": "product"
+    },
+    "summary": "通过打字的方式学习英语",
+    "tag": "game"
+  },
+  {
+    "week": 34,
+    "url": "https://calendar.perfplanet.com/2022/reduce-image-sizes-by-removing-metadata/",
+    "type": "twitter_share",
+    "props": {
+      "horizontal": true
+    },
+    "summary": "移除了图片的 meta 信息居然可以减少图片体积。",
+    "tag": "developers"
+  },
+  {
+    "week": 34,
+    "url": "https://github.com/oceanlvr/ChatGPT-ProBot",
+    "type": "reference",
+    "props": {
+      "category": "product"
+    },
+    "summary": "chatgpt 来 review 你的代码",
+    "tag": "ai"
+  },
+  {
+    "week": 34,
+    "url": "https://github.com/ggerganov/whisper.cpp/tree/master/examples/talk.wasm",
+    "type": "reference",
+    "props": {
+      "category": "tutorial"
+    },
+    "summary": "两个 chatgpt 机器人如何聊天。",
+    "tag": "ai"
+  },
+  {
+    "week": 33,
+    "url": "https://twitter.com/jesper_vos/status/1595075494831357952",
+    "type": "reference",
+    "summary": "看起来是很简单的代码，实现了 portal 的效果。",
+    "props": {
+      "category": "tutorial"
+    },
+    "tag": "threejs"
+  },
+  {
+    "week": 33,
+    "url": "https://www.tremor.so/",
+    "type": "reference",
+    "summary": "图表库，构建在 tailwindcss 之上",
+    "props": {
+      "category": "react"
+    },
+    "tag": "front-end"
+  },
+  {
+    "week": 33,
+    "url": "https://shopify.engineering/what-we-learned-from-open-sourcing-flashlist",
+    "type": "twitter_share",
+    "summary": "介绍了对于开源工作来说，如果想要获得成功，不仅仅需要将代码作为产品来思考，它需要解决一个问题（无论多小），还需要在社交媒体上作为宣传。同时你的身份也是可以帮助你更好的冷启动",
+    "tag": "solo"
+  },
+  {
+    "week": 33,
+    "url": "https://citiesandmemory.com/obsolete-sounds/",
+    "type": "comment",
+    "summary": "收集声音，然后 remix tap。听起来还挺有趣的。 ",
+    "tag": "resource"
+  },
+  {
+    "week": 33,
+    "url": "https://adinunz.io/spellcaster/",
+    "type": "reference",
+    "summary": "看过奇异博士的电影的话，肯定不会对里面的传送门陌生，它实现了一个类似的。实在是太酷了。",
+    "props": {
+      "category": "tutorial"
+    },
+    "tag": "threejs"
+  },
+  {
+    "week": 33,
+    "url": "https://github.com/steven-tey/dub",
+    "type": "reference",
+    "props": {
+      "category": "toolkit"
+    },
+    "tag": "product"
+  },
+  {
+    "week": 33,
+    "url": "https://blog.jim-nielsen.com/2022/css-for-urls-and-http-headers/",
+    "type": "reference",
+    "summary": "一个新的 css 选择规则，在样式文件中匹配 url 地址，应用不同的样式。",
+    "props": {
+      "category": "tutorial"
+    },
+    "tag": "css-is-awesome"
+  },
+  {
     "week": 32,
     "url": "https://deno.com/blog/the-future-of-web-is-on-the-edge",
     "type": "twitter_share",
